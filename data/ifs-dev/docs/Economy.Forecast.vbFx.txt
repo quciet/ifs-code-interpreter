@@ -1,0 +1,22 @@
+List of Functions not found:
+=============================
+
+TFNameTransfersPctGDP
+TFNamePublicPensionPctGDP
+TFNamePublicPensionPctGDP
+TFNameLifeExp
+TblNameEducExp
+TblNameHealthExp
+TblNameRandDPctGDP
+TblNameYrsEduc15
+TblNameStunting
+TFNameInternetPctUse
+GDP/Capita (PPP) Versus Technological Premium Medium SSP2 (2015)
+GDP/Capita (PPP) Versus Technological Premium Medium SSP2 (2015)
+GDP/Capita (PPP) Versus Technological Premium Medium SSP2 (2015)
+TblNameEducExp
+TblNameHealthExp
+TblNameRandDPctGDP
+TblNameYrsEduc15
+TblNameStunting
+TFNameInternetPctUse

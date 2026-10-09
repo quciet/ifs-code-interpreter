@@ -1,0 +1,55 @@
+List of Functions not found:
+=============================
+GDP/Capita (PPP 2011) Versus Percentage ART Coverage (2017) Log
+Education Years (15+) Versus Condom Use (2014) Log
+GDP/Capita (PPP 2000) Versus Female Smoking Rate (2003) Quadratic
+GDP/Capita (PPP 2000) Versus Male Smoking Rate (2004) Quadratic
+Calories per Capita Versus Obesity Rate Adult Females (2005) Linear
+Calories per Capita Versus Obesity Rate Adult Males (2005) Linear
+Calories per Capita Versus Female BMI (2005) Linear
+Calories per Capita Versus Male BMI (2005) Linear
+GDP/Capita (PPP 2000) Versus Impaired Glucose Tolerance (2003) Log
+GDP/Capita (PPP 2000) Versus Diabetes Prevalence (2003) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 30 to 44 (2002) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 45 to 59 (2002) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 60 to 69 (2002) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 70+ (2002) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Female 30 to 44 (2002) Linear
+GDP/Capita (PPP 2000) Versus Smoking Impact Female 45 to 59 (2002) Linear
+GDP/Capita (PPP 2000) Versus Smoking Impact Female 60 to 69 (2002) Linear
+GDP/Capita (PPP 2000) Versus Smoking Impact Female 70+ (2002) Linear
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 30 to 44 (2002) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 45 to 59 (2002) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 60 to 69 (2002) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 70+ (2002) Log
+GDP/Capita (PPP 2000) Versus Smoking Impact Female 30 to 44 (2002) Linear
+GDP/Capita (PPP 2000) Versus Smoking Impact Female 45 to 59 (2002) Linear
+GDP/Capita (PPP 2000) Versus Smoking Impact Female 60 to 69 (2002) Linear
+GDP/Capita (PPP 2000) Versus Smoking Impact Female 70+ (2002) Linear
+BMI(2005) vs Diabetes RR[2005] Males 15 to 29 Cubic
+BMI(2005) vs Diabetes RR[2005] Males 30 to 44 Cubic
+BMI(2005) vs Diabetes RR[2005] Males 45 to 59 Cubic
+BMI(2005) vs Diabetes RR[2005] Males 60 to 69 Cubic
+BMI(2005) vs Diabetes RR[2005] Males 70 to 79 Cubic
+BMI(2005) vs Diabetes RR[2005] Males 80+ Cubic
+BMI(2005) vs Diabetes RR[2005] Females 15 to 29 Cubic
+BMI(2005) vs Diabetes RR[2005] Females 30 to 44 Cubic
+BMI(2005) vs Diabetes RR[2005] Females 45 to 59 Cubic
+BMI(2005) vs Diabetes RR[2005] Females 60 to 69 Cubic
+BMI(2005) vs Diabetes RR[2005] Females 70 to 79 Cubic
+BMI(2005) vs Diabetes RR[2005] Females 80+ Cubic
+GDP/Capita Versus GDP/Capita at Purchasing Power Parity (2000) Power Function
+GDP/Capita (PPP 2000) Versus Malnutrition (2000) Power
+GDP/Capita Versus GDP/Capita at Purchasing Power Parity (2000) Power Function
+GDP/Capita (PPP 2000) Versus Malnutrition (2000) Power
+GDP/Capita (PPP) Versus HIV Infections, Male Portion
+GDP/Capita (PPP) Versus HIV Infections, Male Portion
+Male 30 to 44 Smoking Impact (2030) Versus Male Smoking Prevalence (2005) Linear
+Male 45 to 59 Smoking Impact (2030) Versus Male Smoking Prevalence (2005) Linear
+Male 60 to 69 Smoking Impact (2030) Versus Male Smoking Prevalence (2005) Linear
+Male 70+ Smoking Impact (2030) Versus Male Smoking Prevalence (2005) Linear
+Female 30 to 44 Smok Impact (2030) Versus Female Smoking Prev (2005) Linear
+Female 45 to 59 Smok Impact (2030) Versus Female Smoking Prev (2005) Linear
+Female 60 to 69 Smok Impact (2030) Versus Female Smoking Prev (2005) Linear
+Female 70+ Smok Impact (2030) Versus Female Smoking Prev (2005) Linear
+GDP/Capita (PPP 2000) Versus Smoking Impact Male 30 to 44 (2002) Log

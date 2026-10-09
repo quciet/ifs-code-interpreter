@@ -1,0 +1,29 @@
+
+Error in parsing STFAILURE.FORECAST.VB
+========================================
+Error Msg: 
+
+Could not find file 'C:\My Documents\IFs\Code.Ifs-Translation\TmpCode\STFAILURE.FORECAST.VB'.
+
+----------------------------------------
+Probable Parsing Code Location: 
+
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at IFs.Cli.IFsFunctions.ParseCodeFile(String Filename, String ModName) in C:\My Documents\IFs\Code.Ifs-Translation\src\IFs.Cli\IFsFunctions.vb:line 6952
+
+----------------------------------------
+IFs Model Code Location: 
+
+
+
+----------------------------------------
+IFs Model Code Block (36478): 
+
+'Save results to tableIf wpindsw > 1 And wpindsw < 5 Then 'clp 2024/07/10 Block if new code activeFor R1 = 1 To NR - 1For R2 = R1 + 1 To NR'jrs 2011/11/21 saving to Threat variable'                tblK.AddNew'                tblK.Fields("RegionIdA") = R1'                tblK.Fields("RegionIdB") = R2'                tblK.Fields("Year") = FirstYear + IY - 1'                tblK.Fields("Forecast") = WPINDKANT(R1, R2)'                tblK.Update''                tblR.AddNew'                tblR.Fields("RegionIdA") = R1'                tblR.Fields("RegionIdB") = R2'                tblR.Fields("Year") = FirstYear + IY - 1'                tblR.Fields("Forecast") = WPINDREAL(R1, R2)'                tblR.Update'Select Case wpindswCase 2THREAT(R1, R2) = WPINDKANT(R1, R2)Case 3THREAT(R1, R2) = WPINDREAL(R1, R2)Case 4'COI Forecast uses constant growth until 2050 then stays flatIf COI2(R1, R2, 1) = 0 Or COI(R1, R2, 2) = COI2(R1, R2, 2) Or IY = 1 Or Abs(COI(R1, R2, 1)) > 3 ThenCOIPrediction = COI(R1, R2, 1)ElseCOIPrediction = CSng((COI(R1, R2, 1) + 3) * ((COI(R1, R2, 1) + 3) / (COI2(R1, R2, 1) + 3)) ^ ((Amin(IY, 41) - 1) / (COI(R1, R2, 2) - COI2(R1, R2, 2))))COIPrediction = COIPrediction - 3'jrs 2011/12/16If Abs(COIPrediction) > 3 ThenCOIPrediction = Sign(COIPrediction) * 3End IfEnd IfTHREAT(R1, R2) = COIPredictionEnd SelectTHREAT(R2, R1) = THREAT(R1, R2)''                tblC.AddNew'                tblC.Fields("RegionIdA") = R1'                tblC.Fields("RegionIdB") = R2'                tblC.Fields("Year") = FirstYear + IY - 1'                tblC.Fields("Forecast") = COIPrediction'                tblC.UpdateNext R2Next R1End If
+
+
+========================================

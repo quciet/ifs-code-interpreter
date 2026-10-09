@@ -1,0 +1,36 @@
+List of Functions not found:
+=============================
+TFNameTotCarsPC).ToEstimator
+If Not CCarsTotal(valtbl.Country).HasValue Or CCarsTotal(0 Then
+If Not CTrucksTotal(valtbl.Country).HasValue Or CTrucksTotal(0 Then
+11) As SeriesEstimator
+cc%) = cntx.GetRegression
+12) As SeriesEstimator
+cc%) = cntx.GetRegression
+XYTABL2s(cntx.GetRegression(Title).ToEstimator(IndVar2)
+CCarsType(key)(CCarsType(key)(cc%)                            * CCarsTotal(key) / AMAX(1, TotalCarCount)
+GDP/Capita (PPP) Versus Total Cars/Capita
+GDP/Capita (PPP) Versus Total Trucks/Capita
+CarsTot Versus CarsMini
+CarsTot Versus CarsSmall
+CarsTot Versus CarsLowMed
+CarsTot Versus CarsInterm
+CarsTot Versus CarsUpMed
+CarsTot Versus CarsLarge
+CarsTot Versus CarsHigh
+CarsTot Versus CarsLFamWag
+CarsTot Versus CarsSFamWag
+CarsTot Versus CarsSportL
+CarsTot Versus CarsSportH
+TrucksTot Versus TrucksPCD
+TrucksTot Versus TrucksSPickup
+TrucksTot Versus TrucksSVan
+TrucksTot Versus TrucksMPickup
+TrucksTot Versus TrucksLPickup
+TrucksTot Versus TrucksSUtility
+TrucksTot Versus TrucksMUtility
+TrucksTot Versus TrucksLUtility
+TrucksTot Versus TrucksMVan
+TrucksTot Versus TrucksLVan
+TrucksTot Versus TrucksLightComl
+TrucksTot Versus TrucksMedHeavy

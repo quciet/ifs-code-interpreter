@@ -1,0 +1,205 @@
+List of Functions not found:
+=============================
+GDP/Capita (PPP 2011) Versus SecLowr Dropout Rate, Grade 5, Female (2015) Log
+GDP/Capita (PPP 2011) Versus SecLowr Dropout Rate, Grade 5, Male (2015) Log
+GDP/Capita (PPP 2011) Versus SecLowr Dropout Rate, Grade 6, Female (2015) Log
+GDP/Capita (PPP 2011) Versus SecLowr Dropout Rate, Grade 6, Male (2015) Log
+TFNameTerGradRate1stDegreeMale
+TFNameTerGradRate1stDegreeMale
+TFNameTerGradRate1stDegreeFem
+TFNameTerGradRate1stDegreeFem
+Ter Intake Tot versus Sec Grads 20 to 24 Tot, GDPPCP(Log) (Most Recent)
+Ter Intake Male versus Sec Grads 20 to 24 Male, GDPPCP(Log) (Most Recent)
+Education, Tertiary Grad Rate Male (Logit) versus Enrlmnt, Attnmnt (M RECENT)
+Ter Intake Female versus Sec Grads 20 to 24 Female, GDPPCP(Log) (Most Recent)
+Education, Tertiary Grad Rate Fml (Logit) versus Enrlmnt, Attnmnt (M RECENT)
+Educ Qual Pri All, Total, WBGA 2010 (Lin) vs GDPPCPLN and Edyear25
+Educ Qual Sec All, Total, WBGA 2010 (Lin) vs GDPPCPLN and Edyear25
+GDP/Capita (PPP 2011) Versus SecLowr Dropout Rate, Grade 5, Female (2015) Log
+GDP/Capita (PPP 2011) Versus SecLowr Dropout Rate, Grade 5, Male (2015) Log
+GDP/Capita (PPP 2011) Versus SecLowr Dropout Rate, Grade 6, Female (2015) Log
+GDP/Capita (PPP 2011) Versus SecLowr Dropout Rate, Grade 6, Male (2015) Log
+GDP/Capita (PPP) Versus Primary Apparent (Gross) Intake Rate Male(1970)
+GDP/Capita (PPP) Versus Primary Apparent (Gross) Intake Rate Male(2000)
+GDP/Capita (PPP) Versus Primary Gross Enrollment Male (1970)
+GDP/Capita (PPP) Versus Primary Gross Enrollment Male (2000)
+GDP/Capita (PPP) Versus Primary Net Enrollment Male (1970)
+GDP/Capita (PPP) Versus Primary Net Enrollment Male (2000)
+GDP/Capita (PPP) Versus Primary Net Intake Rate Male(1995)
+GDP/Capita (PPP 2011) Versus Primary Net Intake Rate Male (MostRecent) Log
+GDP/Capita (PPP) Versus Primary Survival Rate Male(1970)
+GDP/Capita (PPP 2011) Versus Primary Survival Rate Male (MostRecent) Log
+GDP/Capita (PPP) Versus Primary Completion Male (2000)
+GDP/Capita (PPP) Versus Primary Completion Male (2000)
+GDP/Capita (PPP) Versus Primary Graduates Male (1960)
+GDP/Capita (PPP 2000) Versus Primary Graduates 15+ Male (Log) (MostRecent)
+GDP/Capita (PPP 2011) Versus Primary Graduates 15 to 24 Male (1960) Log
+GDP/Capita (PPP 2000) Versus Primary Graduates 15+ Male (Log) (MostRecent)
+GDP/Capita (PPP) Versus Primary Apparent (Gross) Intake Rate Female(1970)
+GDP/Capita (PPP) Versus Primary Apparent (Gross) Intake Rate Female(2000)
+GDP/Capita (PPP) Versus Primary Gross Enrollment Female (1970)
+GDP/Capita (PPP) Versus Primary Gross Enrollment Female (2000)
+GDP/Capita (PPP) Versus Primary Net Enrollment Female (1970)
+GDP/Capita (PPP) Versus Primary Net Enrollment Female (2000)
+GDP/Capita (PPP) Versus Primary Net Intake Rate Female(1995)
+GDP/Capita (PPP 2011) Versus Primary Net Intake Rate Female (MostRecent) Log
+GDP/Capita (PPP) Versus Primary Survival Rate Female(1970)
+GDP/Capita (PPP 2011) Versus Primary Survival Rate Female (MostRecent) Log
+GDP/Capita (PPP) Versus Primary Completion Female (2000)
+GDP/Capita (PPP) Versus Primary Completion Female (2000)
+GDP/Capita (PPP) Versus Primary Graduates Female (1960)
+GDP/Capita (PPP 2000) Versus Primary Graduates 15+ Female (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Primary Graduates 15 to 24 Female (1960) Log
+GDP/Capita (PPP 2000) Versus Primary Graduates 15+ Female (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Gross Enrollment Rate (1970)
+GDP/Capita (PPP) Versus Secondary Gross Enrollment Rate (2000)
+Secondary Gross Enrollment Versus Secondary Net Enrollment Total (1970)
+Secondary Gross Enrollment Versus Secondary Net Enrollment Total (2000)
+Secondary Net Enrollment Versus Secondary Gross Enrollment Total  (1970)
+Secondary Net Enrollment Versus Secondary Gross Enrollment Total (2000)
+GDP/Capita (PPP) Versus Secondary Graduates Total (1960)
+GDP/Capita (PPP 2000) Versus Secondary Graduates 15+ Total (Log) (MostRecent)
+GDP/Capita (PPP 2011) Versus Secondary Graduates 15 to 24 Total (1960) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 15 to 24 Total (2010) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 20 to 24 Total (1960) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 20 to 24 Total (2010) Log
+GDP/Capita (PPP 2011) Versus Transition From Primary to Lower Sec Male (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Transition From Primary to Lower Sec Male (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Lower Gross Enrollment Rate Male (2000)
+GDP/Capita (PPP) Versus Secondary Lower Gross Enrollment Rate Male (2000)
+GDP/Capita (PPP 2011) Versus Secondary Lower Graduation Rate, All, Male (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Secondary Lower Graduation Rate, All, Male (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Gross Enrollment Rate Male (1970)
+GDP/Capita (PPP) Versus Secondary Gross Enrollment Rate Male (2000)
+Secondary Gross Enrollment Versus Secondary Net Enrollment Male (1970)
+Secondary Gross Enrollment Versus Secondary Net Enrollment Male (2000)
+Secondary Net Enrollment Versus Secondary Gross Enrollment Male (1970)
+Secondary Net Enrollment Versus Secondary Gross Enrollment Male (2000)
+GDP/Capita (PPP 2011) Versus Transition From Lower to Upper Sec Male (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Transition From Lower to Upper Sec Male (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Upper Gross Enrollment Rate Male (2000) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Gross Enrollment Rate Male (2020) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Graduation Rate, All, Male (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Graduation Rate, All, Male (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Graduates Male (1960)
+GDP/Capita (PPP 2000) Versus Secondary Graduates 15+ Male (Log) (MostRecent)
+GDP/Capita (PPP 2011) Versus Secondary Graduates 15 to 24 Male (1960) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 15 to 24 Male (2010) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 20 to 24 Male (1960) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 20 to 24 Male (2010) Log
+GDP/Capita (PPP 2011) Versus Transition From Primary to Lower Sec Female (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Transition From Primary to Lower Sec Female (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Lower Gross Enrollment Rate Female (2000)
+GDP/Capita (PPP) Versus Secondary Lower Gross Enrollment Rate Female (2000)
+GDP/Capita (PPP 2011) Versus Secondary Lower Graduation Rate, All, Female (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Secondary Lower Graduation Rate, All, Female (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Gross Enrollment Rate Female (1970)
+GDP/Capita (PPP) Versus Secondary Gross Enrollment Rate Female (2000)
+Secondary Gross Enrollment Versus Secondary Net Enrollment Female (1970)
+Secondary Gross Enrollment Versus Secondary Net Enrollment Female (2000)
+Secondary Net Enrollment Versus Secondary Gross Enrollment Female (1970)
+Secondary Net Enrollment Versus Secondary Gross Enrollment Female (2000)
+GDP/Capita (PPP 2011) Versus Transition From Lower to Upper Sec Female (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Transition From Lower to Upper Sec Female (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Upper Gross Enrollment Rate Female (2000) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Gross Enrollment Rate Female (2020) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Graduation Rate, All, Female (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Graduation Rate, All, Female (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Graduates Female (1960)
+GDP/Capita (PPP 2011) Versus Secondary Graduates 15+ Female (2010) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 15 to 24 Female (1960) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 15 to 24 Female (2010) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 20 to 24 Female (1960) Log
+GDP/Capita (PPP 2011) Versus Secondary Graduates 20 to 24 Female (2010) Log
+GDP/Capita (PPP 2011) Versus Transition From Primary to Lower Sec Total (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Transition From Primary to Lower Sec Total (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Lower Gross Enrollment Rate Total (2000)
+GDP/Capita (PPP) Versus Secondary Lower Gross Enrollment Rate Total (2000)
+GDP/Capita (PPP 2011) Versus Secondary Lower Graduation Rate, All, Total (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Secondary Lower Graduation Rate, All, Total (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Transition From Lower to Upper Sec Total (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Transition From Lower to Upper Sec Total (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Upper Gross Enrollment Rate Total (2000) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Gross Enrollment Rate Total (2020) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Graduation Rate, All, Total (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Secondary Upper Graduation Rate, All, Total (MostRecent) Log
+GDP/Capita (PPP) Versus Tertiary Gross Intake Rate Total (2000)
+GDP/Capita (PPP) Versus Tertiary Graduation Rate 1st Degree Total Log (MostRecent)
+GDP/Capita (PPP) Versus Tertiary SciEngg Graduation Share (MostRecent)
+GDP/Capita (PPP) Versus Tertiary SciEngg Graduation Share (MostRecent)
+GDP/Capita (PPP) Versus Tertiary Graduates Total (1960)
+GDP/Capita (PPP 2000) Versus Tertiary Graduates 15+ Total (Log) (MostRecent)
+GDP/Capita (PPP) Versus Tertiary Gross Intake Rate Male (2000)
+GDP/Capita (PPP) Versus Tertiary Graduates Male (1960)
+GDP/Capita (PPP 2000) Versus Tertiary Graduates 15+ Male (Log) (MostRecent)
+GDP/Capita (PPP) Versus Tertiary Graduation Rate 1st Degree Male Log (MostRecent)
+GDP/Capita (PPP) Versus Tertiary Gross Intake Rate Female (2000)
+GDP/Capita (PPP) Versus Tertiary Graduates Female (1960)
+GDP/Capita (PPP 2000) Versus Tertiary Graduates 15+ Female (Log) (MostRecent)
+GDP/Capita (PPP) Versus Tertiary Graduation Rate 1st Degree Female Log (MostRecent)
+GDP/Capita (PPP) Versus Primary Expenditures Per Student as % of GDPPC (1970)
+GDP/Capita (PPP) Versus Primary Expenditures Per Student as % of GDPPC (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Expenditures Per Student as % of GDPPC (1970)
+GDP/Capita (PPP) Versus Secondary Expenditures Per Student as % of GDPPC (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Lower Exp Per Student as % of GDPPC (M Recent)
+GDP/Capita (PPP) Versus Secondary Lower Exp Per Student as % of GDPPC (MostRecent) Log
+GDP/Capita (PPP) Versus Secondary Upper Exp Per Student as % of GDPPC (M Recent)
+GDP/Capita (PPP) Versus Secondary Upper Exp Per Student as % of GDPPC (MostRecent) Log
+GDP/Capita (PPP) Versus Tertiary Expenditures Per Student as % of GDPPC (1970)
+GDP/Capita (PPP) Versus Tertiary Expenditures Per Student EP as % of GDPPC (MostRecent) Log
+GDP/Capita (PPP) Versus Years of Educ at 15+ Male (1960)
+GDP/Capita (PPP) Versus Years of Educ at 15+ Male (2000) Log
+GDP/Capita (PPP) Versus Years of Educ at 15+ Female (1960)
+GDP/Capita (PPP) Versus Years of Educ at 15+ Female (2000) Log
+GDP/Capita (PPP) Versus Years of Educ at 15+ (1960)
+GDP/Capita (PPP 2005) Versus Years of Educ at 15+ (2010) Log
+GDP/Capita (PPP) Versus Years of Educ at 25+ Male (1960)
+GDP/Capita (PPP) Versus Years of Educ at 25+ Male (2000) Log
+GDP/Capita (PPP) Versus Years of Educ at 25+ Female (1960)
+GDP/Capita (PPP) Versus Years of Educ at 25+ Female (2000) Log
+GDP/Capita (PPP) Versus Years of Educ at 25+ (1960)
+GDP/Capita (PPP) Versus Years of Educ at 25+ (2000) Log
+GDP/Capita (PPP) Versus Years of Educ at 20 to 29 Male (1960)
+GDP/Capita (PPP) Versus Years of Educ at 20 to 29 Male (MostRecent)
+GDP/Capita (PPP) Versus Years of Educ at 20 to 29 Female (1960)
+GDP/Capita (PPP) Versus Years of Educ at 20 to 29 Female (MostRecent)
+GDP/Capita (PPP) Versus Years of Educ at 25+ (1960)
+GDP/Capita (PPP) Versus Years of Educ at 20 to 29 (MostRecent)
+GDP/Capita (PPP) Versus Years of Educ at 15 to 24 Male (1960)
+GDP/Capita (PPP) Versus Years of Educ at 15 to 24 Male (2000) Log
+GDP/Capita (PPP) Versus Years of Educ at 15 to 24 Female (1960)
+GDP/Capita (PPP) Versus Years of Educ at 15 to 24 Female (2000) Log
+GDP/Capita (PPP) Versus Years of Educ at 15 to 24 (1960)
+GDP/Capita (PPP) Versus Years of Educ at 15 to 24 (2000) Log
+GDP/Capita (PPP) Versus Primary Pupil Teacher Ratio (1970)
+GDP/Capita (PPP) Versus Primary Pupil Teacher Ratio (2000)
+GDP/Capita (PPP) Versus Primary Apparent (Gross) Intake Rate (1970)
+GDP/Capita (PPP 2011) Versus Primary Apparent (Gross) Intake Rate Total (2020) Log
+GDP/Capita (PPP) Versus Primary Gross Enrollment Total (1970)
+GDP/Capita (PPP) Versus Primary Gross Enrollment Total (2000)
+GDP/Capita (PPP) Versus Primary Net Enrollment Total (1970)
+GDP/Capita (PPP) Versus Primary Net Enrollment Total (2000)
+GDP/Capita (PPP) Versus Primary Net Intake Rate Total(1995)
+GDP/Capita (PPP 2011) Versus Primary Net Intake Rate Total (MostRecent) Log
+GDP/Capita (PPP) Versus Primary Survival Rate Total(1970)
+GDP/Capita (PPP 2011) Versus Primary Survival Rate Total (MostRecent) Log
+GDP/Capita (PPP) Versus Primary Completion Total (2000)
+GDP/Capita (PPP) Versus Primary Completion Total (2000)
+GDP/Capita (PPP) Versus Primary Graduates Total (1960)
+GDP/Capita (PPP 2000) Versus Primary Graduates 15+ Total (Log) (MostRecent)
+GDP/Capita (PPP 2011) Versus Primary Graduates 15 to 24 Total (1960) Log
+GDP/Capita (PPP 2000) Versus Primary Graduates 15+ Total (Log) (MostRecent)
+GDP/Capita (PPP 2011) Versus Gender Ratio in Primary Reading Scores (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Gender Ratio in Primary Science Scores (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Gender Ratio in Primary Math Scores (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Gender Ratio in Secondary Reading Scores (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Gender Ratio in Secondary Science Scores (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Gender Ratio in Secondary Math Scores (MostRecent) Log
+Educational Years (15+) Versus Education Quality Scores, Primary, All, Both Sexes (Log)
+GDP/Capita (PPP 2011) Versus Education Quality Scores, Primary, All, Both Sexes (Log)
+Educational Years (15+) Versus Education Quality Scores, Primary, All, Both Sexes (Log)
+GDP/Capita (PPP 2011) Versus Education Quality Scores, Primary, All, Both Sexes (Log)
+Educational Years (15+) Versus Education Quality Scores, Secondary, All, Both Sexes (Log)
+GDP/Capita (PPP 2011) Versus Education Quality Scores, Secondary, All, Both Sexes (Log)
+Educational Years (15+) Versus Education Quality Scores, Secondary, All, Both Sexes (Log)
+GDP/Capita (PPP 2011) Versus Education Quality Scores, Secondary, All, Both Sexes (Log)

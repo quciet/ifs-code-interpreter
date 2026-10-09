@@ -1,0 +1,196 @@
+List of Functions not found:
+=============================
+TbNameVADDAgg).ToEstimator
+TbNameVADDInd).ToEstimator
+TbNameVADDSer).ToEstimator
+item.Key)
+item.Key)
+item.Key)
+item.Key)
+item.Key)
+TbNamePersCons).ToEstimator
+TbName).ToEstimator
+TbName$).ToEstimator
+item.Key)
+CPCON(XYTABL(item.Key)
+CGCon(XYTABL2(item.Key)
+TbName).ToEstimator
+govrevtotdat(False
+TbName).ToEstimator
+govrevcen(item.Value2
+TbName).ToEstimator
+item.Key)))))
+TbName).ToEstimator
+key))
+If Not (ValHold1(key).HasValue) Then ValHold1(0
+CXWORKREMITOUT(CPOPFOREIGNIN(key) * RemitSentPerWorker
+CAIDDONCount(CAIDDONCount(item.Key) + 1
+exports(XYTABL(item.Key)
+TblName).ToEstimator
+TblName).ToEstimator
+key))
+key))
+AGMFishValueTrade(AGMFishValueTrade(key) * fishFact / MTotFish
+CGDPInformSHRFromData(False
+TFNameShadowEconomyShare).ToEstimator
+TFNameInformalEconomyShare).ToEstimator
+cimports(XYTABL2(item.Key)
+CGDPInformSHRFromData(False
+TbName).ToEstimator
+CGDPInformSHRFromData(True
+CGDPInformSHRFromData(True
+CGDPINFORMSHR(AMAX(CLABINFORMSHR(key) / 8, CGDPINFORMSHR(key))
+If GExpDef(key) < 0.01 Then GExpDef(0.01
+Private Health Expenditures % of GDP (2012)
+PrivExpHl(TExpHl(key) - GExpHl(key)
+TExpHl(GExpHl(key) + PrivExpHl(key)
+TbName).ToEstimator
+If GExpEd(key) < 1 Then GExpEd(1
+ExpRandDTot(ExpRandDTotPred
+ExpRandDTot(ExpRandDTotPred
+TbName).ToEstimator
+ILOLabManu(CSng(ILOLabManu(item.Key) * 0.99 * CLAB(item.Key) / ILOTot)
+TbName).ToEstimator
+If GExpDef(item.Key) < 0.01 Then GExpDef(0.01
+Private Health Expenditures % of GDP (2012)
+PrivExpHl(TExpHl(item.Key) - GExpHl(item.Key)
+TbName$).ToEstimator
+TExpHl(GExpHl(item.Key) + PrivExpHl(item.Key)
+TbName).ToEstimator
+TbName).ToEstimator
+If item.Key = Uzbekistan Then GExpEd(3
+ExpRandDTot(ExpRandDTotPred
+ExpRandDTot(ExpRandDTotPred
+TblName).ToEstimator
+TblName).ToEstimator
+CXARMS(CXARMS(key) * globalSumOfImports / globalSumOfExports
+CXARMS(CXARMS(key) * globalSumOfImports / globalSumOfExports
+CXARMS(CXARMS(key) * globalSumOfImports / globalSumOfExports
+CXARMS(CXARMS(key) * globalSumOfImports / globalSumOfExports
+CXARMS(CXARMS(key) * globalSumOfImports / globalSumOfExports
+TbName).ToEstimator
+item.Key))
+GExpRandD(ExpRandDTot(item.Key) * RandDMul
+TbName).ToEstimator
+TbName2).ToEstimator
+If key = Liberia Then CIGDPR(Amin(CIGDPR(key), 0.055F)
+If key = Liberia Then CIGDPR(Amin(CIGDPR(key), 0.055F)
+TbName).ToEstimator
+TbName215).ToEstimator
+TbName300).ToEstimator
+TbName420).ToEstimator
+TbName830).ToEstimator
+TbName2).ToEstimator
+TbName3).ToEstimator
+TbName4).ToEstimator
+TbName365).ToEstimator
+TbName685).ToEstimator
+CINCOMELT1(Amin(CSng(0.9 * CPOP(key)), portionpoor * CPOP(key))
+CINCOMELT1(Amin(CSng(0.9 * CPOP(key)), portionpoor * CPOP(key))
+CINCOMELT1(Amin(CSng(0.9 * CPOP(key)), portionpoor * CPOP(key))
+CINCOMELT1(Amin(CSng(0.9 * CPOP(key)), portionpoor * CPOP(key))
+CINCOMELT1(Amin(CSng(0.9 * CPOP(key)), portionpoor * CPOP(key))
+CINCOMELT1(Amin(CSng(0.9 * CPOP(key)), portionpoor * CPOP(key))
+CINCOMELT1(Amin(CSng(0.9 * CPOP(key)), portionpoor * CPOP(key))
+TbName).ToEstimator
+TbName32).ToEstimator
+TbName55).ToEstimator
+TbName365).ToEstimator
+TbName685).ToEstimator
+TbName420).ToEstimator
+TbName830).ToEstimator
+TbNamePL).ToEstimator
+CINCOMELT830(CSng(Round(CDbl(CINCOMELT830(key)), 6))
+CINCOMELT830(CSng(Round(CDbl(CINCOMELT830(key)), 6))
+CINCOMELT830(CSng(Round(CDbl(CINCOMELT830(key)), 6))
+CINCOMELT830(CSng(Round(CDbl(CINCOMELT830(key)), 6))
+CINCOMELT830(CSng(Round(CDbl(CINCOMELT830(key)), 6))
+CINCOMELT830(CSng(Round(CDbl(CINCOMELT830(key)), 6))
+CINCOMELT830(CSng(Round(CDbl(CINCOMELT830(key)), 6))
+CINCOMELT830(CSng(Round(CDbl(CINCOMELT830(key)), 6))
+sCountry)
+sCountry)
+Private Health Expenditures % of GDP (2012)
+Private Health Expenditures % of GDP (2012)
+Domestic Gini Index
+Domestic Gini Index).Normalize
+GExpRandD(ExpRandDTot(item.Key) * RandDMul
+GDP/Capita Versus GDP/Capita at Purchasing Power Parity (1980)
+GDP/Capita Versus GDP/Capita at Purchasing Power Parity (2000) Power Function
+GDP/Capita (PPP) Versus Value Added in Ag (1970)
+GDP/Capita (PPP) Versus Value Added in Ind (1970)
+GDP/Capita (PPP) Versus Value Added in Ser (1970)
+GDP/Capita (PPP) Versus Value Added in Man (1970)
+GDP/Capita (PPP) Versus Value Added in Ag (1995) Power
+GDP/Capita (PPP) Versus Value Added in Ind (1995) Log
+GDP/Capita (PPP) Versus Value Added in Ser (1995) Log
+GDP/Capita (PPP) Versus Pers Consumption (1960)
+GDP/Capita (PPP) Versus Govt Cons % GDP (1960)
+GDP/Capita (PPP) Versus Investment, Fixed (1960)
+GDP/Capita (PPP) Versus Pers Consumption (1995)
+GDP/Capita (PPP) Versus Govt Cons % GDP (2000)
+GDP/Capita (PPP) Versus Investment, Fixed (1995)
+GDP/Capita (PPP 2005) Versus Govt Revenue Total (1989) Linear
+GDP/Capita (PPP 2011) Versus Govt Revenue Total (2011) Log
+GDP/Capita (PPP) Versus Govt Revenue (1970)
+GDP/Capita (PPP) Versus Govt Revenue (2000)
+GDP/Capita (PPP 2005) Versus Govt Expense % GDP (2010) Log
+GDP/Capita (PPP) Versus Corporate Tax % of Total (2000)
+GDP/Capita (PPP) Versus SS Tax % of Total (1970)
+GDP/Capita (PPP) Versus SS Tax % of Total (2000)
+GDP/Capita (PPP) Versus Indirect Tax % of Total (1970)
+GDP/Capita (PPP) Versus Indirect Tax % of Total (2000)
+GDP/Capita (PPP 2011) Versus Transfers (Pension and Welfare) as % GDP (2014) Log
+GDP/Capita (PPP) Versus Public Pension % of GDP (MostRecent)
+GDP/Capita (PPP) Versus Public Pension % of GDP (MostRecent)
+GDP/Capita (PPP) Versus Govt Debt % GDP (1970)
+GDP/Capita (PPP) Versus Govt Debt % GDP (2000)
+GDP/Capita (PPP) Versus Cobb-Douglas Alpha (GTAP 5)
+GDP/Capita (PPP 2000) Versus ICT Expend % of GDP (2001) Exp
+GDP/Capita Versus Remittances Sent Out per Foreign Worker (2017)
+GDP/Capita Versus Remittances Received per Worker Abroad (2017)
+GDP/Capita (PPP) Versus Exports (1960)
+GDP/Capita (PPP) Versus Imports (1960)
+GDP/Capita (PPP) Versus Exports (1995)
+GDP/Capita (PPP) Versus Imports (1995)
+GDP/Capita (PPP 2011) Versus Shadow Economy Share of Total(Earliest) Log
+GDP/Capita (PPP 2011) Versus Informal Economy Share of Total(1960) Log
+GDP/Capita (PPP 2011) Versus Shadow Economy Share of Total(MOSTRECENT) Log
+GDP/Capita (PPP 2011) Versus Informal Economy Share of Total(MOSTRECENT) Log
+GDP/Capita (PPP 2011) Versus LabInformal/GDPInformal (MOSTRECENT) Log
+Informal Employment Versus Share of Inf Emp Working at Inf Enterprises(MOSTRECENT) Linear
+GDP/Capita (PPP) Versus Govt Exp Mil as % of GDP (1965) - linear
+GDP/Capita (PPP) Versus Govt Exp Hlth as % of GDP (1990) - log
+GDP/Capita (PPP) Versus Govt Exp Educ as % of GDP (1960) - log
+GDP/Capita (PPP) Versus R&D Total  as % of GNI (1980) - linear
+GDP/Capita (PPP) Versus Govt Exp R&D as % of GNP (2000) Linear
+GDP/Capita (PPP) Versus Govt Exp Mil as % of GDP (2000) Linear
+GDP/Capita (PPP) Versus Govt Exp Hlth as % of GDP (2000) Log
+GDP/Capita (PPP) Versus Govt Exp Educ as % of GDP (2002) Log
+GDP/Capita (PPP) Versus R&D Total  as % of GNI (2000) - linear
+GDP/Capita (PPP) Versus Govt Exp R&D as % of GNP (2000) Linear
+GDP/Capita (PPP) Versus Economic Growth Rate (1995)
+GDP/Capita (PPP) Versus Income Share of Lowest 20% (1995)
+GDP/Capita (PPP) Versus Economic Growth Rate (1995)
+GDP/Capita (PPP) Versus Income Share of Lowest 20% (1995)
+GDP/Capita (PPP) Versus Gini Index (2000)
+GDP/Capita (PPP 2005) Versus Income Below One Dollar and 25 Cents per Day (2009) Log
+GDP/Capita (PPP 2005) Versus Income Below Two Dollars per Day (2009) Log
+GDP/Capita (PPP 2011) Versus Income Below One Dollar and 90 Cents per Day (2017) Log
+GDP/Capita (PPP 2017) Versus Income Below Two Dollars and 15 Cents per Day (2018) Log
+GDP/Capita (PPP 2021) Versus Income Below Three Dollars per Day (2022) Log
+GDP/Capita (PPP 2021) Versus Income Below Four Dollars and 20 Cents per Day (2022) Log
+GDP/Capita (PPP 2021) Versus Income Below Eight Dollars and 30 Cents per Day (2022) Log
+GDP/Capita (PPP 2011) Versus Income Below Three Dollars and 10 Cents per Day (2013) Log
+GDP/Capita (PPP 2011) Versus Income Below Three Dollars and 20 Cents per Day (2017) Log
+GDP/Capita (PPP 2011) Versus Income Below Five Dollars and 50 Cents per Day (2017) Log
+GDP/Capita (PPP 2017) Versus Income Below Three Dollars and 65 Cents per Day (2018) Log
+GDP/Capita (PPP 2017) Versus Income Below Six Dollars and 85 Cents per Day (2018) Log
+GDP/Capita (PPP 2021) Versus Poverty Gap at 3 Dollars per day (2022) Log
+GDP/Capita (PPP 2011) Versus Poverty Gap at 3 Dollar 20 cents per day (2017) Log
+GDP/Capita (PPP 2011) Versus Poverty Gap at 5 Dollar 50 cents per day (2017) Log
+GDP/Capita (PPP 2017) Versus Poverty Gap at 3 Dollar 65 cents per day (2018) Log
+GDP/Capita (PPP 2017) Versus Poverty Gap at 6 Dollar 85 cents per day (2018) Log
+GDP/Capita (PPP 2021) Versus Poverty Gap at 4 Dollar 20 cents per day (2022) Log
+GDP/Capita (PPP 2021) Versus Poverty Gap at 8 Dollar 30 cents per day (2022) Log
+GDP/Capita (PPP 2021) Versus People Living Below National Pov Line (2022) Log

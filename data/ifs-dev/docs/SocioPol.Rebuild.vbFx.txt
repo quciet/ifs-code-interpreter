@@ -1,0 +1,45 @@
+List of Functions not found:
+=============================
+Amphetmanine Drug prevalence versus youth bulge and GEM
+Cocaine Drug prevalence versus consumption per person, GEM and GINI
+Opiate Drug prevalence
+Prescription opioids initialization
+Prescription Drug Use prevalence versus health expenditure
+Amphetmanine Drug prevalence versus youth bulge and GEM).Normalize
+key) / 
+item.Key) / 
+key) / 
+item.Key) / 
+Opiate Drug prevalence).Normalize
+key) / 
+item.Key) / 
+Prescription opioids initialization).Normalize
+Prescription Drug Use prevalence versus health expenditure).Normalize
+If (Not CDRUGUSEPRESCRIPTOPIOID(key).HasValue) AndAlso druginitsw(1 Then
+key) / 
+If (Not CDRUGUSEPRESCRIPTOPIOID(item.Key).HasValue) AndAlso druginitsw(1 Then
+item.Key) / 
+GDP/Capita (PPP) Versus Freedom -Logged and Inverted (Earliest)
+GDP/Capita (PPP) Versus Freedom -Logged and Inverted (2005)
+GDP/Capita (PPP) Versus Economic Freedom (1970)
+GDP/Capita (PPP) Versus Economic Freedom (1970)
+GDP/Capita (PPP) Versus Economic Freedom (2000) Log
+GDP/Capita (PPP 2000) Versus Governance Effectiveness (2002) Linear
+GDP/Capita (PPP 2000) Versus Governance Reg Quality (2006) Linear
+GDP/Capita (PPP 2000) Versus Governance Reg Quality (2006) Linear
+GDP/Capita (PPP 2000) Versus TI Corruption Perception (2000) Linear
+GDP/Capita (PPP 2011) Versus Cost of Starting Business (MOSTRECENT) Log
+GDP/Capita (PPP 2011) Versus Business Regulation Index (MOSTRECENT) Log
+GDP/Capita (PPP) Versus Democracy, Polity measure (1980)
+GDP/Capita (PPP) Versus Democracy, Polity measure (1999)
+GDP/Capita (PPP) Versus Autocracy, Polity measure (1980)
+GDP/Capita (PPP) Versus Autocracy, Polity measure (1999)
+GDP/Capita Versus Global Empowerment Measure
+GDP/Capita (PPP) Versus Gender Inequality Index Log
+GDP/Capita (PPP) Versus Internet Percent Use (2007)
+DrugPrevalenceAmphetaminesIHME(MOSTRECENT) Versus DrPrevRateAmphetamines Linear
+DrugPrevalenceAmphetaminesIHME(MOSTRECENT) Versus DrPrevRateAmphetamines Linear
+DrugPrevalenceCocaineIHME(MOSTRECENT) Versus DrugPrevRateCocaine(MOSTRECENT) Linear
+DrugPrevalenceCocaineIHME(MOSTRECENT) Versus DrugPrevRateCocaine(MOSTRECENT) Linear
+DrOpioidPrevIHME(MOSTRECENT) Versus DrugPrevRateOpiates Linear
+DrOpioidPrevIHME(MOSTRECENT) Versus DrugPrevRateOpiates Linear

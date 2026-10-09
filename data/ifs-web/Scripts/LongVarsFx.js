@@ -1,0 +1,1274 @@
+//JAM 2013-11-16 Functions used for ScarVars.aspx form, code based on FlexDisplayFx developed by Jose
+function cmb_VCAT_click() {
+ //filter categories
+ 
+    var doc = document.forms[0];
+    var i = 0;
+	var jLoadCovatra = "LoadCoVaTrA";
+	//var vGroupSelected = doc.cmb_VCAT[doc.cmb_VCAT.selectedIndex].text
+	
+	var jOthFiltchosen=0;
+    
+	var jSubSetchosen= 0;
+	
+	//JAM 2013-12-28 Validating if the navigator version is previous to IE 10
+	var glbPrevIEVersion = isPreviousVerIE();
+	
+	
+	
+
+	
+	if (doc.cmb_VCAT[0].selected) {
+		vGroupSelected = "All";
+	}
+	else {
+	
+		vGroupSelected = doc.cmb_VCAT[doc.cmb_VCAT.selectedIndex].text;
+		}
+		
+	//alert(navigator.appVersion);	
+     //JAM 2013--12-10 In order to optimize in IE11
+	if (navigator.appName == 'Microsoft Internet Explorer')	{
+		/*var vselect = document.getElementById("cmb_VCAT");
+
+		for (i = 0; i < NumVars; i++) {
+		  vselect.options[i] = null;
+		}*/
+	
+		//doc.lstVarName.length = 0;
+		//document.getElementById("lstVarName").options.length = 0;
+		
+		document.getElementById("lstVarName").innerHTML = ""; 
+		
+	}
+	else {
+		//JAM 2013-12-14	For IE<11
+		if (navigator.appName == 'Netscape')	{
+			document.getElementById("lstVarName").innerHTML = "";
+		}
+		else {
+			doc.lstVarName.length = 0;
+		}	
+		
+	}
+    if (doc.cmb_VCAT[0].selected) {  // ALL Category selected
+	    for (i = 0; i < NumVars; i++) {
+			if ((jModelLoad = jLoadCovatra.toUpperCase()) || (jScat_GroupNames != "Automobile") ) {
+		   
+			
+				if (jbInclude[i] = "True") {
+					var opt = document.createElement("option");
+					opt.text = VarList[i];
+					opt.value = VarList[i];
+					
+					//JAM 2013-12-14	For IE<11
+					if (navigator.appName == 'Microsoft Internet Explorer')	{
+						
+						//JAM 2013-12-10 In order to optimize in IE11
+						//JAM 2013-12-26 Navigator is lower than 10 version
+						if (glbPrevIEVersion == 1) { 
+							
+							doc.lstVarName.add(opt);
+						}
+						else {
+							doc.lstVarName.appendChild(opt); 
+						}
+							
+						
+						
+					}
+					else {
+						 doc.lstVarName.appendChild(opt); 
+					}	
+					/*
+					try {
+						doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+					}
+					catch (ex) {
+						doc.lstVarName.add(opt); // IE only
+					}
+					*/
+				}	
+			}	
+        }
+    }	
+    else //Category Selected
+    {		
+			//NumVars
+        for (i = 0; i < NumVars; i++) {
+				var vCountGroup = NumGroups[i];
+							
+				for (var j = 0; j < vCountGroup; j++) {
+					
+					if ((jModelLoad = jLoadCovatra.toUpperCase()) || (jScat_GroupNames != "Automobile")) {
+						if (jbInclude[i] = "True") {
+							 //var vtemp = FullGroups[i][j];
+							if (vGroupSelected == FullGroups[i][j]) {
+								var opt = document.createElement("option");
+								opt.text = VarList[i];
+								opt.value = VarList[i];
+								
+								//JAM 2013-12-14	For IE<11
+								if (navigator.appName == 'Microsoft Internet Explorer')	{
+									//JAM 2013-12-10 In order to optimize in IE11
+									//JAM 2013-12-26 Navigator is lower than 10 version
+									if (glbPrevIEVersion == 1) { 
+										
+										doc.lstVarName.add(opt);
+									}
+									else {
+										doc.lstVarName.appendChild(opt); 
+									}
+								}
+								else {
+									 doc.lstVarName.appendChild(opt); 
+								}	
+								/*try {
+									doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+								}
+								catch (ex) {
+									doc.lstVarName.add(opt); // IE only
+								}*/
+								break;
+							}
+						}	
+					}	
+				}
+
+            
+        }
+    }
+	doc.fSubSetchosen.value=doc.cmb_VCAT.selectedIndex;
+	doc.fSubSetchosenName.value = vGroupSelected; 
+	doc.lstVarName.selectedIndex = 0;
+	document.forms[0].txtVarSearch.focus(); 
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////
+	 /*  function setVariableFromSearchClick()
+	         {
+	         
+	         // if (this.actb_currObject=="TFR - Total fertility rate: children per woman - Number")
+          // {
+	      //       this.actb_currObject="TFR - Total fertility rate: children per woman - Number";
+	       //    }
+	          document.getElementById("lstVarName").value=this.actb_currObject;
+	          document.getElementById("btnInvs").click();
+	         
+	         }
+				
+				
+			
+      //  if (variableList == null){
+               if (document.forms[0].lstVarName!= null)
+                { 
+                var lst=document.getElementById("lstVarName");
+                variableList =new Array(lst.length);
+               
+                 for (var count = 0; count < lst.length; count++)
+                 {
+	                 variableList[count]=lst.options[count].innerHTML;
+	                  
+	             }
+	            }
+           // }
+            
+             function BindDataToVarSearch()
+             {     
+                var obj = actb(document.getElementById('txtVarSearch'),variableList);
+                //KIA add the follwing event listener with your desired method what you want to call on a search list item is clicked
+                this.actb_cur_obj_clicked.prototype.itemClicked = setVariableFromSearchClick;
+                this.actb_fSize = '12px';
+                this.actb_bgColor = '#888888';
+                this.actb_textColor = '#FFFFFF';
+                this.actb_hColor = '#000000';
+                this.actb_fFamily = 'Verdana';
+                this.actb_lim =5;
+                this.actb_timeOut = -1;
+                this.actb_firstText =true;
+                this.actb_hStyle = 'text-decoration:underline;font-weight="bold"';  
+                document.getElementById('txtVarSearch').value="";         
+                document.getElementById('txtVarSearch').select();   
+                
+              }
+                BindDataToVarSearch();		
+             */ 
+	
+    //JAM 2013-11-24
+//////			 function setVariableFromSearchClick()
+//////	         {
+//////	         
+////////	          if (this.actb_currObject=="TFR - Total fertility rate: children per woman - Number")
+////////	           {
+////////	             this.actb_currObject="TFR - Total fertility rate: children per woman - Number";
+////////	           }
+//////	          document.getElementById("lstVarName").value=this.actb_currObject;
+//////	          document.getElementById("btnInvs").click();
+//////	         
+//////	         }
+//////				
+				
+			
+      //  if (variableList == null){
+               if (document.forms[0].lstVarName!= null)
+                { 
+                var lst=document.getElementById("lstVarName");
+                variableList =new Array(lst.length);
+               
+                 for (var count = 0; count < lst.length; count++)
+                 {
+	                 variableList[count]=lst.options[count].innerHTML;
+	                  
+	             }
+	            }
+           // }
+            
+             function BindDataToVarSearch()
+             {     
+                var obj = actb(document.getElementById('txtVarSearch'),variableList);
+                //KIA add the follwing event listener with your desired method what you want to call on a search list item is clicked
+                this.actb_cur_obj_clicked.prototype.itemClicked = setVariableFromSearchClick;
+                this.actb_fSize = '12px';
+                this.actb_bgColor = '#888888';
+                this.actb_textColor = '#FFFFFF';
+                this.actb_hColor = '#000000';
+                this.actb_fFamily = 'Verdana';
+                this.actb_lim =5;
+                this.actb_timeOut = -1;
+                this.actb_firstText =true;
+                this.actb_hStyle = 'text-decoration:underline;font-weight="bold"';  
+                document.getElementById('txtVarSearch').value="";         
+                document.getElementById('txtVarSearch').select();   
+                
+              }
+                BindDataToVarSearch();		
+				
+				
+              
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////////////
+	
+	
+}
+
+
+
+function cmb_OthFilt_click(){
+ //Other Filters
+ 
+  var doc = document.forms[0];
+  var jGroupSelected ="";
+  var jAddName = "";
+  var jdataString = "";
+  var jLoadCovatra = "LoadCoVaTrA";
+  var i = 0;
+  var jothFilterchosen = "";
+  var jfilter= 0;
+  var jpivotfilter;
+  
+  //JAM 2013-12-28 Validating if the navigator version is previous to IE 10
+  var glbPrevIEVersion = isPreviousVerIE();
+
+	
+	//doc.lstVarName.length = 0;
+	//JAM 2013-12-10 Commented due IE 11 compatibility
+	if (navigator.appName == 'Microsoft Internet Explorer')	{
+		/*var vselect = document.getElementById("cmb_VCAT");
+
+		for (i = 0; i < NumVars; i++) {
+		  vselect.options[i] = null;
+		}*/
+	
+		//doc.lstVarName.length = 0;
+		//document.getElementById("lstVarName").options.length = 0;
+		
+		document.getElementById("lstVarName").innerHTML = ""; 
+		
+	}
+	else {
+		//JAM 2013-12-14	For IE<11
+		if (navigator.appName == 'Netscape')	{
+			document.getElementById("lstVarName").innerHTML = "";
+		}
+		else {
+			doc.lstVarName.length = 0;
+		}	
+		
+	}
+	/////////////////
+	
+	if (doc.cmb_VCAT[0].selected) {
+		jGroupSelected = "All";
+	}
+	else {
+		jGroupSelected = doc.cmb_VCAT[doc.cmb_VCAT.selectedIndex].text;
+	}
+	
+	if (jGroupSelected == "All") {
+		
+			jothFilterchosen = doc.cmb_OthFilt[doc.cmb_OthFilt.selectedIndex].text;
+			if (jothFilterchosen == "ALL") {
+				jfilter= 0;
+			}	
+			else if (jothFilterchosen == ("At least through year " + jFilterYear ))  {	
+				jfilter= 1;
+			
+			}
+			else if (jothFilterchosen == ("At least " + jFilterPoints + " Data Points"))  {	
+				jfilter= 2;
+			
+			}
+			else if (jothFilterchosen == ("Used for Initialization"))  {	
+				jfilter= 3;
+			
+			}
+			else  {	
+				jfilter= 0;
+			
+			}
+	
+			for (i = 0; i < NumVars; i++) {
+				if (jfilter == 0) {
+					pivotfilter = jbInclude[i];
+				}
+				else if (jfilter == 1) {
+					pivotfilter = jbIncludeTroughYear[i];
+				}
+				else if (jfilter == 2) {
+					pivotfilter = jbIncludeNPoint[i];
+				}
+				else if (jfilter == 3) {
+					pivotfilter = jbIncludeInit[i];
+				}
+				
+				
+				if ((jModelLoad = jLoadCovatra.toUpperCase()) || (UCase(sCoVaTra) = "NO") ) {  
+				
+					if (pivotfilter == "True") {
+					
+						var opt = document.createElement("option");
+						opt.text = VarList[i];
+						opt.value = VarList[i];
+						
+						//JAM 2013-12-14	For IE<11
+						if (navigator.appName == 'Microsoft Internet Explorer')	{
+							//JAM 2013-12-10 In order to optimize in IE11
+							//JAM 2013-12-26 Navigator is lower than 10 version
+							if (glbPrevIEVersion == 1) { 
+								
+								doc.lstVarName.add(opt);
+							}
+							else {
+								doc.lstVarName.appendChild(opt); 
+							}
+						}
+						else {
+							 doc.lstVarName.appendChild(opt); 
+						}	
+						/*try {
+							doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+						}
+						catch (ex) {
+							doc.lstVarName.add(opt); // IE only
+						}*/
+						
+				
+					}
+				}
+			}	
+	}
+	else {
+			
+			jothFilterchosen = doc.cmb_OthFilt[doc.cmb_OthFilt.selectedIndex].text;
+			if (jothFilterchosen == "ALL") {
+				jfilter= 0;
+			}	
+			else if (jothFilterchosen == ("At least through year " + jFilterYear ))  {	
+				jfilter= 1;
+			
+			}
+			else if (jothFilterchosen == ("At least " + jFilterPoints + " Data Points"))  {	
+				jfilter= 2;
+			
+			}
+			else if (jothFilterchosen == ("Used for Initialization"))  {	
+				jfilter= 3;
+			
+			}
+			else  {	
+				jfilter= 0;
+			
+			}
+			 for (i = 0; i < NumVars; i++) {
+			 	var vCountGroup = NumGroups[i];
+				if (jfilter == 0) {
+					pivotfilter = jbInclude[i];
+				}
+				else if (jfilter == 1) {
+					pivotfilter = jbIncludeTroughYear[i];
+				}
+				else if (jfilter == 2) {
+					pivotfilter = jbIncludeNPoint[i];
+				}
+				else if (jfilter == 3) {
+					pivotfilter = jbIncludeInit[i];
+				}
+				
+				if (pivotfilter == "True") {
+					for (var j = 0; j < vCountGroup; j++) {
+					
+							
+							if (jGroupSelected == FullGroups[i][j]) {
+									var opt = document.createElement("option");
+									opt.text = VarList[i];
+									opt.value = VarList[i];
+									
+									//JAM 2013-12-14	For IE<11
+									if (navigator.appName == 'Microsoft Internet Explorer')	{
+										//JAM 2013-12-10 In order to optimize in IE11
+										//JAM 2013-12-26 Navigator is lower than 10 version
+										if (glbPrevIEVersion == 1) { 
+											
+											doc.lstVarName.add(opt);
+										}
+										else {
+											doc.lstVarName.appendChild(opt); 
+										}
+									}
+									else {
+										 doc.lstVarName.appendChild(opt); 
+									}	
+									/*try {
+										doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+									}
+									catch (ex) {
+										doc.lstVarName.add(opt); // IE only
+									}*/
+									break;
+							}
+								
+					}	
+				}
+			}	
+	}
+	
+	doc.fOthFiltchosen.value=doc.cmb_OthFilt.selectedIndex;
+	doc.fOthFiltchosenName.value = jothFilterchosen; 
+	doc.lstVarName.selectedIndex = 0;
+	document.forms[0].txtVarSearch.focus(); 
+	
+	
+	
+	////////////////////////////////////////////////////////////////////////////////////////
+	 /*  function setVariableFromSearchClick()
+	         {
+	         
+//	          if (this.actb_currObject=="TFR - Total fertility rate: children per woman - Number")
+//	           {
+//	             this.actb_currObject="TFR - Total fertility rate: children per woman - Number";
+//	           }
+	          document.getElementById("lstVarName").value=this.actb_currObject;
+	          document.getElementById("btnInvs").click();
+	         
+	         }
+				
+				
+			
+      //  if (variableList == null){
+               if (document.forms[0].lstVarName!= null)
+                { 
+                var lst=document.getElementById("lstVarName");
+                variableList =new Array(lst.length);
+               
+                 for (var count = 0; count < lst.length; count++)
+                 {
+	                 variableList[count]=lst.options[count].innerHTML;
+	                  
+	             }
+	            }
+           // }
+            
+             function BindDataToVarSearch()
+             {     
+                var obj = actb(document.getElementById('txtVarSearch'),variableList);
+                //KIA add the follwing event listener with your desired method what you want to call on a search list item is clicked
+                this.actb_cur_obj_clicked.prototype.itemClicked = setVariableFromSearchClick;
+                this.actb_fSize = '12px';
+                this.actb_bgColor = '#888888';
+                this.actb_textColor = '#FFFFFF';
+                this.actb_hColor = '#000000';
+                this.actb_fFamily = 'Verdana';
+                this.actb_lim =5;
+                this.actb_timeOut = -1;
+                this.actb_firstText =true;
+                this.actb_hStyle = 'text-decoration:underline;font-weight="bold"';  
+                document.getElementById('txtVarSearch').value="";         
+                document.getElementById('txtVarSearch').select();   
+                
+              }
+                BindDataToVarSearch();		
+              
+	*/
+	
+    //JAM 2013-11-24
+////	 function setVariableFromSearchClick()
+////	         {
+////	         
+//////	          if (this.actb_currObject=="TFR - Total fertility rate: children per woman - Number")
+//////	           {
+//////	             this.actb_currObject="TFR - Total fertility rate: children per woman - Number";
+//////	           }
+////	          document.getElementById("lstVarName").value=this.actb_currObject;
+////	          document.getElementById("btnInvs").click();
+////	         
+////	         }
+				
+				
+			
+      //  if (variableList == null){
+               if (document.forms[0].lstVarName!= null)
+                { 
+                var lst=document.getElementById("lstVarName");
+                variableList =new Array(lst.length);
+               
+                 for (var count = 0; count < lst.length; count++)
+                 {
+	                 variableList[count]=lst.options[count].innerHTML;
+	                  
+	             }
+	            }
+           // }
+            
+             function BindDataToVarSearch()
+             {     
+                var obj = actb(document.getElementById('txtVarSearch'),variableList);
+                //KIA add the follwing event listener with your desired method what you want to call on a search list item is clicked
+                this.actb_cur_obj_clicked.prototype.itemClicked = setVariableFromSearchClick;
+                this.actb_fSize = '12px';
+                this.actb_bgColor = '#888888';
+                this.actb_textColor = '#FFFFFF';
+                this.actb_hColor = '#000000';
+                this.actb_fFamily = 'Verdana';
+                this.actb_lim =5;
+                this.actb_timeOut = -1;
+                this.actb_firstText =true;
+                this.actb_hStyle = 'text-decoration:underline;font-weight="bold"';  
+                document.getElementById('txtVarSearch').value="";         
+                document.getElementById('txtVarSearch').select();   
+                
+              }
+                BindDataToVarSearch();		
+              
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////////////////////////////////
+	
+	 
+}
+
+
+function initLongVarsGroup() {
+ //filter categories
+ 
+    var doc = document.forms[0];
+    var i = 0;
+	var jLoadCovatra = "LoadCoVaTrA";
+	//var vGroupSelected = doc.cmb_VCAT[doc.cmb_VCAT.selectedIndex].text
+	
+	//JAM 2013-12-28 Validating if the navigator version is previous to IE 10
+	var glbPrevIEVersion = isPreviousVerIE();
+
+	
+	
+if (typeof (doc.fSubSetchosenName.value) != "undefined"  && document.getElementById("lstVarName") != null && doc.fSubSetchosenName.value!= "All" && doc.fSubSetchosenName.value != "") {
+	
+	
+	//if (doc.fSubSetchosen.value != "" && doc.fSubSetchosen.value != "0" ) {
+	if (doc.fSubSetchosenName.value != "" ) {
+	//if doc.fSubSetchosen.value
+			var jOthFiltchosen=0;
+			
+			var jSubSetchosen= 0;
+			
+
+			
+			if (doc.fSubSetchosenName.value== "All") {
+				vGroupSelected = "All";
+			}
+			else {
+			
+				vGroupSelected = doc.fSubSetchosenName.value;
+				}
+
+			
+			//doc.lstVarName.length = 0;
+			//JAM 2013-12-10 Commented due IE 11 compatibility
+			//if (navigator.appName == 'Microsoft Internet Explorer')	{
+			
+			if (document.getElementById("lstVarName") != null) {	
+				if (navigator.appName == 'Microsoft Internet Explorer')	{
+				/*var vselect = document.getElementById("cmb_VCAT");
+
+				for (i = 0; i < NumVars; i++) {
+				  vselect.options[i] = null;
+				}*/
+			
+				//doc.lstVarName.length = 0;
+				//document.getElementById("lstVarName").options.length = 0;
+				
+				document.getElementById("lstVarName").innerHTML = ""; 
+				
+				}
+				else {
+					//JAM 2013-12-14	For IE<11
+					if (navigator.appName == 'Netscape')	{
+						document.getElementById("lstVarName").innerHTML = "";
+					}
+					else {
+						doc.lstVarName.length = 0;
+					}	
+					
+				}
+			}
+			/*}
+			else {
+				doc.lstVarName.length = 0;
+			}*/
+			/////////////////
+			if (doc.fSubSetchosenName.value=="All") {  // ALL Category selected
+				for (i = 0; i < NumVars; i++) {
+					if ((jModelLoad = jLoadCovatra.toUpperCase()) || (jScat_GroupNames != "Automobile") ) {
+				   
+					
+						if (jbInclude[i] = "True") {
+							var opt = document.createElement("option");
+							opt.text = VarList[i];
+							opt.value = VarList[i];
+							//JAM 2013-12-14	For IE<11
+							if (navigator.appName == 'Microsoft Internet Explorer')	{
+								//JAM 2013-12-10 In order to optimize in IE11
+								//JAM 2013-12-26 Navigator is lower than 10 version
+								if (glbPrevIEVersion == 1) { 
+									
+									doc.lstVarName.add(opt);
+								}
+								else {
+									doc.lstVarName.appendChild(opt); 
+								}
+							}
+							else {
+								 doc.lstVarName.appendChild(opt); 
+							}	
+							/*try {
+								doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+							}
+							catch (ex) {
+								doc.lstVarName.add(opt); // IE only
+							}*/
+						}	
+					}	
+				}
+			}	
+			else //Category Selected
+			{		
+					//NumVars
+				for (i = 0; i < NumVars; i++) {
+						var vCountGroup = NumGroups[i];
+									
+						for (var j = 0; j < vCountGroup; j++) {
+							
+							if ((jModelLoad = jLoadCovatra.toUpperCase()) || (jScat_GroupNames != "Automobile")) {
+								if (jbInclude[i] = "True") {
+									 //var vtemp = FullGroups[i][j];
+									if (vGroupSelected == FullGroups[i][j]) {
+										var opt = document.createElement("option");
+										opt.text = VarList[i];
+										opt.value = VarList[i];
+										//JAM 2013-12-14	For IE<11
+										if (navigator.appName == 'Microsoft Internet Explorer')	{
+											//JAM 2013-12-10 In order to optimize in IE11
+											//JAM 2013-12-26 Navigator is lower than 10 version
+											if (glbPrevIEVersion == 1) { 
+												
+												doc.lstVarName.add(opt);
+											}
+											else {
+												doc.lstVarName.appendChild(opt); 
+											}
+										}
+										else {
+											 doc.lstVarName.appendChild(opt); 
+										}	
+										/*try {
+											doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+										}
+										catch (ex) {
+											doc.lstVarName.add(opt); // IE only
+										}*/
+										break;
+									}
+								}	
+							}	
+						}
+
+					
+				}
+			}
+			//doc.fSubSetchosen.value=doc.cmb_VCAT.selectedIndex;
+			//doc.fSubSetchosenName.value = vGroupSelected; 
+			doc.lstVarName.selectedIndex = 0;
+			document.forms[0].txtVarSearch.focus(); 
+	
+    //JAM 2013-11-24		
+//////			 function setVariableFromSearchClick()
+//////	         {
+//////	         
+////////	          if (this.actb_currObject=="TFR - Total fertility rate: children per woman - Number")
+////////	           {
+////////	             this.actb_currObject="TFR - Total fertility rate: children per woman - Number";
+////////	           }
+//////	          document.getElementById("lstVarName").value=this.actb_currObject;
+//////	          document.getElementById("btnInvs").click();
+//////	         
+//////	         }
+				
+				
+			
+      //  if (variableList == null){
+               if (document.forms[0].lstVarName!= null)
+                { 
+                var lst=document.getElementById("lstVarName");
+                variableList =new Array(lst.length);
+               
+                 for (var count = 0; count < lst.length; count++)
+                 {
+	                 variableList[count]=lst.options[count].innerHTML;
+	                  
+	             }
+	            }
+           // }
+            
+             function BindDataToVarSearch()
+             {     
+                var obj = actb(document.getElementById('txtVarSearch'),variableList);
+                //KIA add the follwing event listener with your desired method what you want to call on a search list item is clicked
+                this.actb_cur_obj_clicked.prototype.itemClicked = setVariableFromSearchClick;
+                this.actb_fSize = '12px';
+                this.actb_bgColor = '#888888';
+                this.actb_textColor = '#FFFFFF';
+                this.actb_hColor = '#000000';
+                this.actb_fFamily = 'Verdana';
+                this.actb_lim =5;
+                this.actb_timeOut = -1;
+                this.actb_firstText =true;
+                this.actb_hStyle = 'text-decoration:underline;font-weight="bold"';  
+                document.getElementById('txtVarSearch').value="";         
+                document.getElementById('txtVarSearch').select();   
+                
+              }
+                BindDataToVarSearch();		
+              
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////
+			
+	}
+}	
+else {	
+		if ( document.getElementById("lstVarName") != null  ) {
+			
+			
+			//doc.lstVarName.length = 0;
+			//JAM 2013-12-10 Commented due IE 11 compatibility
+			//if (navigator.appName == 'Microsoft Internet Explorer')	{
+				
+				
+				if (navigator.appName == 'Microsoft Internet Explorer')	{
+				/*var vselect = document.getElementById("cmb_VCAT");
+
+				for (i = 0; i < NumVars; i++) {
+				  vselect.options[i] = null;
+				}*/
+			
+				//doc.lstVarName.length = 0;
+				//document.getElementById("lstVarName").options.length = 0;
+				
+				document.getElementById("lstVarName").innerHTML = ""; 
+		
+				}
+				else {
+					//JAM 2013-12-14	For IE<11
+					if (navigator.appName == 'Netscape')	{
+						document.getElementById("lstVarName").innerHTML = "";
+					}
+					else {
+						doc.lstVarName.length = 0;
+					}	
+					
+				}
+			/*}
+			else {
+				doc.lstVarName.length = 0;
+			}*/
+			/////////////////
+		
+		
+			for (i = 0; i < NumVars; i++) {
+				//if ((jModelLoad = jLoadCovatra.toUpperCase()) || (jScat_GroupNames != "Automobile") ) {
+					   
+						
+					//if (jbInclude[i] = "True") {
+						var opt = document.createElement("option");
+						opt.text = VarList[i];
+						opt.value = VarList[i];
+						//JAM 2013-12-14	For IE<11
+						if (navigator.appName == 'Microsoft Internet Explorer')	{
+							//JAM 2013-12-10 In order to optimize in IE11
+							//JAM 2013-12-26 Navigator is lower than 10 version
+							if (glbPrevIEVersion == 1) { 
+								
+								doc.lstVarName.add(opt);
+							}
+							else {
+								doc.lstVarName.appendChild(opt); 
+							}
+						}
+						else {
+							 doc.lstVarName.appendChild(opt); 
+						}	
+						/*try {
+							doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+							}
+						catch (ex) {
+							doc.lstVarName.add(opt); // IE only
+						}*/
+					//}	
+				//}	
+			}
+			
+		////////////////////////////////////////////////////////////////
+		doc.lstVarName.selectedIndex = 0;
+		document.forms[0].txtVarSearch.focus(); 
+
+//JAM 2013-11-24			
+////			 function setVariableFromSearchClick()
+////	         {
+////	        
+//////	          if (this.actb_currObject=="TFR - Total fertility rate: children per woman - Number")
+//////	           {
+//////	             this.actb_currObject="TFR - Total fertility rate: children per woman - Number";
+//////	           }
+////	          document.getElementById("lstVarName").value=this.actb_currObject;
+////	          document.getElementById("btnInvs").click();
+////	         
+////	         }
+				
+				
+			
+      //  if (variableList == null){
+               if (document.forms[0].lstVarName!= null)
+                { 
+                var lst=document.getElementById("lstVarName");
+                variableList =new Array(lst.length);
+               
+                 for (var count = 0; count < lst.length; count++)
+                 {
+	                 variableList[count]=lst.options[count].innerHTML;
+	                  
+	             }
+	            }
+           // }
+            
+             function BindDataToVarSearch()
+             {     
+                var obj = actb(document.getElementById('txtVarSearch'),variableList);
+                //KIA add the follwing event listener with your desired method what you want to call on a search list item is clicked
+                this.actb_cur_obj_clicked.prototype.itemClicked = setVariableFromSearchClick;
+                this.actb_fSize = '12px';
+                this.actb_bgColor = '#888888';
+                this.actb_textColor = '#FFFFFF';
+                this.actb_hColor = '#000000';
+                this.actb_fFamily = 'Verdana';
+                this.actb_lim =5;
+                this.actb_timeOut = -1;
+                this.actb_firstText =true;
+                this.actb_hStyle = 'text-decoration:underline;font-weight="bold"';  
+                document.getElementById('txtVarSearch').value="";         
+                document.getElementById('txtVarSearch').select();   
+                
+              }
+                BindDataToVarSearch();		
+              
+	
+		
+			
+		/////////////////////////////////////////////////////////////////		
+		}
+}
+}
+
+function initLongVarsOthFilt(){
+ //Other Filters
+ 
+  var doc = document.forms[0];
+  var jGroupSelected ="";
+  var jAddName = "";
+  var jdataString = "";
+  var jLoadCovatra = "LoadCoVaTrA";
+  var i = 0;
+  var jothFilterchosen = "";
+  var jfilter= 0;
+  var jpivotfilter;
+  
+  //JAM 2013-12-28 Validating if the navigator version is previous to IE 10
+  var glbPrevIEVersion = isPreviousVerIE();
+  
+ 
+ if (typeof (doc.fOthFiltchosenName.value) != "undefined" && document.getElementById("lstVarName") != null && doc.fOthFiltchosenName.value != "ALL" ) {
+ 
+	
+	if ((doc.fOthFiltchosenName.value != "" ) ) {	
+	//if (doc.fOthFiltchosen.value != "" && doc.fOthFiltchosen.value != "3") {	
+				
+				//doc.lstVarName.length = 0;
+				//JAM 2013-12-10 Commented due IE 11 compatibility
+				//if (navigator.appName == 'Microsoft Internet Explorer')	{
+					
+					
+					if (document.getElementById("lstVarName") != null) {
+						
+						if (navigator.appName == 'Microsoft Internet Explorer')	{
+							/*var vselect = document.getElementById("cmb_VCAT");
+
+							for (i = 0; i < NumVars; i++) {
+							  vselect.options[i] = null;
+							}*/
+						
+							//doc.lstVarName.length = 0;
+							//document.getElementById("lstVarName").options.length = 0;
+							
+							document.getElementById("lstVarName").innerHTML = ""; 
+		
+						}
+						else {
+							//JAM 2013-12-14	For IE<11
+							if (navigator.appName == 'Netscape')	{
+								document.getElementById("lstVarName").innerHTML = "";
+							}
+							else {
+								doc.lstVarName.length = 0;
+							}	
+							
+						}
+
+					}	
+				/*}
+				else {
+					doc.lstVarName.length = 0;
+				}*/
+				/////////////////
+				
+				if (doc.fSubSetchosen.value =="0") {
+					jGroupSelected = "All";
+				}
+				else {
+					jGroupSelected = doc.fSubSetchosenName.value;
+				}
+				
+				if (jGroupSelected == "All") {
+					
+						jothFilterchosen = doc.fOthFiltchosenName.value;
+						if (jothFilterchosen == "ALL") {
+							jfilter= 0;
+						}	
+						else if (jothFilterchosen == ("At least through year " + jFilterYear ))  {	
+							jfilter= 1;
+						
+						}
+						else if (jothFilterchosen == ("At least " + jFilterPoints + " Data Points"))  {	
+							jfilter= 2;
+						
+						}
+						else if (jothFilterchosen == ("Used for Initialization"))  {	
+							jfilter= 3;
+						
+						}
+						else  {	
+							jfilter= 0;
+						
+						}
+				
+						for (i = 0; i < NumVars; i++) {
+							if (jfilter == 0) {
+								pivotfilter = jbInclude[i];
+							}
+							else if (jfilter == 1) {
+								pivotfilter = jbIncludeTroughYear[i];
+							}
+							else if (jfilter == 2) {
+								pivotfilter = jbIncludeNPoint[i];
+							}
+							else if (jfilter == 3) {
+								pivotfilter = jbIncludeInit[i];
+							}
+							
+							
+							if ((jModelLoad = jLoadCovatra.toUpperCase()) || (UCase(sCoVaTra) = "NO") ) {  
+							
+								if (pivotfilter == "True") {
+								
+									var opt = document.createElement("option");
+									opt.text = VarList[i];
+									opt.value = VarList[i];
+									//JAM 2013-12-14	For IE<11
+									if (navigator.appName == 'Microsoft Internet Explorer')	{
+										//JAM 2013-12-10 In order to optimize in IE11
+										//JAM 2013-12-26 Navigator is lower than 10 version
+										if (glbPrevIEVersion == 1) { 
+											
+											doc.lstVarName.add(opt);
+										}
+										else {
+											doc.lstVarName.appendChild(opt); 
+										}
+									}
+									else {
+										 doc.lstVarName.appendChild(opt); 
+									}	
+									/*try {
+										doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+									}
+									catch (ex) {
+										doc.lstVarName.add(opt); // IE only
+									}*/
+									
+							
+								}
+							}
+						}	
+				}
+				else {
+						
+						jothFilterchosen = doc.fOthFiltchosenName.value;
+						if (jothFilterchosen == "ALL") {
+							jfilter= 0;
+						}	
+						else if (jothFilterchosen == ("At least through year " + jFilterYear ))  {	
+							jfilter= 1;
+						
+						}
+						else if (jothFilterchosen == ("At least " + jFilterPoints + " Data Points"))  {	
+							jfilter= 2;
+						
+						}
+						else if (jothFilterchosen == ("Used for Initialization"))  {	
+							jfilter= 3;
+						
+						}
+						else  {	
+							jfilter= 0;
+						
+						}
+						 for (i = 0; i < NumVars; i++) {
+							var vCountGroup = NumGroups[i];
+							if (jfilter == 0) {
+								pivotfilter = jbInclude[i];
+							}
+							else if (jfilter == 1) {
+								pivotfilter = jbIncludeTroughYear[i];
+							}
+							else if (jfilter == 2) {
+								pivotfilter = jbIncludeNPoint[i];
+							}
+							else if (jfilter == 3) {
+								pivotfilter = jbIncludeInit[i];
+							}
+							
+							if (pivotfilter == "True") {
+								for (var j = 0; j < vCountGroup; j++) {
+								
+										
+										if (jGroupSelected == FullGroups[i][j]) {
+												var opt = document.createElement("option");
+												opt.text = VarList[i];
+												opt.value = VarList[i];
+												//JAM 2013-12-14	For IE<11
+												if (navigator.appName == 'Microsoft Internet Explorer')	{
+													//JAM 2013-12-10 In order to optimize in IE11
+													//JAM 2013-12-26 Navigator is lower than 10 version
+													if (glbPrevIEVersion == 1) { 
+														
+														doc.lstVarName.add(opt);
+													}
+													else {
+														doc.lstVarName.appendChild(opt); 
+													}
+												}
+												else {
+													 doc.lstVarName.appendChild(opt); 
+												}	
+												/*try {
+													doc.lstVarName.add(opt, null); // standards compliant; doesn't work in IE
+												}
+												catch (ex) {
+													doc.lstVarName.add(opt); // IE only
+												}*/
+												break;
+										}
+											
+								}	
+							}
+						}	
+				}
+				
+				//doc.fOthFiltchosen.value=doc.cmb_OthFilt.selectedIndex;
+				//doc.fOthFiltchosenName.value = jothFilterchosen; 
+				doc.lstVarName.selectedIndex = 0;
+				document.forms[0].txtVarSearch.focus(); 
+		//JAM 2013-11-24		
+////			 function setVariableFromSearchClick()
+////	         {
+////	         
+//////	          if (this.actb_currObject=="TFR - Total fertility rate: children per woman - Number")
+//////	           {
+//////	             this.actb_currObject="TFR - Total fertility rate: children per woman - Number";
+//////	           }
+////	          document.getElementById("lstVarName").value=this.actb_currObject;
+////	          document.getElementById("btnInvs").click();
+////	         
+////	         }
+				
+				
+			
+      //  if (variableList == null){
+               if (document.forms[0].lstVarName!= null)
+                { 
+                var lst=document.getElementById("lstVarName");
+                variableList =new Array(lst.length);
+               
+                 for (var count = 0; count < lst.length; count++)
+                 {
+	                 variableList[count]=lst.options[count].innerHTML;
+	                  
+	             }
+	            }
+           // }
+            
+             function BindDataToVarSearch()
+             {     
+                var obj = actb(document.getElementById('txtVarSearch'),variableList);
+                //KIA add the follwing event listener with your desired method what you want to call on a search list item is clicked
+                this.actb_cur_obj_clicked.prototype.itemClicked = setVariableFromSearchClick;
+                this.actb_fSize = '12px';
+                this.actb_bgColor = '#888888';
+                this.actb_textColor = '#FFFFFF';
+                this.actb_hColor = '#000000';
+                this.actb_fFamily = 'Verdana';
+                this.actb_lim =5;
+                this.actb_timeOut = -1;
+                this.actb_firstText =true;
+                this.actb_hStyle = 'text-decoration:underline;font-weight="bold"';  
+                document.getElementById('txtVarSearch').value="";         
+                document.getElementById('txtVarSearch').select();   
+                
+              }
+                BindDataToVarSearch();		
+              
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////
+	
+	}
+ }	 
+}
+//JAM 2013-12-28 Validating if the navigator version is previous to IE 10
+function isPreviousVerIE()
+{
+	var isprevious=0;
+	var navVersion = navigator.appVersion;
+	var navIE7 = navVersion.search("MSIE 7");
+	var navIE8 = navVersion.search("MSIE 8");
+	var navIE9 = navVersion.search("MSIE 9");
+	
+	if ((navIE7 != -1) || (navIE8 != -1) || (navIE9 != -1)) {
+		isprevious = 1;
+	}
+	else {
+		isprevious = 0;
+	}
+		
+	return isprevious;
+
+}
+/*
+
+function AjaxCmbRefresh{
+
+
+	////////////////////////////////////////////////////////////////////////////////////////
+	   function setVariableFromSearchClick()
+	         {
+	         
+//	          if (this.actb_currObject=="TFR - Total fertility rate: children per woman - Number")
+//	           {
+//	             this.actb_currObject="TFR - Total fertility rate: children per woman - Number";
+//	           }
+	          document.getElementById("lstVarName").value=this.actb_currObject;
+	          document.getElementById("btnInvs").click();
+	         
+	         }
+				
+				
+			
+      //  if (variableList == null){
+               if (document.forms[0].lstVarName!= null)
+                { 
+                var lst=document.getElementById("lstVarName");
+                variableList =new Array(lst.length);
+               
+                 for (var count = 0; count < lst.length; count++)
+                 {
+	                 variableList[count]=lst.options[count].innerHTML;
+	                  
+	             }
+	            }
+           // }
+            
+             function BindDataToVarSearch()
+             {     
+                var obj = actb(document.getElementById('txtVarSearch'),variableList);
+                //KIA add the follwing event listener with your desired method what you want to call on a search list item is clicked
+                this.actb_cur_obj_clicked.prototype.itemClicked = setVariableFromSearchClick;
+                this.actb_fSize = '12px';
+                this.actb_bgColor = '#888888';
+                this.actb_textColor = '#FFFFFF';
+                this.actb_hColor = '#000000';
+                this.actb_fFamily = 'Verdana';
+                this.actb_lim =5;
+                this.actb_timeOut = -1;
+                this.actb_firstText =true;
+                this.actb_hStyle = 'text-decoration:underline;font-weight="bold"';  
+                document.getElementById('txtVarSearch').value="";         
+                document.getElementById('txtVarSearch').select();   
+                
+              }
+                BindDataToVarSearch();		
+              
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////
+	
+
+}
+*/
+
+
+
+
+
+
+
+

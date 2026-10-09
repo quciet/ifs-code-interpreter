@@ -1,0 +1,11 @@
+List of Functions not found:
+=============================
+GDP/Capita (PPP 2011) Versus Built Land/Capita (2010) Linear
+GDP/Capita (PPP 2011) Versus Calorie Demand (fixed-effect)
+GDP/Capita (PPP 2011) Versus CLPC from MeatandFish (2010) Log
+Calories per capita (2009) versus Malnourished Children (2011) LN
+Calories per capita (2009) versus Malnourished Children (2011) LN
+Calories per capita (2009) versus Malnourished Pop Percent (Most Recent) Log
+Calories per capita (2009) versus Malnourished Pop Percent (Most Recent) Log
+GDP/Capita (PPP) Versus Feed Requirements
+Crop Production/Capita Versus Water Use/Capita

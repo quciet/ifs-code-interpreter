@@ -1,0 +1,43 @@
+List of Functions not found:
+=============================
+MaternalMortalityRatio versus TFR(Log) & GDPPCP(Log)
+GDP/Capita (PPP) Versus Literacy (
+GDP/Capita (PPP) Versus Literacy ( & CStr(context.FirstYear) & )
+Infant Mortality Rate Versus Neonatal Mortality Rate ( & CStr(cntx.BaseYear) & ) Linear
+GDP/Capita (PPP) Versus Total Fertility Rate (1960)
+GDP/Capita (PPP) Versus Total Fertility Rate (2005)
+GDP/Capita (PPP) Versus Infant Mortality (1960)
+GDP/Capita (PPP) Versus Infant Mortality (1995)
+GDP/Capita (PPP) Versus Contraception Use (1975)
+GDP/Capita (PPP) Versus Contraception Use (1990)
+GDP/Capita (PPP) Versus Life Expectancy Male (1962)
+GDP/Capita (PPP) Versus Life Expectancy Female (1962)
+GDP/Capita (PPP) Versus Life Expectancy Male (2006)
+GDP/Capita (PPP) Versus Life Expectancy Female (2006)
+GDP/Capita (PPP 2011) Versus AvgAgeAtFirstMarriageMen-WB(2017) Log
+GDP/Capita (PPP 2011) Versus AvgAgeAtFirstMarriageWomen-WB(2017) Log
+Education (Both Sexes, 25+) Versus Women in Marriage or Union, 15 to 19 (MostRecent) Log
+Education (Both Sexes, 25+) Vs Married % Diff, 20_24 and 15_19, Women (MostRecent) Cubic
+GDP/Capita (PPP 2011) Versus Labor Participation Rate Male (MostRecent) Lin
+GDP/Capita (PPP 2011) Versus Labor Participation Rate Female (MostRecent) Lin
+GDP/Capita (PPP) Versus Crude Birth Rate (1960)
+GDP/Capita (PPP) Versus Crude Birth Rate (1998) Log
+GDP/Capita (PPP) Versus Crude Death Rate (1960)
+GDP/Capita (PPP) Versus Crude Death Rate (1998) Log
+GDP/Capita (PPP) Versus Urbanization Percentage (1960)
+GDP/Capita (PPP) Versus Urbanization Percentage (1998) Log
+GDP/Capita (PPP) Versus Illiteracy (1980)
+GDP/Capita (PPP) Versus Literacy (2000)
+GDP/Capita Versus Labor Participation Rate
+GDP/Capita (PPP) Versus Female Share of Labor Force (1960)
+GDP/Capita (PPP) Versus Female Share of Labor Force (1995)
+GDP/Capita (PPP 2011) Versus Unemployment Rate (MostRecent) Lin
+GDP/Capita (PPP 2011) Versus Wage Sex Ratio (MostRecent) Log
+GDP/Capita (PPP 2000) Versus Households Intensity (1960)
+Population Age Ratio Versus Households Intensity (MOSTRECENT)
+GDP/Capita (PPP 2000) Versus Households Intensity (MOSTRECENT)
+Infant Mortality Rate Versus Neonatal Mortality Rate (1960) Linear
+Infant Mortality Rate Versus Neonatal Mortality Rate (MOSTRECENT) Linear
+GDP/Capita Versus Labor Participation Rate
+GDP/Capita (PPP 2011) Versus Informal Employment Share of Total Logit
+Population Age Ratio Versus Households Intensity (1960)

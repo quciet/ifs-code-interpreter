@@ -1,0 +1,106 @@
+List of Functions not found:
+=============================
+TbName).ToEstimator
+CInfraElecGenCapGR(-9999
+TbName).ToEstimator
+TbName).ToEstimator
+TbName).ToEstimator
+TbName).ToEstimator
+CInfraElecAccTotal(AMAX(1, Amin(100, CInfraElecAccTotal(key)))
+CInfraElecAccTotal(AMAX(1, Amin(100, CInfraElecAccTotal(key)))
+f CurrYr(cntx.BaseYear And CurrYr(key) - PrevYr(1 Then                            CInfraElecAccRuralCurr = ValHoldCurr * PopRuralBase / 100 / CHHSIZE(key)
+f CurrYr(cntx.BaseYear And CurrYr(key) - PrevYr(1 Then                            CInfraElecAccRuralCurr = ValHoldCurr * PopRuralBase / 100 / CHHSIZE(key)
+TbName).ToEstimator
+CInfraElec(ValHold
+TbName).ToEstimator
+CInfraElec(XYTABL(key)
+TbName).ToEstimator
+TbName).ToEstimator
+TbName).ToEstimator
+CLandIrAreaEquipGR(-9999
+CTeleDens(XYTABL(key)
+CTeleDensGR(-9999
+CTeleDensGR(-9999
+TbName).ToEstimator
+TbName).ToEstimator
+CTeleDensGR(-9999
+CSpend(AMAX(Amin(CSpend(key), 100), 0)
+TbName).ToEstimator
+TbName).ToEstimator
+TbName).ToEstimator
+TbName).ToEstimator
+TbName).ToEstimator
+TbName).ToEstimator
+TbName).ToEstimator
+CSpend(AMAX(Amin(CSpend(key), 100), 0)
+CMobilGR(-9999
+CBroadbandGR(-9999
+CBroadMobilGR(-9999
+CICTComputers(AMAX(0, Amin(100, CICTComputers(key)))
+CBroadMobil(AMAX(0.0001F, Amin(CBroadMobil(key), CMobil(key)))
+CICTComputers(AMAX(0, Amin(100, CICTComputers(key)))
+TbName).ToEstimator
+TbName).ToEstimator
+CICTIndex(CSng(10 * (0.4 * TICTAcc + 0.4 * TICTUse + 0.2 * TICTSkill))
+CICTIndex(CSng(10 * (0.4 * TICTAcc + 0.4 * TICTUse + 0.2 * TICTSkill))
+TbName).ToEstimator
+TbName).ToEstimator
+CICTIndex(CSng(10 * (0.4 * TICTAcc + 0.4 * TICTUse + 0.2 * TICTSkill))
+CICTIndex(CSng(10 * (0.4 * TICTAcc + 0.4 * TICTUse + 0.2 * TICTSkill))
+TbName).ToEstimator
+TbName).ToEstimator
+CICTIndex(CSng(10 * (0.4 * TICTAcc + 0.4 * TICTUse + 0.2 * TICTSkill))
+CICTIndex(CSng(10 * (0.4 * TICTAcc + 0.4 * TICTUse + 0.2 * TICTSkill))
+Percent of People with No Access to Sanitation
+Percent of People with Access to Improved Sanitation but no HC
+Percent of People with No Access to Clean Water
+Percent of People with Improved Access to Clean Water but No HC
+Percent of People using Primarily Solid Fuels (Full Model 2010)
+
+
+CInfraElecProd(AMAX(0.001F, CInfraElecProd(key))
+Water Services, Fractional Logit, Surface Water, 
+Water Services, Fractional Logit, Unimproved Source, 
+Water Services, Fractional Logit, Limited Service, 
+Water Services, Fractional Logit, Basic Service, 
+Sanitation Services, Fractional Logit, Open Defecation, 
+Sanitation Services, Fractional Logit, Unimproved Services, 
+Sanitation Services, Fractional Logit, Limited Service, 
+Sanitation Services, Fractional Logit, Basic Service, 
+GDP/Capita (PPP 2005) Versus Income Below One Dollar and 25 Cents per Day (2009) Log
+GDP/Capita (PPP 2000) Versus Governance Effectiveness (2002) Linear
+GDP/Capita (PPP 2000) Versus Governance Reg Quality (2002) Linear
+GDP/Capita (PPP 2000) Versus Governance Reg Quality (2006) Linear
+GDP/Capita (PPP 2000) Versus Sanitation % with Access to HC (MOSTRECENT) Log
+GDP/Capita (PPP 2000) Versus Sanitation % with Access to HC (MOSTRECENT) Log
+GDP/Capita (PPP 2000) Versus Water Safe % with Access to HC (MOSTRECENT) Log
+GDP/Capita (PPP 2000) Versus Water Safe % with Access to HC (MOSTRECENT) Log
+GDP/Capita (PPP 2000) Vs Electricity Gen Capacity per capita (MOSTRECENT) Logit
+GDP/Capita (PPP 2000) Vs Electricity Gen Capacity per capita (MOSTRECENT) Logit
+GDP/Capita (PPP 2000) Vs Electricity Gen Capacity per capita (MOSTRECENT) Logit
+GDP/Capita (PPP 2000) Versus Rural Electricity Access (MostRecent) Logistic
+GDP/Capita (PPP 2000) Versus Rural Electricity Access (MostRecent) Logistic
+GDP/Capita (PPP 2000) Versus Urban Electricity Access (MostRecent) Log
+GDP/Capita (PPP 2000) Versus Urban Electricity Access (MostRecent) Log
+GDP/Capita (PPP 2000) Versus Kilowatt-Hours per Capita (2000) Linear
+GDP/Capita (PPP) Versus Energy Demand per GDP Dollar PPP (2000) Logarithmic
+GDP/Capita (PPP) Versus Telephones per 100 (MOSTRECENT) Parabolic
+GDP/Capita (PPP) Versus Telephones per 100 (MOSTRECENT) Parabolic
+GDP/Capita (PPP) Versus Telephones per 100 (MOSTRECENT) Parabolic
+GDP/Capita (PPP 2000) Versus ICT Expenditures % GDP (2005) Linear
+GDP/Capita (PPP 2000) Versus ICT Expenditures % GDP (2005) Linear
+GDP/Capita (PPP 2000) Versus Telephone Cell Subscribers Per 100 (2001) Log
+GDP/Capita (PPP 2000) Versus ICT Broadband Subs per 100 ITU (2001) Linear
+GDP/Capita (PPP 2005) Versus Mobile Broadband Per 100 (MostRecent) Log
+GDP/Capita (PPP 2011) Versus Computer Owning Households(MOSTRECENT) Log
+GDP/Capita (PPP 2011) Versus Internet Connected Households(MOSTRECENT) Log
+GDP/Capita (PPP 2011) Versus ITU ICT Development Index (MOSTRECENT) Log
+GDP/Capita (PPP 2011) Versus Computer Owning Households(MOSTRECENT) Log
+GDP/Capita (PPP 2011) Versus Internet Connected Households(MOSTRECENT) Log
+GDP/Capita (PPP 2000) Versus ICT Broadband Subs per 100 ITU (2007) Linear
+GDP/Capita (PPP 2000) Versus ICT Broadband Subs per 100 ITU (2007) Linear
+GDP/Capita (PPP 2005) Versus Mobile Broadband Per 100 (MostRecent) Log
+GDP/Capita (PPP 2005) Versus Mobile Broadband Per 100 (MostRecent) Log
+GDP/Capita (PPP 2000) Versus Telephone Cell Subscribers Per 100 (2007) Log
+GDP/Capita (PPP 2000) Versus Telephone Cell Subscribers Per 100 (2007) Log
+GDP/Capita (PPP 2011) Versus Income Below One Dollar and 90 Cents per Day (2017) Log

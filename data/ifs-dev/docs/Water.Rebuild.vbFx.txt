@@ -1,0 +1,7 @@
+List of Functions not found:
+=============================
+MunDemandPC (Linear) versus GDP2011PCPPP(MOSTRECENT) (Log) AND Connections
+WaterWithdIndustrial(MOSTRECENT minus elec) (Linear) versus Man (Linear)
+WastewaterProduced v MunicipalDemand
+WastewaterTreated pct of produced (Linear) versus GDP2011PCPPP(MOSTRECENT) (Log)
+WaterResTotalRenew(MOSTRECENT) (Linear) versus LandTotal(MOSTRECENT) (Linear)

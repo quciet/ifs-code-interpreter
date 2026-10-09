@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsSAMLabels" targetNamespace="http://www.tempuri.org/dsSAMLabels.xsd" xmlns:mstns="http://www.tempuri.org/dsSAMLabels.xsd" xmlns="http://www.tempuri.org/dsSAMLabels.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsSAMLabels" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="SAMLabels">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Categories" type="xs:string" minOccurs="0" />
+              <xs:element name="Capital" type="xs:string" minOccurs="0" />
+              <xs:element name="Environment" type="xs:string" minOccurs="0" />
+              <xs:element name="Firms" type="xs:string" minOccurs="0" />
+              <xs:element name="Government" type="xs:string" minOccurs="0" />
+              <xs:element name="Household" type="xs:string" minOccurs="0" />
+              <xs:element name="ROW" type="xs:string" minOccurs="0" />
+              <xs:element name="Sectors" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

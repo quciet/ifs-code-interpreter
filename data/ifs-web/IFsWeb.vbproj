@@ -1,0 +1,2728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IFsWeb</RootNamespace>
+    <AssemblyName>IFsWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <!--
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44340</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+	-->
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress>true</Use64BitIISExpress>
+    <IISExpressSSLPort>44340</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord">
+      <HintPath>..\libs\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math.Core">
+      <HintPath>..\libs\Accord.Math.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <HintPath>..\libs\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\IFsWeb\bin\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ArtinSoft.WinFormsToWeb.WebControls">
+      <HintPath>..\libs\ArtinSoft.WinFormsToWeb.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="AspMapNET">
+      <HintPath>..\libs\AspMapNET.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Coalesys.WebMenu">
+      <HintPath>..\libs\Coalesys.WebMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLine">
+      <HintPath>..\libs\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomDropDownList">
+      <HintPath>..\libs\CustomDropDownList.dll</HintPath>
+    </Reference>
+    <Reference Include="DAO">
+      <HintPath>..\libs\DAO.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="envdte, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\envdte.17.9.37000\lib\net472\envdte.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Web">
+      <HintPath>..\libs\EO.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="FilePickerControl">
+      <HintPath>..\libs\FilePickerControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.FMSSTA65">
+      <HintPath>..\libs\Interop.FMSSTA65.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <HintPath>..\libs\Interop.Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <HintPath>..\libs\Interop.VBIDE.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MarkItUp.WebControls.Timer">
+      <HintPath>..\libs\MarkItUp.WebControls.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.2.1.0\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualStudio.Interop, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Interop.17.9.37000\lib\net472\Microsoft.VisualStudio.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <HintPath>..\libs\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHunspell, Version=1.2.5554.16953, Culture=neutral, PublicKeyToken=1ac793ea843b4366, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHunspell.1.2.5554.16953\lib\net\NHunspell.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.2.8\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Web.5.3.8\lib\net46\NLog.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Parquet, Version=2.0.0.0, Culture=neutral, PublicKeyToken=de28deb604dd91c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Parquet.Net.2.0.0\lib\net451\Parquet.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=2.1.8.2226, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_e_sqlite3.2.1.8\lib\net461\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=2.1.8.2226, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.2.1.8\lib\netstandard2.0\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.dynamic_cdecl, Version=2.1.8.2226, Culture=neutral, PublicKeyToken=b68184102cba0b3b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.dynamic_cdecl.2.1.8\lib\netstandard2.0\SQLitePCLRaw.provider.dynamic_cdecl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.5.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Odbc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Odbc.4.5.0\lib\net461\System.Data.Odbc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.118.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.118.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.0\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Interactive.Async, Version=3.2.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.3.2.0\lib\net46\System.Interactive.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.4.5.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="tmswebcontrols">
+      <HintPath>..\libs\tmswebcontrols.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutMDG.aspx" />
+    <Content Include="AboutModel.aspx" />
+    <Content Include="AboutSAM.aspx" />
+    <Content Include="ArtinSoft.WinFormsToWeb.BlackArrow.gif" />
+    <Content Include="ArtinSoft.WinFormsToWeb.Empty.gif" />
+    <Content Include="Availability.aspx" />
+    <Content Include="blank.gif" />
+    <Content Include="checkbox.gif" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Control.aspx" />
+    <Content Include="CountSel.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\DBstyle.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="ErrorHandler.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="frm_AboutPopulation.aspx" />
+    <Content Include="frm_AddDelProvinces.aspx" />
+    <Content Include="frm_AddDelRawD.aspx" />
+    <Content Include="frm_AnalFunc.aspx" />
+    <Content Include="frm_Analytic.aspx" />
+    <Content Include="frm_ApplyGListComp.aspx" />
+    <Content Include="frm_ASA.aspx" />
+    <Content Include="frm_autocomplete.aspx" />
+    <Content Include="frm_BaseRadial.aspx" />
+    <Content Include="frm_BilateralInteractionDGravity.aspx" />
+    <Content Include="frm_BilateralInteractionDisplay.aspx" />
+    <Content Include="frm_BilateralInteractionGraphLabel.aspx" />
+    <Content Include="frm_ChangeRegisteredMembers.aspx" />
+    <Content Include="frm_ChangeValues.aspx" />
+    <Content Include="frm_CohoInfDisp.aspx" />
+    <Content Include="frm_computations.aspx" />
+    <Content Include="frm_Confirm.aspx" />
+    <Content Include="frm_CountryProfile.aspx" />
+    <Content Include="frm_CreaGList.aspx" />
+    <Content Include="frm_CreateVarList.aspx" />
+    <Content Include="frm_CurrencyOpt.aspx" />
+    <Content Include="frm_Cyber.aspx" />
+    <Content Include="frm_CyberDashboard.aspx" />
+    <Content Include="frm_CyberDashboardData4Area.aspx" />
+    <Content Include="frm_CyberDashboardData4Line.aspx" />
+    <Content Include="frm_CyberDashboardData4Map.aspx" />
+    <Content Include="frm_CyberProfile.aspx" />
+    <Content Include="frm_Datadict.aspx" />
+    <Content Include="frm_DataSeries.aspx" />
+    <Content Include="frm_DevelopmentProfile.aspx" />
+    <Content Include="frm_DisplayControl.aspx" />
+    <Content Include="frm_DisplayMenu.aspx" />
+    <Content Include="frm_Drivers.aspx" />
+    <Content Include="frm_EdnCohoDisp.aspx" />
+    <Content Include="frm_EdnCohortLabels.aspx" />
+    <Content Include="frm_EdnCostDisplay.aspx" />
+    <Content Include="frm_FilterParameters.aspx" />
+    <Content Include="frm_ForecastGroupAggregation.aspx" />
+    <Content Include="frm_FuncGraph.aspx" />
+    <Content Include="frm_GraphicalDisplay.aspx" />
+    <Content Include="frm_GraphLabels.aspx" />
+    <Content Include="frm_GrowthAccounting.aspx" />
+    <Content Include="frm_HealthMeassures.aspx" />
+    <Content Include="frm_Histogram.aspx" />
+    <Content Include="frm_ICTProfile.aspx" />
+    <Content Include="frm_ImportPopData.aspx" />
+    <Content Include="Frm_ImportXLSNewProvinces.aspx" />
+    <Content Include="Frm_ImportXLSNew.aspx" />
+    <Content Include="frm_Initials.aspx" />
+    <Content Include="frm_LongPlot.aspx" />
+    <Content Include="frm_LongVarSearch.aspx" />
+    <Content Include="frm_LorenzGraph.aspx" />
+    <Content Include="frm_MainMenu.aspx" />
+    <Content Include="frm_MapImage.aspx" />
+    <Content Include="frm_mapViewer.aspx" />
+    <Content Include="frm_MapViewerRanges.aspx" />
+    <Content Include="frm_Message.aspx" />
+    <Content Include="frm_MorbCohorts.aspx" />
+    <Content Include="frm_MortCohorts.aspx" />
+    <Content Include="frm_MortDisplay.aspx" />
+    <Content Include="frm_MotionChart.aspx" />
+    <Content Include="frm_NameDisp.aspx" />
+    <Content Include="frm_PackagedDisplays.aspx" />
+    <Content Include="frm_PackagedDisplaysFlex.aspx" />
+    <Content Include="frm_PackagedDisplays_Exp.aspx" />
+    <Content Include="frm_PerfRiskAnalysis.aspx" />
+    <Content Include="frm_PopCohortDisp.aspx" />
+    <Content Include="frm_PovertyDisplay.aspx" />
+    <Content Include="frm_RebuildBase.aspx" />
+    <Content Include="frm_RecreateSce.aspx" />
+    <Content Include="frm_RegMemb.aspx" />
+    <Content Include="frm_Report.aspx" />
+    <Content Include="frm_run.aspx" />
+    <Content Include="frm_SAM.aspx" />
+    <Content Include="frm_SaturParam.aspx" />
+    <Content Include="frm_ScatterAxisLabels.aspx" />
+    <Content Include="frm_ScatterChooseLabels.aspx" />
+    <Content Include="frm_ScatterExponLimit.aspx" />
+    <Content Include="frm_ScatterPower.aspx" />
+    <Content Include="frm_ScatVarGList.aspx" />
+    <Content Include="frm_ScatVarSearch.aspx" />
+    <Content Include="frm_ScenarioCreate.aspx" />
+    <Content Include="frm_SDG.aspx" />
+    <Content Include="frm_SDGEditTarget.aspx" />
+    <Content Include="frm_SDGset.aspx" />
+    <Content Include="frm_SearchParam.aspx" />
+    <Content Include="frm_SearchVar.aspx" />
+    <Content Include="frm_SearchVarBilat.aspx" />
+    <Content Include="frm_SearchVList.aspx" />
+    <Content Include="frm_SelctGeography.aspx" />
+    <Content Include="frm_Select.aspx" />
+    <Content Include="frm_SelectProjectFile.aspx" />
+    <Content Include="frm_SelectSceDir.aspx" />
+    <Content Include="frm_ShowHistAnalog.aspx" />
+    <Content Include="frm_StackedBar.aspx" />
+    <Content Include="frm_StartYearControl.aspx" />
+    <Content Include="frm_Table.aspx" />
+    <Content Include="frm_TableDisplay.aspx" />
+    <Content Include="frm_TablFunc.aspx" />
+    <Content Include="frm_TablFunc2.aspx" />
+    <Content Include="frm_VariableListEdit.aspx" />
+    <Content Include="frm_VarperGraph.aspx" />
+    <Content Include="frm_Varsel.aspx" />
+    <Content Include="frm_VarSelAgg.aspx" />
+    <Content Include="frm_ViewData.aspx" />
+    <Content Include="frm_ViewDataBatch.aspx" />
+    <Content Include="frm_ViewDataDict.aspx" />
+    <Content Include="frm_WorldBankFinancialFlows.aspx" />
+    <Content Include="frm_WorldVariables.aspx" />
+    <Content Include="frm_WVSDisplay.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Dictionary\en_US.aff" />
+    <Content Include="Dictionary\en_US.dic" />
+    <None Include="Hunspellx64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Hunspellx86.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="IFS.aspx" />
+    <Content Include="IFs.ico" />
+    <Content Include="Images\AClogo.png" />
+    <Content Include="Images\arrowhl.png" />
+    <Content Include="Images\arrowhr.png" />
+    <Content Include="Images\arrowvb.png" />
+    <Content Include="Images\arrowvt.png" />
+    <Content Include="Images\background.gif" />
+    <Content Include="Images\Big3DiseaseTypes.png" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\Bottom.gif" />
+    <Content Include="Images\browse.gif" />
+    <Content Include="Images\Cancel.gif" />
+    <Content Include="Images\checkbox.gif" />
+    <Content Include="Images\CheckMask.gif" />
+    <Content Include="Images\CheckMaskOff.gif" />
+    <Content Include="Images\clearpixel.gif" />
+    <Content Include="Images\CommDisTypes.png" />
+    <Content Include="Images\Copy.gif" />
+    <Content Include="Images\CopyOff.gif" />
+    <Content Include="Images\Cut.gif" />
+    <Content Include="Images\CutOff.gif" />
+    <Content Include="Images\Delete.gif" />
+    <Content Include="Images\DeleteOff.gif" />
+    <Content Include="Images\divider.gif" />
+    <Content Include="Images\Download.gif" />
+    <Content Include="Images\DownloadFile.gif" />
+    <Content Include="Images\DownloadFolder.gif" />
+    <Content Include="Images\DownloadOff.gif" />
+    <Content Include="Images\EducationPyramidCats.png" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\FemalesAndMales.png" />
+    <Content Include="Images\Go.gif" />
+    <Content Include="Images\header_bg.gif" />
+    <Content Include="Images\History.gif" />
+    <Content Include="Images\Icons\Bat.gif" />
+    <Content Include="Images\Icons\Bmp.gif" />
+    <Content Include="Images\Icons\Doc.gif" />
+    <Content Include="Images\Icons\File.gif" />
+    <Content Include="Images\Icons\Folder.gif" />
+    <Content Include="Images\Icons\Gif.gif" />
+    <Content Include="Images\Icons\Html.gif" />
+    <Content Include="Images\Icons\Ini.gif" />
+    <Content Include="Images\Icons\Jpg.gif" />
+    <Content Include="Images\Icons\Mdb.gif" />
+    <Content Include="Images\Icons\Mp3.gif" />
+    <Content Include="Images\Icons\Msi.gif" />
+    <Content Include="Images\Icons\Pdf.gif" />
+    <Content Include="Images\Icons\Psp.gif" />
+    <Content Include="Images\Icons\Snp.gif" />
+    <Content Include="Images\Icons\Text.gif" />
+    <Content Include="Images\Icons\Ttf.gif" />
+    <Content Include="Images\Icons\Unknown.gif" />
+    <Content Include="Images\Icons\Vsd.gif" />
+    <Content Include="Images\Icons\Wma.gif" />
+    <Content Include="Images\Icons\Xls.gif" />
+    <Content Include="Images\Icons\Zip.gif" />
+    <Content Include="Images\img1.png" />
+    <Content Include="Images\img_2.png" />
+    <Content Include="Images\img_3.png" />
+    <Content Include="Images\info.png" />
+    <Content Include="Images\InjuryTypes.png" />
+    <Content Include="Images\ItemBackground.gif" />
+    <Content Include="Images\LineGraph.gif" />
+    <Content Include="Images\Line_Graph_Icon_26x26.jpg" />
+    <Content Include="Images\loading-bluebar.gif" />
+    <Content Include="Images\logo_1.png" />
+    <Content Include="Images\Logo_AUDA-NEPAD.png" />
+    <Content Include="Images\Mayan_Pyramid-icon.jpg" />
+    <Content Include="Images\MMMap.GIF" />
+    <Content Include="Images\MSACWY.jpg" />
+    <Content Include="Images\MSAYWC.jpg" />
+    <Content Include="Images\MSDCAPD.jpg" />
+    <Content Include="Images\MSDCDPA.jpg" />
+    <Content Include="Images\New.gif" />
+    <Content Include="Images\NewFolder.gif" />
+    <Content Include="Images\NewFolderOff.gif" />
+    <Content Include="Images\NonCommDisTypes.png" />
+    <Content Include="Images\Ok.gif" />
+    <Content Include="Images\OnlyZip.gif" />
+    <Content Include="Images\PardeeCenterLogo.jpg" />
+    <Content Include="Images\Paste.gif" />
+    <Content Include="Images\PasteOff.gif" />
+    <Content Include="Images\pcl.jpg" />
+    <Content Include="Images\pcl.png" />
+    <Content Include="Images\Popup.gif" />
+    <Content Include="Images\Progress.gif" />
+    <Content Include="Images\Properties.gif" />
+    <Content Include="Images\Pyramid_Icon_26x26.jpg" />
+    <Content Include="Images\RecycleBinEmpty.gif" />
+    <Content Include="Images\RecycleBinFull.gif" />
+    <Content Include="Images\Refresh.gif" />
+    <Content Include="Images\Rename.gif" />
+    <Content Include="Images\Restore.gif" />
+    <Content Include="Images\ReverseCheck.gif" />
+    <Content Include="Images\Root.gif" />
+    <Content Include="Images\RwandaFlag.png" />
+    <Content Include="Images\Save.gif" />
+    <Content Include="Images\ScrollDownActive.gif" />
+    <Content Include="Images\ScrollDownEnabled.gif" />
+    <Content Include="Images\ScrollUpActive.gif" />
+    <Content Include="Images\ScrollUpEnabled.gif" />
+    <Content Include="Images\Search.gif" />
+    <Content Include="Images\SearchOff.gif" />
+    <Content Include="Images\SelectedPopup.gif" />
+    <Content Include="Images\Separador.gif" />
+    <Content Include="Images\squares-circle.gif" />
+    <Content Include="Images\SSCAYD.jpg" />
+    <Content Include="Images\SSCDYA.jpg" />
+    <Content Include="Images\Stop.gif" />
+    <Content Include="Images\table-graph-line-icone-4358-16.png" />
+    <Content Include="Images\Table.jpg" />
+    <Content Include="Images\Table_Icon_26x26.jpg" />
+    <Content Include="Images\ThumbNail.gif" />
+    <Content Include="Images\ThumbNailOff.gif" />
+    <Content Include="Images\Top.gif" />
+    <Content Include="Images\top_icon.GIF" />
+    <Content Include="Images\Unzip.gif" />
+    <Content Include="Images\UnzipHere.gif" />
+    <Content Include="Images\Up.gif" />
+    <Content Include="Images\Upload.gif" />
+    <Content Include="Images\UploadOff.gif" />
+    <Content Include="Images\View.gif" />
+    <Content Include="Images\world_map.png" />
+    <Content Include="Images\ZipDownload.gif" />
+    <Content Include="Images\Zurich.png" />
+    <Content Include="Images\ZurichOld.png" />
+    <Content Include="Images\ZurichStack.png" />
+    <Content Include="Images\__ReverseCheck.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="LongVarS.aspx" />
+    <Content Include="map.aspx" />
+    <Content Include="Maps\country.js" />
+    <Content Include="MDG.htm" />
+    <Content Include="MDGIFs.htm" />
+    <Content Include="My Project\PublishProfiles\FolderProfile.pubxml.user" />
+    <Content Include="NotePad.aspx" />
+    <Content Include="RoboHelp_CSH.js" />
+    <Content Include="Scatter.aspx" />
+    <Content Include="ScatVarS.aspx" />
+    <Content Include="Scripts\actb.js" />
+    <Content Include="Scripts\AjaxMethodsHandler.js" />
+    <Content Include="Scripts\autocompleteFx.js" />
+    <Content Include="Scripts\autocomplete_vars.js" />
+    <Content Include="Scripts\bilateral\jquery-ui.min.js" />
+    <Content Include="Scripts\bilateral\jquery.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bubble-dragndrop.js" />
+    <Content Include="Scripts\chosen\chosen-sprite%402x.png" />
+    <Content Include="Scripts\chosen\chosen-sprite.png" />
+    <Content Include="Scripts\chosen\chosen.css" />
+    <Content Include="Scripts\chosen\chosen.jquery.js" />
+    <Content Include="Scripts\chosen\chosen.jquery.min.js" />
+    <Content Include="Scripts\chosen\chosen.min.css" />
+    <Content Include="Scripts\chosen\chosen.proto.js" />
+    <Content Include="Scripts\chosen\chosen.proto.min.js" />
+    <Content Include="Scripts\chosen\chosen1.4.2.jquery.min.js" />
+    <Content Include="Scripts\chosen\docsupport\prism.css" />
+    <Content Include="Scripts\chosen\docsupport\prism.js" />
+    <Content Include="Scripts\chosen\docsupport\style.css" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\customEvents.js" />
+    <Content Include="Scripts\CyberDisplaysFx.js" />
+    <Content Include="Scripts\CyberDisplaysVars.js" />
+    <Content Include="Scripts\DimsInOrder.js" />
+    <Content Include="Scripts\DimsInOrderChk.js" />
+    <Content Include="Scripts\drilldown.js" />
+    <Content Include="Scripts\drivers\customEvents.js" />
+    <Content Include="Scripts\drivers\exporting.js" />
+    <Content Include="Scripts\drivers\highcharts.js" />
+    <Content Include="Scripts\drivers\networkgraph.js" />
+    <Content Include="Scripts\exporting.js" />
+    <Content Include="Scripts\FilesInOrder.js" />
+    <Content Include="Scripts\FlexDisplaysFx.js" />
+    <Content Include="Scripts\gridviewScroll.css" />
+    <Content Include="Scripts\gridviewScroll.js" />
+    <Content Include="Scripts\gridviewScroll.min.js" />
+    <Content Include="Scripts\highchartlatest\exporting.js" />
+    <Content Include="Scripts\highchartlatest\highcharts-more.js" />
+    <Content Include="Scripts\highchartlatest\highcharts.js" />
+    <Content Include="Scripts\highchartlatest\offline-exporting.js" />
+    <Content Include="Scripts\highcharts-more.js" />
+    <Content Include="Scripts\highcharts.js" />
+    <Content Include="Scripts\highmaps.js" />
+    <Content Include="Scripts\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Scripts\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Scripts\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Scripts\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Scripts\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Scripts\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Scripts\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Scripts\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Scripts\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Scripts\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Scripts\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Scripts\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.2.js" />
+    <Content Include="ReadmeConfig.md" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="webctrl_client\1_0\Images\folder.gif" />
+    <Content Include="webctrl_client\1_0\Images\folderopen.gif" />
+    <Content Include="webctrl_client\1_0\Images\html.gif" />
+    <Content Include="webctrl_client\1_0\Images\root.gif" />
+    <Content Include="webctrl_client\1_0\MultiPage.htc" />
+    <Content Include="webctrl_client\1_0\TabStrip.htc" />
+    <Content Include="webctrl_client\1_0\toolbar.htc" />
+    <Content Include="webctrl_client\1_0\TreeImages\f.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\fminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\fplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\i.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\L.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Lminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Lplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\minus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\plus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\r.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Rminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Rplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\F.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Fminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Fplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\I.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\L.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Lminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Lplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\minus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\plus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\r.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Rminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Rplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\T.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Tminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\Tplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\rtl\white.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\T.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Tminus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\Tplus.gif" />
+    <Content Include="webctrl_client\1_0\TreeImages\white.gif" />
+    <Content Include="webctrl_client\1_0\treeview.htc" />
+    <Content Include="webctrl_client\1_0\webservice.htc" />
+    <Content Include="webctrl_client\1_0\webserviced.htc" />
+    <Content Include="Scripts\jquery-ui.css" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.combobox.js" />
+    <Content Include="Scripts\jquery.fixedheader.js" />
+    <Content Include="Scripts\jquery.fixheadertable.js" />
+    <Content Include="Scripts\jquery\1.8.2\jquery.min.js" />
+    <Content Include="Scripts\jquery\1.9.0\jquery.min.js" />
+    <Content Include="Scripts\jquery\1.9.1\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery\1.9.2\jquery-ui.css" />
+    <Content Include="Scripts\jquery\1.9.2\jquery-ui.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.cs-CZ.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.de-DE.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.en-CA.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.en-US.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.fr-FR.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.he-IL.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.hr-HR.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.hu-HU.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.it-IT.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.ja-JP.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.lt.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.ru-RU.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.sa-IN.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.js" />
+    <Content Include="Scripts\jqwidgets\globalization\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\jqx-all.js" />
+    <Content Include="Scripts\jqwidgets\jqxangular.js" />
+    <Content Include="Scripts\jqwidgets\jqxbulletchart.js" />
+    <Content Include="Scripts\jqwidgets\jqxbuttongroup.js" />
+    <Content Include="Scripts\jqwidgets\jqxbuttons.js" />
+    <Content Include="Scripts\jqwidgets\jqxcalendar.js" />
+    <Content Include="Scripts\jqwidgets\jqxchart.annotations.js" />
+    <Content Include="Scripts\jqwidgets\jqxchart.api.js" />
+    <Content Include="Scripts\jqwidgets\jqxchart.core.js" />
+    <Content Include="Scripts\jqwidgets\jqxchart.js" />
+    <Content Include="Scripts\jqwidgets\jqxchart.rangeselector.js" />
+    <Content Include="Scripts\jqwidgets\jqxchart.waterfall.js" />
+    <Content Include="Scripts\jqwidgets\jqxcheckbox.js" />
+    <Content Include="Scripts\jqwidgets\jqxcolorpicker.js" />
+    <Content Include="Scripts\jqwidgets\jqxcombobox.js" />
+    <Content Include="Scripts\jqwidgets\jqxcomplexinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxcore.js" />
+    <Content Include="Scripts\jqwidgets\jqxdata.export.js" />
+    <Content Include="Scripts\jqwidgets\jqxdata.js" />
+    <Content Include="Scripts\jqwidgets\jqxdatatable.js" />
+    <Content Include="Scripts\jqwidgets\jqxdatetimeinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxdocking.js" />
+    <Content Include="Scripts\jqwidgets\jqxdockpanel.js" />
+    <Content Include="Scripts\jqwidgets\jqxdragdrop.js" />
+    <Content Include="Scripts\jqwidgets\jqxdraw.js" />
+    <Content Include="Scripts\jqwidgets\jqxdropdownbutton.js" />
+    <Content Include="Scripts\jqwidgets\jqxdropdownlist.js" />
+    <Content Include="Scripts\jqwidgets\jqxeditor.js" />
+    <Content Include="Scripts\jqwidgets\jqxexpander.js" />
+    <Content Include="Scripts\jqwidgets\jqxfileupload.js" />
+    <Content Include="Scripts\jqwidgets\jqxformattedinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxgauge.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.aggregates.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.columnsreorder.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.columnsresize.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.edit.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.export.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.filter.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.grouping.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.pager.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.selection.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.sort.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.storage.js" />
+    <Content Include="Scripts\jqwidgets\jqxinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxknockout.js" />
+    <Content Include="Scripts\jqwidgets\jqxlistbox.js" />
+    <Content Include="Scripts\jqwidgets\jqxlistmenu.js" />
+    <Content Include="Scripts\jqwidgets\jqxmaskedinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxmenu.js" />
+    <Content Include="Scripts\jqwidgets\jqxnavbar.js" />
+    <Content Include="Scripts\jqwidgets\jqxnavigationbar.js" />
+    <Content Include="Scripts\jqwidgets\jqxnotification.js" />
+    <Content Include="Scripts\jqwidgets\jqxnumberinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxpanel.js" />
+    <Content Include="Scripts\jqwidgets\jqxpasswordinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxprogressbar.js" />
+    <Content Include="Scripts\jqwidgets\jqxradiobutton.js" />
+    <Content Include="Scripts\jqwidgets\jqxrangeselector.js" />
+    <Content Include="Scripts\jqwidgets\jqxrating.js" />
+    <Content Include="Scripts\jqwidgets\jqxresponse.js" />
+    <Content Include="Scripts\jqwidgets\jqxribbon.js" />
+    <Content Include="Scripts\jqwidgets\jqxscrollbar.js" />
+    <Content Include="Scripts\jqwidgets\jqxscrollview.js" />
+    <Content Include="Scripts\jqwidgets\jqxslider.js" />
+    <Content Include="Scripts\jqwidgets\jqxsplitter.js" />
+    <Content Include="Scripts\jqwidgets\jqxswitchbutton.js" />
+    <Content Include="Scripts\jqwidgets\jqxtabs.js" />
+    <Content Include="Scripts\jqwidgets\jqxtoolbar.js" />
+    <Content Include="Scripts\jqwidgets\jqxtooltip.js" />
+    <Content Include="Scripts\jqwidgets\jqxtouch.js" />
+    <Content Include="Scripts\jqwidgets\jqxtree.js" />
+    <Content Include="Scripts\jqwidgets\jqxtreegrid.js" />
+    <Content Include="Scripts\jqwidgets\jqxtreemap.js" />
+    <Content Include="Scripts\jqwidgets\jqxvalidator.js" />
+    <Content Include="Scripts\jqwidgets\jqxwindow.js" />
+    <Content Include="Scripts\jqwidgets\styles\images\backgroundTop.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\backImage.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blackhover.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blackhover_horizontal.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blackpressed.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blackpressed_horizontal.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_black_horizontal.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blueenergy.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_darkblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_darkbluehover.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_darkbluepressed.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\blackbackground.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\black_gradient.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_blue_indeterminate.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_indeterminate_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_indeterminate_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_indeterminate_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_lightblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_lightblue_indeterminate.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\close.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\close_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\close_blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\close_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\colorpicker\bar-hue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\colorpicker\bar-saturation.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\colorpicker\map-hue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\colorpicker\map-saturation-overlay.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\colorpicker\map-saturation.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\colorpicker\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\crosshair-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\crosshair.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_a83300_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_cccccc_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkred_gradient.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\drag.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\dragcancel.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\error.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\filter.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\html_editor.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\html_editor_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-calendar-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-calendar.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-cancel-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-cancel.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-delete-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-delete.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-down-blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-down-transparent.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-down-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-down.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-edit-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-edit.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-first-blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-first-transparent.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-first-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-first.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-last-blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-last-transparent.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-last-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-last.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-left-blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-left-transparent.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-left-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-left.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-menu-minimized-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-menu-minimized.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-recurrence-exception-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-recurrence-exception.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-recurrence-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-recurrence.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-right-blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-right-transparent.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-right-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-right.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-save-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-save.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-showpassword-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-showpassword.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-time-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-time.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-up-blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-up-transparent.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-up-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-up.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\info.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_diagonals-thick_15_444444_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_glass_55_fbf5d0_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_highlight-hard_30_285c00_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_33_3a8104_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_50_4eb305_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_inset-soft_10_285c00_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_4eb305_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_72b42d_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\icon-first.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\icon-last.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_228ef1_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\loader-small.gif" />
+    <Content Include="Scripts\jqwidgets\styles\images\loader.gif" />
+    <Content Include="Scripts\jqwidgets\styles\images\mail.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\menubutton.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-down-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-down.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-first-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-first.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-last-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-last.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-left-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-left.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-right - Copy.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-right-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-right.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-up-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-up.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\multi-arrow.gif" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-down.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-first.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-last.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-left.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-right.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-up.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_3383bb_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_70b2e1_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_999999_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_fbc856_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pin-black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pin-blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pin-lightblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pin-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pin-yellow.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pin.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pinned-black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pinned-blue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pinned-lightblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pinned-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pinned-yellow.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pinned.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\plus.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\plus_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pointer.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\rangebar_classic.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\rangebar_darkblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\rangebar_shinyblack.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\rangebar_summer.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\icon-first.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\icon-last.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_217bc0_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_469bdd_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\red_arrow_down.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\red_arrow_up.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\red_gradient.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_check_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_check_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_check_indeterminate.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_check_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_classic_hover.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_classic_normal.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\search.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\search_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sortasc.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sortascbutton.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sortdesc.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sortdescbutton.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sortremove.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\star.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_0078ae_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_056b93_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_e0fdff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_f5e175_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_f7a50d_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_fcd113_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\star_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\star_hover.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\success.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_bd7b00_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_d19405_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_eb990f_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_ed9f26_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_fadc7a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_ffe180_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\tick.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\time.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\track_classic.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\track_darkblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\track_shinyblack.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\track_summer.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\warning.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\wp_check_indeterminate_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\wp_check_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.android.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.arctic.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.base.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.black.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.blackberry.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.bootstrap.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.classic.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.darkblue.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.energyblue.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.fresh.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.glacier.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.highcontrast.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.metro.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.metrodark.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.mobile.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.office.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.orange.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.shinyblack.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.summer.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-darkness.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-le-frog.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-lightness.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-overcast.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-redmond.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-smoothness.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-start.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-sunny.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.web.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.windowsphone.css" />
+    <Content Include="Scripts\ListsInOrder.js" />
+    <Content Include="Scripts\loader.js" />
+    <Content Include="Scripts\LongVarsFx.js" />
+    <Content Include="Scripts\LongVar_Vars.js" />
+    <Content Include="Scripts\map.js" />
+    <Content Include="Scripts\networkgraph.js" />
+    <Content Include="Scripts\ScatVarsFx.js" />
+    <Content Include="Scripts\ScatVars_Vars.js" />
+    <Content Include="Scripts\tokenize\jquery.tokenize.css" />
+    <Content Include="Scripts\tokenize\jquery.tokenize.js" />
+    <Content Include="Scripts\VarSelForeFx.js" />
+    <Content Include="Scripts\VarSelForeFxa.js" />
+    <Content Include="Scripts\VarSelFx.js" />
+    <Content Include="Scripts\VarSel_ForeVars.js" />
+    <Content Include="Scripts\VarSel_Vars.js" />
+    <Content Include="SDG.htm" />
+    <Content Include="SDGIFs.htm" />
+    <Content Include="setextrapolate.aspx" />
+    <Content Include="Statistics.aspx" />
+    <Content Include="StatisticsPy.aspx" />
+    <Content Include="StyleCombo.ascx" />
+    <Content Include="thefuturescollection.html" />
+    <Content Include="Transform.aspx" />
+    <Content Include="TransformPy.aspx" />
+    <Content Include="Images\Icons\Thumbs.db" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutMDG.aspx.designer.vb">
+      <DependentUpon>AboutMDG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutMDG.aspx.vb">
+      <DependentUpon>AboutMDG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutModel.aspx.designer.vb">
+      <DependentUpon>AboutModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutModel.aspx.vb">
+      <DependentUpon>AboutModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutSAM.aspx.designer.vb">
+      <DependentUpon>AboutSAM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutSAM.aspx.vb">
+      <DependentUpon>AboutSAM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Availability.aspx.designer.vb">
+      <DependentUpon>Availability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Availability.aspx.vb">
+      <DependentUpon>Availability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Classifier.vb" />
+    <Compile Include="Code\ColorRamp.vb" />
+    <Compile Include="Code\Constants.vb" />
+    <Compile Include="Code\IFsWeb.dsAnalFunc.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsAnalFunc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsEconomic.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsEconomic.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsEnergy.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsEnergy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsFormula.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsFormula.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsIndepVar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsIndepVar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsPolitical.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsPolitical.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsPopulation.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsPopulation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsSAMBasePct.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsSAMBasePct.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsSAMLabels.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsSAMLabels.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsSAMLabels2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsSAMLabels2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsSAMValues.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsSAMValues.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\IFsWeb.dsSocial.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IFsWeb.dsSocial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Code\PageBarColorFilter.vb" />
+    <Compile Include="Code\PageBarColorModule.vb" />
+    <Compile Include="Code\RunErrorFileException.vb" />
+    <Compile Include="Code\RunHttpHandler.vb" />
+    <Compile Include="Code\RunManager.vb" />
+    <Compile Include="Code\RunProcess.vb" />
+    <Compile Include="Code\SpellCheckerService.vb" />
+    <Compile Include="Control.aspx.designer.vb">
+      <DependentUpon>Control.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control.aspx.vb">
+      <DependentUpon>Control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountSel.aspx.designer.vb">
+      <DependentUpon>CountSel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CountSel.aspx.vb">
+      <DependentUpon>CountSel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\DiagramRenderer.vb" />
+    <Compile Include="Code\DisplayColumn.vb" />
+    <Compile Include="Code\DisplayVariable.vb" />
+    <Compile Include="Code\dsAgriculture1.vb" />
+    <Compile Include="Code\EqualCountClassifier.vb" />
+    <Compile Include="Code\EqualIntervalClassifier.vb" />
+    <Compile Include="Code\ExceptionLogger.vb" />
+    <Compile Include="Code\Explorer.vb" />
+    <Compile Include="ErrorHandler.aspx.designer.vb">
+      <DependentUpon>ErrorHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorHandler.aspx.vb">
+      <DependentUpon>ErrorHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formula.vb" />
+    <Compile Include="frm_AboutPopulation.aspx.designer.vb">
+      <DependentUpon>frm_AboutPopulation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AboutPopulation.aspx.vb">
+      <DependentUpon>frm_AboutPopulation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_AddDelProvinces.aspx.designer.vb">
+      <DependentUpon>frm_AddDelProvinces.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddDelProvinces.aspx.vb">
+      <DependentUpon>frm_AddDelProvinces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_AddDelRawD.aspx.designer.vb">
+      <DependentUpon>frm_AddDelRawD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AddDelRawD.aspx.vb">
+      <DependentUpon>frm_AddDelRawD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_AnalFunc.aspx.designer.vb">
+      <DependentUpon>frm_AnalFunc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_AnalFunc.aspx.vb">
+      <DependentUpon>frm_AnalFunc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Analytic.aspx.designer.vb">
+      <DependentUpon>frm_Analytic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Analytic.aspx.vb">
+      <DependentUpon>frm_Analytic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ApplyGListComp.aspx.designer.vb">
+      <DependentUpon>frm_ApplyGListComp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ApplyGListComp.aspx.vb">
+      <DependentUpon>frm_ApplyGListComp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ASA.aspx.designer.vb">
+      <DependentUpon>frm_ASA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ASA.aspx.vb">
+      <DependentUpon>frm_ASA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_autocomplete.aspx.designer.vb">
+      <DependentUpon>frm_autocomplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_autocomplete.aspx.vb">
+      <DependentUpon>frm_autocomplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_BaseRadial.aspx.designer.vb">
+      <DependentUpon>frm_BaseRadial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BaseRadial.aspx.vb">
+      <DependentUpon>frm_BaseRadial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_BilateralInteractionDGravity.aspx.designer.vb">
+      <DependentUpon>frm_BilateralInteractionDGravity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BilateralInteractionDGravity.aspx.vb">
+      <DependentUpon>frm_BilateralInteractionDGravity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_BilateralInteractionDisplay.aspx.designer.vb">
+      <DependentUpon>frm_BilateralInteractionDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BilateralInteractionDisplay.aspx.vb">
+      <DependentUpon>frm_BilateralInteractionDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_BilateralInteractionGraphLabel.aspx.designer.vb">
+      <DependentUpon>frm_BilateralInteractionGraphLabel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BilateralInteractionGraphLabel.aspx.vb">
+      <DependentUpon>frm_BilateralInteractionGraphLabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ChangeRegisteredMembers.aspx.designer.vb">
+      <DependentUpon>frm_ChangeRegisteredMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ChangeRegisteredMembers.aspx.vb">
+      <DependentUpon>frm_ChangeRegisteredMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ChangeValues.aspx.designer.vb">
+      <DependentUpon>frm_ChangeValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ChangeValues.aspx.vb">
+      <DependentUpon>frm_ChangeValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CohoInfDisp.aspx.designer.vb">
+      <DependentUpon>frm_CohoInfDisp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CohoInfDisp.aspx.vb">
+      <DependentUpon>frm_CohoInfDisp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_computations.aspx.designer.vb">
+      <DependentUpon>frm_computations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_computations.aspx.vb">
+      <DependentUpon>frm_computations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Confirm.aspx.designer.vb">
+      <DependentUpon>frm_Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Confirm.aspx.vb">
+      <DependentUpon>frm_Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CountryProfile.aspx.designer.vb">
+      <DependentUpon>frm_CountryProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CountryProfile.aspx.vb">
+      <DependentUpon>frm_CountryProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CreaGList.aspx.designer.vb">
+      <DependentUpon>frm_CreaGList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreaGList.aspx.vb">
+      <DependentUpon>frm_CreaGList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CreateVarList.aspx.designer.vb">
+      <DependentUpon>frm_CreateVarList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CreateVarList.aspx.vb">
+      <DependentUpon>frm_CreateVarList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CurrencyOpt.aspx.designer.vb">
+      <DependentUpon>frm_CurrencyOpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CurrencyOpt.aspx.vb">
+      <DependentUpon>frm_CurrencyOpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Cyber.aspx.designer.vb">
+      <DependentUpon>frm_Cyber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cyber.aspx.vb">
+      <DependentUpon>frm_Cyber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CyberDashboard.aspx.designer.vb">
+      <DependentUpon>frm_CyberDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CyberDashboard.aspx.vb">
+      <DependentUpon>frm_CyberDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CyberDashboardData4Area.aspx.designer.vb">
+      <DependentUpon>frm_CyberDashboardData4Area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CyberDashboardData4Area.aspx.vb">
+      <DependentUpon>frm_CyberDashboardData4Area.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CyberDashboardData4Line.aspx.designer.vb">
+      <DependentUpon>frm_CyberDashboardData4Line.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CyberDashboardData4Line.aspx.vb">
+      <DependentUpon>frm_CyberDashboardData4Line.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CyberDashboardData4Map.aspx.designer.vb">
+      <DependentUpon>frm_CyberDashboardData4Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CyberDashboardData4Map.aspx.vb">
+      <DependentUpon>frm_CyberDashboardData4Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_CyberProfile.aspx.designer.vb">
+      <DependentUpon>frm_CyberProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CyberProfile.aspx.vb">
+      <DependentUpon>frm_CyberProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Datadict.aspx.designer.vb">
+      <DependentUpon>frm_Datadict.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Datadict.aspx.vb">
+      <DependentUpon>frm_Datadict.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_DataSeries.aspx.designer.vb">
+      <DependentUpon>frm_DataSeries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DataSeries.aspx.vb">
+      <DependentUpon>frm_DataSeries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_DevelopmentProfile.aspx.designer.vb">
+      <DependentUpon>frm_DevelopmentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DevelopmentProfile.aspx.vb">
+      <DependentUpon>frm_DevelopmentProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_DisplayControl.aspx.designer.vb">
+      <DependentUpon>frm_DisplayControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DisplayControl.aspx.vb">
+      <DependentUpon>frm_DisplayControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_DisplayMenu.aspx.designer.vb">
+      <DependentUpon>frm_DisplayMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DisplayMenu.aspx.vb">
+      <DependentUpon>frm_DisplayMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Drivers.aspx.designer.vb">
+      <DependentUpon>frm_Drivers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Drivers.aspx.vb">
+      <DependentUpon>frm_Drivers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_EdnCohoDisp.aspx.designer.vb">
+      <DependentUpon>frm_EdnCohoDisp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EdnCohoDisp.aspx.vb">
+      <DependentUpon>frm_EdnCohoDisp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_EdnCohortLabels.aspx.designer.vb">
+      <DependentUpon>frm_EdnCohortLabels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EdnCohortLabels.aspx.vb">
+      <DependentUpon>frm_EdnCohortLabels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_EdnCostDisplay.aspx.designer.vb">
+      <DependentUpon>frm_EdnCostDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EdnCostDisplay.aspx.vb">
+      <DependentUpon>frm_EdnCostDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_FilterParameters.aspx.designer.vb">
+      <DependentUpon>frm_FilterParameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FilterParameters.aspx.vb">
+      <DependentUpon>frm_FilterParameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ForecastGroupAggregation.aspx.designer.vb">
+      <DependentUpon>frm_ForecastGroupAggregation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ForecastGroupAggregation.aspx.vb">
+      <DependentUpon>frm_ForecastGroupAggregation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_FuncGraph.aspx.designer.vb">
+      <DependentUpon>frm_FuncGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FuncGraph.aspx.vb">
+      <DependentUpon>frm_FuncGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_GraphicalDisplay.aspx.designer.vb">
+      <DependentUpon>frm_GraphicalDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_GraphicalDisplay.aspx.vb">
+      <DependentUpon>frm_GraphicalDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_GraphLabels.aspx.designer.vb">
+      <DependentUpon>frm_GraphLabels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_GraphLabels.aspx.vb">
+      <DependentUpon>frm_GraphLabels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_GrowthAccounting.aspx.designer.vb">
+      <DependentUpon>frm_GrowthAccounting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_GrowthAccounting.aspx.vb">
+      <DependentUpon>frm_GrowthAccounting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_HealthMeassures.aspx.designer.vb">
+      <DependentUpon>frm_HealthMeassures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HealthMeassures.aspx.vb">
+      <DependentUpon>frm_HealthMeassures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Histogram.aspx.designer.vb">
+      <DependentUpon>frm_Histogram.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Histogram.aspx.vb">
+      <DependentUpon>frm_Histogram.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ICTProfile.aspx.designer.vb">
+      <DependentUpon>frm_ICTProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ICTProfile.aspx.vb">
+      <DependentUpon>frm_ICTProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ImportPopData.aspx.designer.vb">
+      <DependentUpon>frm_ImportPopData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ImportPopData.aspx.vb">
+      <DependentUpon>frm_ImportPopData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_ImportXLSNewProvinces.aspx.designer.vb">
+      <DependentUpon>Frm_ImportXLSNewProvinces.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ImportXLSNewProvinces.aspx.vb">
+      <DependentUpon>Frm_ImportXLSNewProvinces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_ImportXLSNew.aspx.designer.vb">
+      <DependentUpon>Frm_ImportXLSNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ImportXLSNew.aspx.vb">
+      <DependentUpon>Frm_ImportXLSNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Initials.aspx.designer.vb">
+      <DependentUpon>frm_Initials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Initials.aspx.vb">
+      <DependentUpon>frm_Initials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_LongPlot.aspx.designer.vb">
+      <DependentUpon>frm_LongPlot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LongPlot.aspx.vb">
+      <DependentUpon>frm_LongPlot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_LongVarSearch.aspx.designer.vb">
+      <DependentUpon>frm_LongVarSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LongVarSearch.aspx.vb">
+      <DependentUpon>frm_LongVarSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_LorenzGraph.aspx.designer.vb">
+      <DependentUpon>frm_LorenzGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LorenzGraph.aspx.vb">
+      <DependentUpon>frm_LorenzGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MainMenu.aspx.designer.vb">
+      <DependentUpon>frm_MainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MainMenu.aspx.vb">
+      <DependentUpon>frm_MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MapImage.aspx.designer.vb">
+      <DependentUpon>frm_MapImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MapImage.aspx.vb">
+      <DependentUpon>frm_MapImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_mapViewer.aspx.designer.vb">
+      <DependentUpon>frm_mapViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mapViewer.aspx.vb">
+      <DependentUpon>frm_mapViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MapViewerRanges.aspx.designer.vb">
+      <DependentUpon>frm_MapViewerRanges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MapViewerRanges.aspx.vb">
+      <DependentUpon>frm_MapViewerRanges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Message.aspx.designer.vb">
+      <DependentUpon>frm_Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Message.aspx.vb">
+      <DependentUpon>frm_Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MorbCohorts.aspx.designer.vb">
+      <DependentUpon>frm_MorbCohorts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MorbCohorts.aspx.vb">
+      <DependentUpon>frm_MorbCohorts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MortCohorts.aspx.designer.vb">
+      <DependentUpon>frm_MortCohorts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MortCohorts.aspx.vb">
+      <DependentUpon>frm_MortCohorts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MortDisplay.aspx.designer.vb">
+      <DependentUpon>frm_MortDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MortDisplay.aspx.vb">
+      <DependentUpon>frm_MortDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_MotionChart.aspx.designer.vb">
+      <DependentUpon>frm_MotionChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MotionChart.aspx.vb">
+      <DependentUpon>frm_MotionChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_NameDisp.aspx.designer.vb">
+      <DependentUpon>frm_NameDisp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NameDisp.aspx.vb">
+      <DependentUpon>frm_NameDisp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_PackagedDisplays.aspx.designer.vb">
+      <DependentUpon>frm_PackagedDisplays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PackagedDisplays.aspx.vb">
+      <DependentUpon>frm_PackagedDisplays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_PackagedDisplaysFlex.aspx.designer.vb">
+      <DependentUpon>frm_PackagedDisplaysFlex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PackagedDisplaysFlex.aspx.vb">
+      <DependentUpon>frm_PackagedDisplaysFlex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\FUNCTION.vb" />
+    <Compile Include="Code\Function2.vb" />
+    <Compile Include="Code\FunctionsAssemblyResolver.vb" />
+    <Compile Include="frm_PackagedDisplays_Exp.aspx.designer.vb">
+      <DependentUpon>frm_PackagedDisplays_Exp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PackagedDisplays_Exp.aspx.vb">
+      <DependentUpon>frm_PackagedDisplays_Exp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_PerfRiskAnalysis.aspx.designer.vb">
+      <DependentUpon>frm_PerfRiskAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PerfRiskAnalysis.aspx.vb">
+      <DependentUpon>frm_PerfRiskAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_PopCohortDisp.aspx.designer.vb">
+      <DependentUpon>frm_PopCohortDisp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PopCohortDisp.aspx.vb">
+      <DependentUpon>frm_PopCohortDisp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_PovertyDisplay.aspx.designer.vb">
+      <DependentUpon>frm_PovertyDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PovertyDisplay.aspx.vb">
+      <DependentUpon>frm_PovertyDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_RebuildBase.aspx.designer.vb">
+      <DependentUpon>frm_RebuildBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RebuildBase.aspx.vb">
+      <DependentUpon>frm_RebuildBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_RecreateSce.aspx.designer.vb">
+      <DependentUpon>frm_RecreateSce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RecreateSce.aspx.vb">
+      <DependentUpon>frm_RecreateSce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_RegMemb.aspx.designer.vb">
+      <DependentUpon>frm_RegMemb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_RegMemb.aspx.vb">
+      <DependentUpon>frm_RegMemb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Report.aspx.designer.vb">
+      <DependentUpon>frm_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Report.aspx.vb">
+      <DependentUpon>frm_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_run.aspx.designer.vb">
+      <DependentUpon>frm_run.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_run.aspx.vb">
+      <DependentUpon>frm_run.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SAM.aspx.designer.vb">
+      <DependentUpon>frm_SAM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SAM.aspx.vb">
+      <DependentUpon>frm_SAM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SaturParam.aspx.designer.vb">
+      <DependentUpon>frm_SaturParam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SaturParam.aspx.vb">
+      <DependentUpon>frm_SaturParam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ScatterAxisLabels.aspx.designer.vb">
+      <DependentUpon>frm_ScatterAxisLabels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ScatterAxisLabels.aspx.vb">
+      <DependentUpon>frm_ScatterAxisLabels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ScatterChooseLabels.aspx.designer.vb">
+      <DependentUpon>frm_ScatterChooseLabels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ScatterChooseLabels.aspx.vb">
+      <DependentUpon>frm_ScatterChooseLabels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ScatterExponLimit.aspx.designer.vb">
+      <DependentUpon>frm_ScatterExponLimit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ScatterExponLimit.aspx.vb">
+      <DependentUpon>frm_ScatterExponLimit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ScatterPower.aspx.designer.vb">
+      <DependentUpon>frm_ScatterPower.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ScatterPower.aspx.vb">
+      <DependentUpon>frm_ScatterPower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ScatVarGList.aspx.designer.vb">
+      <DependentUpon>frm_ScatVarGList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ScatVarGList.aspx.vb">
+      <DependentUpon>frm_ScatVarGList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ScatVarSearch.aspx.designer.vb">
+      <DependentUpon>frm_ScatVarSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ScatVarSearch.aspx.vb">
+      <DependentUpon>frm_ScatVarSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ScenarioCreate.aspx.designer.vb">
+      <DependentUpon>frm_ScenarioCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ScenarioCreate.aspx.vb">
+      <DependentUpon>frm_ScenarioCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SDG.aspx.designer.vb">
+      <DependentUpon>frm_SDG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SDG.aspx.vb">
+      <DependentUpon>frm_SDG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SDGEditTarget.aspx.designer.vb">
+      <DependentUpon>frm_SDGEditTarget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SDGEditTarget.aspx.vb">
+      <DependentUpon>frm_SDGEditTarget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SDGset.aspx.designer.vb">
+      <DependentUpon>frm_SDGset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SDGset.aspx.vb">
+      <DependentUpon>frm_SDGset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SearchParam.aspx.designer.vb">
+      <DependentUpon>frm_SearchParam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SearchParam.aspx.vb">
+      <DependentUpon>frm_SearchParam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SearchVar.aspx.designer.vb">
+      <DependentUpon>frm_SearchVar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SearchVar.aspx.vb">
+      <DependentUpon>frm_SearchVar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SearchVarBilat.aspx.designer.vb">
+      <DependentUpon>frm_SearchVarBilat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SearchVarBilat.aspx.vb">
+      <DependentUpon>frm_SearchVarBilat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SearchVList.aspx.designer.vb">
+      <DependentUpon>frm_SearchVList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SearchVList.aspx.vb">
+      <DependentUpon>frm_SearchVList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SelctGeography.aspx.designer.vb">
+      <DependentUpon>frm_SelctGeography.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SelctGeography.aspx.vb">
+      <DependentUpon>frm_SelctGeography.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Select.aspx.designer.vb">
+      <DependentUpon>frm_Select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Select.aspx.vb">
+      <DependentUpon>frm_Select.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SelectProjectFile.aspx.designer.vb">
+      <DependentUpon>frm_SelectProjectFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SelectProjectFile.aspx.vb">
+      <DependentUpon>frm_SelectProjectFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_SelectSceDir.aspx.designer.vb">
+      <DependentUpon>frm_SelectSceDir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SelectSceDir.aspx.vb">
+      <DependentUpon>frm_SelectSceDir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ShowHistAnalog.aspx.designer.vb">
+      <DependentUpon>frm_ShowHistAnalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ShowHistAnalog.aspx.vb">
+      <DependentUpon>frm_ShowHistAnalog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_StackedBar.aspx.designer.vb">
+      <DependentUpon>frm_StackedBar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_StackedBar.aspx.vb">
+      <DependentUpon>frm_StackedBar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_StartYearControl.aspx.designer.vb">
+      <DependentUpon>frm_StartYearControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_StartYearControl.aspx.vb">
+      <DependentUpon>frm_StartYearControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Table.aspx.designer.vb">
+      <DependentUpon>frm_Table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Table.aspx.vb">
+      <DependentUpon>frm_Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_TableDisplay.aspx.designer.vb">
+      <DependentUpon>frm_TableDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TableDisplay.aspx.vb">
+      <DependentUpon>frm_TableDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_TablFunc.aspx.designer.vb">
+      <DependentUpon>frm_TablFunc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TablFunc.aspx.vb">
+      <DependentUpon>frm_TablFunc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_TablFunc2.aspx.designer.vb">
+      <DependentUpon>frm_TablFunc2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TablFunc2.aspx.vb">
+      <DependentUpon>frm_TablFunc2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_VariableListEdit.aspx.designer.vb">
+      <DependentUpon>frm_VariableListEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VariableListEdit.aspx.vb">
+      <DependentUpon>frm_VariableListEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_VarperGraph.aspx.designer.vb">
+      <DependentUpon>frm_VarperGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VarperGraph.aspx.vb">
+      <DependentUpon>frm_VarperGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_Varsel.aspx.designer.vb">
+      <DependentUpon>frm_Varsel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Varsel.aspx.vb">
+      <DependentUpon>frm_Varsel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_VarSelAgg.aspx.designer.vb">
+      <DependentUpon>frm_VarSelAgg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VarSelAgg.aspx.vb">
+      <DependentUpon>frm_VarSelAgg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ViewData.aspx.designer.vb">
+      <DependentUpon>frm_ViewData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ViewData.aspx.vb">
+      <DependentUpon>frm_ViewData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ViewDataBatch.aspx.designer.vb">
+      <DependentUpon>frm_ViewDataBatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ViewDataBatch.aspx.vb">
+      <DependentUpon>frm_ViewDataBatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_ViewDataDict.aspx.designer.vb">
+      <DependentUpon>frm_ViewDataDict.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ViewDataDict.aspx.vb">
+      <DependentUpon>frm_ViewDataDict.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_WorldBankFinancialFlows.aspx.designer.vb">
+      <DependentUpon>frm_WorldBankFinancialFlows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_WorldBankFinancialFlows.aspx.vb">
+      <DependentUpon>frm_WorldBankFinancialFlows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_WorldVariables.aspx.designer.vb">
+      <DependentUpon>frm_WorldVariables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_WorldVariables.aspx.vb">
+      <DependentUpon>frm_WorldVariables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_WVSDisplay.aspx.designer.vb">
+      <DependentUpon>frm_WVSDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_WVSDisplay.aspx.vb">
+      <DependentUpon>frm_WVSDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.vb" />
+    <Compile Include="Code\IFsVarInit.vb" />
+    <Compile Include="Code\LineChart.vb" />
+    <Compile Include="IFS.aspx.designer.vb">
+      <DependentUpon>IFS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IFS.aspx.vb">
+      <DependentUpon>IFS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LongVarS.aspx.designer.vb">
+      <DependentUpon>LongVarS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LongVarS.aspx.vb">
+      <DependentUpon>LongVarS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map.aspx.designer.vb">
+      <DependentUpon>map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map.aspx.vb">
+      <DependentUpon>map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Migrated\FilePicker_aspx_vb_FileManagerView.vb" />
+    <Compile Include="Migrated\FilePicker_aspx_vb_MessageType.vb" />
+    <Compile Include="Migrated\Stub_frm_MainMenu_aspx_vb.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Migrated\Stub_frm_Message_aspx_vb.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Migrated\Stub_IFS_aspx_vb.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Migrated\Stub_Index_aspx_vb.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\MortType.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Code\myAggRule.vb" />
+    <Compile Include="Code\myAggRules.vb" />
+    <Compile Include="Code\MyFile.vb" />
+    <Compile Include="Code\MyFiles.vb" />
+    <Compile Include="Code\MyHistAnalog.vb" />
+    <Compile Include="Code\MyHistAnalogs.vb" />
+    <Compile Include="Code\myParameters.vb" />
+    <Compile Include="Code\MyRegion.vb" />
+    <Compile Include="Code\MyRegions.vb" />
+    <Compile Include="Code\MySession.vb" />
+    <Compile Include="Code\MyVariable.vb" />
+    <Compile Include="Code\MyVariables.vb" />
+    <Compile Include="Code\MyVariables2.vb" />
+    <Compile Include="Code\NLFIT.vb" />
+    <Compile Include="Node.vb" />
+    <Compile Include="Code\RegressionObject.vb" />
+    <Compile Include="Code\RenderCalculator.vb" />
+    <Compile Include="Code\RunControl.vb" />
+    <Compile Include="Code\Series.vb" />
+    <Compile Include="Code\SeriesArray.vb" />
+    <Compile Include="Code\Settings.vb" />
+    <Compile Include="NotePad.aspx.designer.vb">
+      <DependentUpon>NotePad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotePad.aspx.vb">
+      <DependentUpon>NotePad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scatter.aspx.designer.vb">
+      <DependentUpon>Scatter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scatter.aspx.vb">
+      <DependentUpon>Scatter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScatVarS.aspx.designer.vb">
+      <DependentUpon>ScatVarS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScatVarS.aspx.vb">
+      <DependentUpon>ScatVarS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setextrapolate.aspx.designer.vb">
+      <DependentUpon>setextrapolate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setextrapolate.aspx.vb">
+      <DependentUpon>setextrapolate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\StatSupport.vb" />
+    <Compile Include="Code\StringHandler.vb" />
+    <Compile Include="Statistics.aspx.designer.vb">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.aspx.vb">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticsPy.aspx.designer.vb">
+      <DependentUpon>StatisticsPy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsPy.aspx.vb">
+      <DependentUpon>StatisticsPy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\ComboboxManager.vb" />
+    <Compile Include="Support\ControlManager.vb" />
+    <Compile Include="Support\FormManager.vb" />
+    <Compile Include="Support\ListBoxSelectedIndexCollectionManager.vb" />
+    <Compile Include="Support\TreeViewManager.vb" />
+    <Compile Include="Code\SwitchingHandler.vb" />
+    <Compile Include="Code\Tools.vb" />
+    <Compile Include="Code\UniqueValueClassifier.vb" />
+    <Compile Include="Code\Utils.vb" />
+    <Compile Include="Code\Vector.vb" />
+    <Compile Include="Code\VectorNodes.vb" />
+    <Compile Include="Transform.aspx.designer.vb">
+      <DependentUpon>Transform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transform.aspx.vb">
+      <DependentUpon>Transform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransformPy.aspx.designer.vb">
+      <DependentUpon>TransformPy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransformPy.aspx.vb">
+      <DependentUpon>TransformPy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutMDG.aspx.resx">
+      <DependentUpon>AboutMDG.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutModel.aspx.resx">
+      <DependentUpon>AboutModel.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Availability.aspx.resx">
+      <DependentUpon>Availability.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control.aspx.resx">
+      <DependentUpon>Control.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountSel.aspx.resx">
+      <DependentUpon>CountSel.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorHandler.aspx.resx">
+      <DependentUpon>ErrorHandler.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AnalFunc.aspx.resx">
+      <DependentUpon>frm_AnalFunc.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Analytic.aspx.resx">
+      <DependentUpon>frm_Analytic.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ApplyGListComp.aspx.resx">
+      <DependentUpon>frm_ApplyGListComp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_autocomplete.aspx.resx">
+      <DependentUpon>frm_autocomplete.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BaseRadial.resx" />
+    <EmbeddedResource Include="frm_ChangeValues.aspx.resx">
+      <DependentUpon>frm_ChangeValues.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_computations.aspx.resx">
+      <DependentUpon>frm_computations.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cyber.resx" />
+    <EmbeddedResource Include="frm_DevelopmentProfile.aspx.resx">
+      <DependentUpon>frm_DevelopmentProfile.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DisplayControl.aspx.resx">
+      <DependentUpon>frm_DisplayControl.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DisplayMenu.aspx.resx">
+      <DependentUpon>frm_DisplayMenu.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EdnCohoDisp.aspx.resx">
+      <DependentUpon>frm_EdnCohoDisp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EdnCohortLabels.aspx.resx" />
+    <EmbeddedResource Include="frm_FilterParameters.aspx.resx">
+      <DependentUpon>frm_FilterParameters.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FuncGraph.aspx.resx">
+      <DependentUpon>frm_FuncGraph.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_GraphLabels.aspx.resx">
+      <DependentUpon>frm_GraphLabels.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LorenzGraph.aspx.resx">
+      <DependentUpon>frm_LorenzGraph.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MainMenu.aspx.resx">
+      <DependentUpon>frm_MainMenu.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mapViewer.aspx.resx">
+      <DependentUpon>frm_mapViewer.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MDG.aspx.resx" />
+    <EmbeddedResource Include="frm_Message.aspx.resx">
+      <DependentUpon>frm_Message.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NameDisp.aspx.resx">
+      <DependentUpon>frm_NameDisp.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PackagedDisplays.aspx.resx">
+      <DependentUpon>frm_PackagedDisplays.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PackagedDisplaysFlex.aspx.resx">
+      <DependentUpon>frm_PackagedDisplaysFlex.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_RebuildBase.aspx.resx">
+      <DependentUpon>frm_RebuildBase.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_REGISTER.aspx.resx" />
+    <EmbeddedResource Include="frm_Report.aspx.resx">
+      <DependentUpon>frm_Report.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_run.aspx.resx">
+      <DependentUpon>frm_run.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SAM.aspx.resx">
+      <DependentUpon>frm_SAM.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SaturParam.aspx.resx">
+      <DependentUpon>frm_SaturParam.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ScatterAxisLabels.aspx.resx">
+      <DependentUpon>frm_ScatterAxisLabels.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ScatterExponLimit.aspx.resx">
+      <DependentUpon>frm_ScatterExponLimit.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ScatterPower.aspx.resx">
+      <DependentUpon>frm_ScatterPower.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ScatVarGList.resx" />
+    <EmbeddedResource Include="frm_ScenarioCreate.aspx.resx">
+      <DependentUpon>frm_ScenarioCreate.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SDG.aspx.resx">
+      <DependentUpon>frm_SDG.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SearchParam.aspx.resx">
+      <DependentUpon>frm_SearchParam.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SearchVar.aspx.resx">
+      <DependentUpon>frm_SearchVar.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_StackedBar.resx" />
+    <EmbeddedResource Include="frm_TableDisplay.aspx.resx">
+      <DependentUpon>frm_TableDisplay.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TablFunc.aspx.resx">
+      <DependentUpon>frm_TablFunc.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TablFunc2.aspx.resx">
+      <DependentUpon>frm_TablFunc2.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VarperGraph.aspx.resx">
+      <DependentUpon>frm_VarperGraph.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Varsel.aspx.resx">
+      <DependentUpon>frm_Varsel.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_WorldVariables.aspx.resx">
+      <DependentUpon>frm_WorldVariables.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFS.aspx.resx">
+      <DependentUpon>IFS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.aspx.resx">
+      <DependentUpon>Index.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LongVarS.aspx.resx">
+      <DependentUpon>LongVarS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map.aspx.resx">
+      <DependentUpon>map.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotePad.aspx.resx">
+      <DependentUpon>NotePad.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scatter.aspx.resx">
+      <DependentUpon>Scatter.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScatVarS.aspx.resx">
+      <DependentUpon>ScatVarS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setextrapolate.aspx.resx">
+      <DependentUpon>setextrapolate.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.aspx.resx">
+      <DependentUpon>Statistics.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transform.aspx.resx">
+      <DependentUpon>Transform.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\IFsWeb.dsAnalFunc.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsAnalFunc.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsAnalFunc.xss">
+      <DependentUpon>IFsWeb.dsAnalFunc.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsEconomic.xsc">
+      <DependentUpon>IFsWeb.dsEconomic.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsEconomic.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsEconomic.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsEconomic.xss">
+      <DependentUpon>IFsWeb.dsEconomic.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsEnergy.xsc">
+      <DependentUpon>IFsWeb.dsEnergy.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsEnergy.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsEnergy.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsEnergy.xss">
+      <DependentUpon>IFsWeb.dsEnergy.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsFormula.xsc">
+      <DependentUpon>IFsWeb.dsFormula.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsFormula.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsFormula.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsFormula.xss">
+      <DependentUpon>IFsWeb.dsFormula.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsIndepVar.xsc">
+      <DependentUpon>IFsWeb.dsIndepVar.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsIndepVar.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsIndepVar.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsIndepVar.xss">
+      <DependentUpon>IFsWeb.dsIndepVar.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsPolitical.xsc">
+      <DependentUpon>IFsWeb.dsPolitical.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsPolitical.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsPolitical.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsPolitical.xss">
+      <DependentUpon>IFsWeb.dsPolitical.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsPopulation.xsc">
+      <DependentUpon>IFsWeb.dsPopulation.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsPopulation.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsPopulation.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsPopulation.xss">
+      <DependentUpon>IFsWeb.dsPopulation.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsReport.xsc">
+      <DependentUpon>IFsWeb.dsReport.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsReport.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsReport.xss">
+      <DependentUpon>IFsWeb.dsReport.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsSAMBasePct.xsc">
+      <DependentUpon>IFsWeb.dsSAMBasePct.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsSAMBasePct.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsSAMBasePct.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsSAMBasePct.xss">
+      <DependentUpon>IFsWeb.dsSAMBasePct.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsSAMLabels.xsc">
+      <DependentUpon>IFsWeb.dsSAMLabels.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsSAMLabels.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsSAMLabels.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsSAMLabels.xss">
+      <DependentUpon>IFsWeb.dsSAMLabels.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsSAMLabels2.xsc">
+      <DependentUpon>IFsWeb.dsSAMLabels2.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsSAMLabels2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsSAMLabels2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsSAMLabels2.xss">
+      <DependentUpon>IFsWeb.dsSAMLabels2.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsSAMValues.xsc">
+      <DependentUpon>IFsWeb.dsSAMValues.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsSAMValues.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsSAMValues.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsSAMValues.xss">
+      <DependentUpon>IFsWeb.dsSAMValues.xsd</DependentUpon>
+    </Content>
+    <Content Include="Code\IFsWeb.dsSocial.xsc">
+      <DependentUpon>IFsWeb.dsSocial.xsd</DependentUpon>
+    </Content>
+    <None Include="Code\IFsWeb.dsSocial.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IFsWeb.dsSocial.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Code\IFsWeb.dsSocial.xss">
+      <DependentUpon>IFsWeb.dsSocial.xsd</DependentUpon>
+    </Content>
+    <Content Include="eo_web.ashx" />
+    <Content Include="libman.json" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Nlog.config" />
+    <Content Include="Nlog.config.debug" />
+    <Content Include="Nlog.config.prod" />
+    <Content Include="Scripts\chosen\bower.json" />
+    <Content Include="Scripts\tokenize\LICENSE" />
+    <Content Include="Scripts\tokenize\README.md" />
+    <None Include="packages.config" />
+    <None Include="Readme.md" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <!--
+  <ItemGroup>
+    <Content Include="..\packages\SQLitePCLRaw.lib.e_sqlite3.2.1.8\runtimes\win-x64\native\e_sqlite3.dll">
+      <Link>e_sqlite3.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+  </ItemGroup>
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\IFs.Data.Lite\IFs.Data.Lite.csproj">
+      <Project>{5ae82d95-54e4-4095-9c13-a191142f915a}</Project>
+      <Name>IFs.Data.Lite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IFs.IData.Lite\IFs.IData.Lite.csproj">
+      <Project>{7aefa6fb-f74c-4eef-9aa9-5c4e0af95cc5}</Project>
+      <Name>IFs.IData.Lite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Run.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.2.1.8\buildTransitive\net461\SQLitePCLRaw.lib.e_sqlite3.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.2.1.8\buildTransitive\net461\SQLitePCLRaw.lib.e_sqlite3.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.2.1.8\buildTransitive\net461\SQLitePCLRaw.lib.e_sqlite3.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SQLitePCLRaw.lib.e_sqlite3.2.1.8\buildTransitive\net461\SQLitePCLRaw.lib.e_sqlite3.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49989</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/ifs/IFsWeb</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

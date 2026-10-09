@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsSocial" targetNamespace="http://www.tempuri.org/dsSocial.xsd" xmlns:mstns="http://www.tempuri.org/dsSocial.xsd" xmlns="http://www.tempuri.org/dsSocial.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsSocial" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="IFSVAR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEF" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="ReportValue" type="xs:float" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DIMENSION2" type="xs:int" minOccurs="0" />
+              <xs:element name="ReportDimension2" type="xs:string" minOccurs="0" />
+              <xs:element name="Report2Dimension2" type="xs:string" minOccurs="0" />
+              <xs:element name="AGGREGATION" type="xs:string" minOccurs="0" />
+              <xs:element name="Pct1stYear" type="xs:float" minOccurs="0" />
+              <xs:element name="PctBaseCase" type="xs:float" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,25 @@
+List of Functions not found:
+=============================
+GDP/Capita (PPP) Versus Materialism/Postmaterialism Cohort 1
+GDP/Capita (PPP) Versus Materialism/Postmaterialism Cohort 2
+GDP/Capita (PPP) Versus Materialism/Postmaterialism Cohort 3
+GDP/Capita (PPP) Versus Materialism/Postmaterialism Cohort 4
+GDP/Capita (PPP) Versus Materialism/Postmaterialism Cohort 5
+GDP/Capita (PPP) Versus Materialism/Postmaterialism Cohort 6
+GDP/Capita (PPP) Versus Materialism/Postmaterialism Total
+GDP/Capita (PPP) Versus Survival/Self-Expression Cohort 1 Log
+GDP/Capita (PPP) Versus Survival/Self-Expression Cohort 2 Log
+GDP/Capita (PPP) Versus Survival/Self-Expression Cohort 3 Log
+GDP/Capita (PPP) Versus Survival/Self-Expression Cohort 4 Log
+GDP/Capita (PPP) Versus Survival/Self-Expression Cohort 5 Log
+GDP/Capita (PPP) Versus Survival/Self-Expression Cohort 6 Log
+GDP/Capita (PPP) Versus Survival/Self-Expression Total
+GDP/Capita (PPP) Versus Survival/Self-Expression Cohort 1 Log
+GDP/Capita (PPP) Versus Traditional/Secular-Rational Cohort 1 Log
+GDP/Capita (PPP) Versus Traditional/Secular-Rational Cohort 2 Log
+GDP/Capita (PPP) Versus Traditional/Secular-Rational Cohort 3 Log
+GDP/Capita (PPP) Versus Traditional/Secular-Rational Cohort 4 Log
+GDP/Capita (PPP) Versus Traditional/Secular-Rational Cohort 5 Log
+GDP/Capita (PPP) Versus Traditional/Secular-Rational Cohort 6 Log
+GDP/Capita (PPP) Versus Traditional/Secular-Rational Total Log
+GDP/Capita (PPP) Versus Traditional/Secular-Rational Cohort 1 Log

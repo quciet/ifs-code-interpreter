@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsSAMBasePct" targetNamespace="http://www.tempuri.org/dsSAMBasePct.xsd" xmlns:mstns="http://www.tempuri.org/dsSAMBasePct.xsd" xmlns="http://www.tempuri.org/dsSAMBasePct.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsSAMBasePct" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="SAMBasePct">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Categories" type="xs:string" minOccurs="0" />
+              <xs:element name="Capital" type="xs:float" minOccurs="0" />
+              <xs:element name="Environment" type="xs:float" minOccurs="0" />
+              <xs:element name="Firms" type="xs:float" minOccurs="0" />
+              <xs:element name="Government" type="xs:float" minOccurs="0" />
+              <xs:element name="Household" type="xs:float" minOccurs="0" />
+              <xs:element name="ROW" type="xs:float" minOccurs="0" />
+              <xs:element name="Sectors" type="xs:float" minOccurs="0" />
+              <xs:element name="Total" type="xs:float" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
