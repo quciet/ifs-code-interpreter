@@ -4,14 +4,22 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ifs-code-interpreter"
-version = "0.2.0"
+version = "0.3.0"
 description = "Source-grounded questions and answers about International Futures code"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.optional-dependencies]
+semantic = ["fastembed==0.8.1", "numpy>=2.3"]
+build = ["pyinstaller>=6.22", "fastembed==0.8.1", "numpy>=2.3"]
 
 [project.scripts]
 ifs-code-interpreter = "ifs_code_interpreter:main"
 
 [tool.setuptools]
 package-dir = {"" = "tool"}
-py-modules = ["ifs_code_interpreter"]
+py-modules = ["ifs_code_interpreter", "research", "investigation", "companion_service", "ai_settings"]
+
+[tool.setuptools.packages.find]
+where = ["tool"]
+include = ["ifs_research*"]

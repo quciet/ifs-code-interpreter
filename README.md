@@ -9,7 +9,9 @@ International Futures implementation and inspect the source evidence behind answ
 - `data/ifs-dev/`: source snapshot of PardeeCenterDU/IFs-Dev.
 - `data/ifs-web/`: source snapshot of PardeeCenterDU/IFsWeb.
 - `data/sources.json`: upstream commits, file hashes, exclusions, and redactions.
-- `scripts/`: source import utilities.
+- `data/wiki/`: 20 public wiki pages with original markup, revision URLs, approval checks and content hashes.
+- `data/embedding-model.json`: pinned offline embedding model identity and hashes.
+- `scripts/`: source/wiki import, evaluation and packaging utilities.
 - `tests/`: offline backend tests.
 
 Snapshots contain source, documentation, and relevant text resources, not complete
@@ -71,22 +73,45 @@ answers. Updating or uninstalling the tool preserves user data. The source versi
 is shown with each saved answer. If a new tool version bundles different commits,
 Explore Code prompts you to prepare its index again.
 
-Retrieval is lexical, not compiler-resolved dependency analysis. Semantic search,
-iterative investigation, and wiki integration remain future work. Citation validation
-checks reference existence, not claim correctness. Live model answer quality has
-not yet been evaluated; integration tests use a local mock provider. No IFs execution
-or numerical results analysis is performed.
+Research includes exact/text and local semantic retrieval, conservative VB routine and
+assignment navigation, and bounded iterative investigations (8 model turns / 12 research
+calls). Each answer saves its evidence ledger, failed calls, citations, timings and any
+provider-reported usage. No model credentials or source instructions enter that ledger.
+The model can read surrounding code, inspect conditions and follow variables, and read
+wiki sections or original inert markup. C# supports lexical search rather than structural
+navigation. These tools do not establish compiler binding, full dependencies or causality.
+
+The shipped wiki covers the prototype's 20-page model/scenario scope and was fetched
+on **September 24, 2026**. It is an offline snapshot, not the whole wiki or a claim of live
+freshness. Each page retains its independently verified approved revision or explicitly
+labeled latest fallback, check date, fetch date, revision URL and content hash. Template
+and image approval can be unverified. Equations/tables are extracted as text with warnings;
+raw markup is retained for inspection. The tool never renders cached wiki HTML.
+
+Choose **Prepare semantic search** after indexing to create local vectors using the
+bundled BGE small English ONNX model. This can take several minutes; Stop preserves
+previous indexes. Search sends nothing to an embedding provider and needs no network.
+Before preparation (or on model mismatch), search explicitly reports the exact/text
+fallback. Reindex after changing sources. Local model weights are in release packages,
+not Git; their pinned manifest and download script are in Git.
+
+Citation validation checks reference existence and successful retrieval, not claim
+correctness. Tests use deterministic mock AI and offline retrieval checks; live-provider
+answer quality still needs evaluation. Numerical scenario analysis remains a separate
+Companion tool. The original `ifs-research-assistant` prototype is retained untouched.
 
 ## Build a Companion package
 
-On Windows with Python and PyInstaller installed:
+On Windows with a Python environment containing the build dependencies:
 
 ```powershell
+python -m pip install -e '.[build]'
+python scripts/prepare_model.py
 python scripts/build_tool.py --python 'path\to\packaging-python.exe'
 ```
 
 The build verifies tests and snapshot hashes, then produces
-`release/ifs-code-reader-0.2.0-win-x64.ifstool` and its SHA256 file. Runtime protocol:
+`release/ifs-code-reader-0.3.0-win-x64.ifstool` and its SHA256 file. Runtime protocol:
 `IFS_TOOL_TOKEN`, `IFS_TOOL_DATA_DIR`, `IFS_TOOL_READY_FILE`, `IFS_COMPANION_PID`, and
 `IFS_AI_SETTINGS_FILE`. Every service route requires `X-IFs-Tool-Token`. User indexes,
 source selection, and answers remain outside the installation. Parent exit and stdin
@@ -111,3 +136,15 @@ Keep both source snapshots pinned to the manifest commits for each tool release.
 ```powershell
 python -m unittest discover -s tests -v
 ```
+
+Maintainers can refresh the documentation with `python scripts/refresh_wiki.py`.
+This is an explicit network operation; normal tool use never refreshes the wiki.
+The approved-first policy follows links from the selected article revisions and activates
+a replacement bundle only after a complete scoped sync. Review snapshot changes before
+shipping a release. Wiki content remains attributed to [Pardee Wiki](https://pardeewiki.du.edu).
+
+For source development, install `.[semantic]`, run `scripts/prepare_model.py`, and then
+`python tool/ifs_code_interpreter.py prepare-semantic`. The model is
+[BAAI/bge-small-en-v1.5](https://huggingface.co/BAAI/bge-small-en-v1.5), distributed as
+[Qdrant's quantized ONNX model](https://huggingface.co/Qdrant/bge-small-en-v1.5-onnx-Q)
+under MIT; see `data/EMBEDDING-LICENSE.txt`.

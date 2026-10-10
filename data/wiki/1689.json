@@ -1,0 +1,111 @@
+{
+  "approval": {
+    "checked_at": "2026-09-24T19:09:52.890918+00:00",
+    "method": "public-body-class-and-RLCONF",
+    "reason": null,
+    "response_sha256": "d51cb5d594c3e22c825561ebdba9183a1287a726da83b6494d4e39c0ddf28474",
+    "revision": 8509,
+    "status": "approved",
+    "url": "https://pardeewiki.du.edu/index.php?title=Understand+the+Model"
+  },
+  "content": {
+    "images": [],
+    "links": [
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Agriculture"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Economics"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Education"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Energy"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Environment"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Governance"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Guide to Scenario Analysis in International Futures (IFs)"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Health"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Infrastructure"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Interstate Politics (IP)"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Population"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Socio-Political"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Transport"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Understand IFs"
+      },
+      {
+        "exists": true,
+        "ns": 0,
+        "title": "Water model documentation"
+      }
+    ],
+    "pageid": 1689,
+    "revid": 8509,
+    "sections": [],
+    "showtoc": false,
+    "templates": [],
+    "text": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en\" dir=\"ltr\"><p><b>\"Opening the Black Box\"</b>\n</p><p>This section of the Help system contains detailed explanations of the issue sub-modules. You can find flow charts, equations, and other information on each by exploring the sections below:\n</p>\n<ul><li><a href=\"/index.php?title=Understand_IFs#Help_During_Use_of_IFs\" title=\"Understand IFs\">Help During Use of IFs</a></li>\n<li><a href=\"/index.php?title=Guide_to_Scenario_Analysis_in_International_Futures_(IFs)\" title=\"Guide to Scenario Analysis in International Futures (IFs)\">Guide to Scenario Analysis in International Futures (IFs)</a></li>\n<li><a href=\"/index.php?title=Understand_IFs#Understanding_the_Modeling_Approach\" title=\"Understand IFs\">Understanding the Modeling Approach</a></li>\n<li><a href=\"/index.php?title=Understand_IFs#Understanding_the_Equations\" title=\"Understand IFs\">Understanding the Equations</a></li>\n<li><a href=\"/index.php?title=Agriculture\" title=\"Agriculture\">Agriculture</a></li>\n<li><a href=\"/index.php?title=Population\" title=\"Population\">Demography/Population</a></li>\n<li><a href=\"/index.php?title=Economics\" title=\"Economics\">Economics</a></li>\n<li><a href=\"/index.php?title=Education\" title=\"Education\">Education</a></li>\n<li><a href=\"/index.php?title=Energy\" title=\"Energy\">Energy</a></li>\n<li><a href=\"/index.php?title=Environment\" title=\"Environment\">Environment</a></li>\n<li><a href=\"/index.php?title=Governance\" title=\"Governance\">Governance</a></li>\n<li><a href=\"/index.php?title=Health\" title=\"Health\">Health</a></li>\n<li><a href=\"/index.php?title=Infrastructure\" title=\"Infrastructure\">Infrastructure</a></li>\n<li><a href=\"/index.php?title=Interstate_Politics_(IP)\" title=\"Interstate Politics (IP)\">Interstate Politics</a></li>\n<li><a href=\"/index.php?title=Socio-Political\" title=\"Socio-Political\">Socio-Political</a></li>\n<li><a href=\"/index.php?title=Transport\" title=\"Transport\">Transportation</a></li>\n<li><a href=\"/index.php?title=Water_model_documentation\" title=\"Water model documentation\">Water</a></li></ul>\n<!-- \nNewPP limit report\nCached time: 20260924190951\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.002 seconds\nReal time usage: 0.003 seconds\nPreprocessor visited node count: 1/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Saved in RevisionOutputCache with key wiki:rcache:8509:dateformat=default and timestamp 20260924190951 and revision id 8509.\n -->\n</div>",
+    "title": "Understand the Model",
+    "wikitext": "'''\"Opening the Black Box\"'''\n\nThis section of the Help system contains detailed explanations of the issue sub-modules. You can find flow charts, equations, and other information on each by exploring the sections below:\n\n*[[Understand_IFs#Help_During_Use_of_IFs|Help During Use of IFs]]\n*[[Guide_to_Scenario_Analysis_in_International_Futures_(IFs)|Guide to Scenario Analysis in International Futures (IFs)]]\n*[[Understand_IFs#Understanding_the_Modeling_Approach|Understanding the Modeling Approach]]\n*[[Understand_IFs#Understanding_the_Equations|Understanding the Equations]]\n*[[Agriculture|Agriculture]]\n*[[Population|Demography/Population]]\n*[[Economics|Economics]]\n*[[Education|Education]]\n*[[Energy|Energy]]\n*[[Environment|Environment]]\n*[[Governance|Governance]]\n*[[Health|Health]]\n*[[Infrastructure|Infrastructure]]\n*[[Interstate_Politics_(IP)|Interstate Politics]]\n*[[Socio-Political|Socio-Political]]\n*[[Transport|Transportation]]\n*[[Water_model_documentation|Water]]"
+  },
+  "content_sha256": "9e0da3c4d93e75c18547b21bf50c5e1d002bbd6a1e301527dba2014f9db189a0",
+  "extraction_warnings": [],
+  "extractor": "structured-v2",
+  "fetched_at": "2026-09-24T19:09:54.908292+00:00",
+  "latest_revision_at_selection": 13544,
+  "page_id": 1689,
+  "requested_title": "Understand the Model",
+  "revision": 8509,
+  "revision_timestamp": "2017-09-12T23:40:35Z",
+  "selection": "approved",
+  "title": "Understand the Model",
+  "url": "https://pardeewiki.du.edu/index.php?title=Understand+the+Model&oldid=8509"
+}

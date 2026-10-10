@@ -1,0 +1,126 @@
+{
+  "approval": {
+    "checked_at": "2026-09-24T19:11:04.537370+00:00",
+    "method": "public-body-class-and-RLCONF",
+    "reason": null,
+    "response_sha256": "5dd0f699a330db9fe5c000bf9b1f2a08562ee9a0b56583c61b68058cc2598fa9",
+    "revision": 9052,
+    "status": "approved",
+    "url": "https://pardeewiki.du.edu/index.php?title=Transport"
+  },
+  "content": {
+    "images": [
+      "T1.gif",
+      "T2.gif"
+    ],
+    "links": [],
+    "pageid": 303,
+    "revid": 9052,
+    "sections": [
+      {
+        "anchor": "Transportation_Flow_Charts",
+        "byteoffset": 449,
+        "fromtitle": "Transport",
+        "index": "1",
+        "level": "1",
+        "line": "<span>Transportation Flow Charts</span>",
+        "linkAnchor": "Transportation_Flow_Charts",
+        "number": "1",
+        "toclevel": 1
+      },
+      {
+        "anchor": "Overview",
+        "byteoffset": 522,
+        "fromtitle": "Transport",
+        "index": "2",
+        "level": "3",
+        "line": "<span>Overview</span>",
+        "linkAnchor": "Overview",
+        "number": "1.1",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Cars_and_Trucks",
+        "byteoffset": 1532,
+        "fromtitle": "Transport",
+        "index": "3",
+        "level": "2",
+        "line": "<span>Cars and Trucks</span>",
+        "linkAnchor": "Cars_and_Trucks",
+        "number": "1.2",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Cars_and_Trucks:_Approach_2_(Total)",
+        "byteoffset": 3368,
+        "fromtitle": "Transport",
+        "index": "4",
+        "level": "2",
+        "line": "<span>Cars and Trucks: Approach 2 (Total)</span>",
+        "linkAnchor": "Cars_and_Trucks:_Approach_2_(Total)",
+        "number": "1.3",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Transportation_Equations",
+        "byteoffset": 4945,
+        "fromtitle": "Transport",
+        "index": "5",
+        "level": "1",
+        "line": "<span>Transportation Equations</span>",
+        "linkAnchor": "Transportation_Equations",
+        "number": "2",
+        "toclevel": 1
+      },
+      {
+        "anchor": "Overview_2",
+        "byteoffset": 5016,
+        "fromtitle": "Transport",
+        "index": "6",
+        "level": "3",
+        "line": "<span>Overview</span>",
+        "linkAnchor": "Overview_2",
+        "number": "2.1",
+        "toclevel": 2
+      }
+    ],
+    "showtoc": true,
+    "templates": [],
+    "text": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en\" dir=\"ltr\"><p><span>The transportation model may eventually consist of a module that represents total demand for transportation services in countries and regions and of additional modules that represent how individual societies meet individual and commercial transportation needs. At this stage, however, the transportation module focuses exclusively on annual sales of cars and trucks.</span>\n</p><p>To read more about the transportation module, see the links below.\n</p>\n<div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Transportation_Flow_Charts\"><span class=\"tocnumber\">1</span> <span class=\"toctext\"><span>Transportation Flow Charts</span></span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Overview\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\"><span>Overview</span></span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Cars_and_Trucks\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\"><span>Cars and Trucks</span></span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Cars_and_Trucks:_Approach_2_(Total)\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\"><span>Cars and Trucks: Approach 2 (Total)</span></span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-5\"><a href=\"#Transportation_Equations\"><span class=\"tocnumber\">2</span> <span class=\"toctext\"><span>Transportation Equations</span></span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-6\"><a href=\"#Overview_2\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\"><span>Overview</span></span></a></li>\n</ul>\n</li>\n</ul>\n</div>\n\n<h1><span class=\"mw-headline\" id=\"Transportation_Flow_Charts\"><span style=\"font-size:xx-large;\">Transportation Flow Charts</span></span></h1>\n<h3><span class=\"mw-headline\" id=\"Overview\"><span style=\"font-size:medium;\">Overview</span></span></h3>\n<p>The transportation model may eventually consist of a module that represents total demand for transportation services in countries and regions and of additional modules that represent how individual societies meet individual and commercial transportation needs. At this stage, however, the transportation module focuses exclusively on annual sales of cars and trucks.\n</p><p>We have developed two approaches to forecasting those sales (a total of four options for the user). GDP per capita at purchasing power parity is the primary driver of sales per capita in&#160;<a class=\"mw-selflink-fragment\" href=\"#Cars_and_Trucks\">most of those options</a>&#160;(in one case total GDP drives total sales, see&#160;<a class=\"mw-selflink-fragment\" href=\"#Cars_and_Trucks:_Approach_2_(Total)\">Approach 2</a>). Values of the indices for survival/self-expression and traditional/secular-rational values may join GDP per capita or GDP in determining the annual sales of cars and trucks.\n</p><p>For more, please read the links below.&#160;\n</p>\n<h2><span class=\"mw-headline\" id=\"Cars_and_Trucks\"><span style=\"font-size:x-large;\">Cars and Trucks</span></span></h2>\n<p>As the equations elaborate, there are two general approaches and four specific options for determining the annual demand of countries/regions for cars and trucks and therefore the annual new sales of those vehicles.\n</p><p>GDP per capita at purchasing power parity is the primary driver of sales per capita in three of those options (in one case total GDP drives total sales, see <a class=\"mw-selflink-fragment\" href=\"#Cars_and_Trucks:_Approach_2_(Total)\">Approach 2</a>). Values of the indices for survival/self-expression and traditional/secular-rational values may join GDP per capita in determining the annual per capita sales of total cars and trucks.\n</p><p>Given per capita sales and population it is easy to compute total annual car and truck sales. Functions that indicate whether individual types of cars or trucks are \"inferior\" or \"superior\" goods, that is whether then decrease or increase with incomes, then determine how total car and truck sales are split across individual categories of cars and trucks.\n</p><p>\nThe following flow is a general representation of the first approach (sales per capita determined by GDP per capita), and the specific formulation depends on the value of the vehicle function switch (vehfuncsw). If the value is 1, GDP/capita alone drives sales per capita. If the value is 3, GDP/capita and values on the traditional/secular-rational dimension drive sales per capita. If the value is 4, GDP/capita and values on the traditional/secular-rational and survival/self-expression dimensions drive sales per capita.</p><figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:T1.gif\" class=\"mw-file-description\"><img src=\"/images/0/07/T1.gif\" decoding=\"async\" width=\"576\" height=\"626\" class=\"mw-file-element\" /></a><figcaption>Sales per capita determined by GDP per capita</figcaption></figure>\n<p>Future development may focus not just on annual car and truck sales, but on the fleets of each. Variables for fleet size and per capita fleet size are therefore shown above, but not yet used.\n</p>\n<h2><span id=\"Cars_and_Trucks:_Approach_2_.28Total.29\"></span><span class=\"mw-headline\" id=\"Cars_and_Trucks:_Approach_2_(Total)\"><span style=\"font-size:x-large;\">Cars and Trucks: Approach 2 (Total)</span></span></h2>\n<p>As the equations elaborate, there are two general approaches and four specific options for determining the annual demand of countries/regions for cars and trucks and therefore the annual new sales of those vehicles.\n</p><p>GDP per capita at purchasing power parity is the primary driver of sales per capita in <a class=\"mw-selflink-fragment\" href=\"#Cars_and_Trucks\">most of those options</a>. It is also possible, however, to have car/truck sales driven directly by GDP, which is the logic portrayed below. The specific logic/formulation depends on the value of the vehicle function switch (vehfuncsw). When the value is 2, sales are driven directly by GDP, as shown here. In addition, sales are affected by country/region values on the traditional/secular-rational value dimension. Although the model does not include the survival/self-expression dimension in this particular logic (estimated functions did not show it adding much predictive power), the causal diagram portrays it as a possible driver.\n</p><p>Functions that indicate whether individual types of cars or trucks are \"inferior\" or \"superior\" goods, that is whether then decrease or increase with incomes, then determine how total car and truck sales are split across individual categories of cars and trucks.\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:T2.gif\" class=\"mw-file-description\"><img src=\"/images/a/a3/T2.gif\" decoding=\"async\" width=\"576\" height=\"632\" class=\"mw-file-element\" /></a><figcaption>Car/truck sales driven directly by GDP</figcaption></figure><p> Future development may focus not just on annual car and truck sales, but on the fleets of each. Variables for fleet size and per capita fleet size are therefore shown above, but not yet used.\n</p><h1><span class=\"mw-headline\" id=\"Transportation_Equations\"><span style=\"font-size:xx-large;\">Transportation Equations</span></span></h1>\n<h3><span class=\"mw-headline\" id=\"Overview_2\"><span style=\"font-size:medium;\">Overview</span></span></h3>\n<p><span>Not available at this time.</span>\n</p>\n<!-- \nNewPP limit report\nCached time: 20260924191103\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.009 seconds\nReal time usage: 0.010 seconds\nPreprocessor visited node count: 30/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Saved in parser cache with key wiki:pcache:idhash:303-0!canonical and timestamp 20260924191103 and revision id 9052. Rendering was triggered because: page-view\n -->\n</div>",
+    "title": "Transport",
+    "wikitext": "<span>The transportation model may eventually consist of a module that represents total demand for transportation services in countries and regions and of additional modules that represent how individual societies meet individual and commercial transportation needs. At this stage, however, the transportation module focuses exclusively on annual sales of cars and trucks.</span>\n\nTo read more about the transportation module, see the links below.\n\n= <span style=\"font-size:xx-large;\">Transportation Flow Charts</span> =\n\n=== <span style=\"font-size:medium;\">Overview</span> ===\n\nThe transportation model may eventually consist of a module that represents total demand for transportation services in countries and regions and of additional modules that represent how individual societies meet individual and commercial transportation needs. At this stage, however, the transportation module focuses exclusively on annual sales of cars and trucks.\n\nWe have developed two approaches to forecasting those sales (a total of four options for the user). GDP per capita at purchasing power parity is the primary driver of sales per capita in&nbsp;[[Transport#Cars_and_Trucks|most of those options]]&nbsp;(in one case total GDP drives total sales, see&nbsp;[[Transport#Cars_and_Trucks:_Approach_2_(Total)|Approach 2]]). Values of the indices for survival/self-expression and traditional/secular-rational values may join GDP per capita or GDP in determining the annual sales of cars and trucks.\n\nFor more, please read the links below.&nbsp;\n\n== <span style=\"font-size:x-large;\">Cars and Trucks</span> ==\n\nAs the equations elaborate, there are two general approaches and four specific options for determining the annual demand of countries/regions for cars and trucks and therefore the annual new sales of those vehicles.\n\nGDP per capita at purchasing power parity is the primary driver of sales per capita in three of those options (in one case total GDP drives total sales, see [[Transport#Cars_and_Trucks:_Approach_2_(Total)|Approach 2]]). Values of the indices for survival/self-expression and traditional/secular-rational values may join GDP per capita in determining the annual per capita sales of total cars and trucks.\n\nGiven per capita sales and population it is easy to compute total annual car and truck sales. Functions that indicate whether individual types of cars or trucks are \"inferior\" or \"superior\" goods, that is whether then decrease or increase with incomes, then determine how total car and truck sales are split across individual categories of cars and trucks.\n\nThe following flow is a general representation of the first approach (sales per capita determined by GDP per capita), and the specific formulation depends on the value of the vehicle function switch (vehfuncsw). If the value is 1, GDP/capita alone drives sales per capita. If the value is 3, GDP/capita and values on the traditional/secular-rational dimension drive sales per capita. If the value is 4, GDP/capita and values on the traditional/secular-rational and survival/self-expression dimensions drive sales per capita.[[File:T1.gif|frame|center|Sales per capita determined by GDP per capita]]\n\nFuture development may focus not just on annual car and truck sales, but on the fleets of each. Variables for fleet size and per capita fleet size are therefore shown above, but not yet used.\n\n== <span style=\"font-size:x-large;\">Cars and Trucks: Approach 2 (Total)</span> ==\n\nAs the equations elaborate, there are two general approaches and four specific options for determining the annual demand of countries/regions for cars and trucks and therefore the annual new sales of those vehicles.\n\nGDP per capita at purchasing power parity is the primary driver of sales per capita in [[Transport#Cars_and_Trucks|most of those options]]. It is also possible, however, to have car/truck sales driven directly by GDP, which is the logic portrayed below. The specific logic/formulation depends on the value of the vehicle function switch (vehfuncsw). When the value is 2, sales are driven directly by GDP, as shown here. In addition, sales are affected by country/region values on the traditional/secular-rational value dimension. Although the model does not include the survival/self-expression dimension in this particular logic (estimated functions did not show it adding much predictive power), the causal diagram portrays it as a possible driver.\n\nFunctions that indicate whether individual types of cars or trucks are \"inferior\" or \"superior\" goods, that is whether then decrease or increase with incomes, then determine how total car and truck sales are split across individual categories of cars and trucks.\n\n[[File:T2.gif|frame|center|Car/truck sales driven directly by GDP]] Future development may focus not just on annual car and truck sales, but on the fleets of each. Variables for fleet size and per capita fleet size are therefore shown above, but not yet used.\n\n= <span style=\"font-size:xx-large;\">Transportation Equations</span> =\n\n=== <span style=\"font-size:medium;\">Overview</span> ===\n\n<span>Not available at this time.</span>"
+  },
+  "content_sha256": "aa1111f435d3e628fe85f2aea7791430a5f3848d5352f16ba864ae52ce12851a",
+  "extraction_warnings": [
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/0/07/T1.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/a/a3/T2.gif"
+    },
+    {
+      "dependencies": {
+        "images": [
+          "T1.gif",
+          "T2.gif"
+        ],
+        "templates": []
+      },
+      "kind": "embedded_dependency_approval_unverified"
+    }
+  ],
+  "extractor": "structured-v2",
+  "fetched_at": "2026-09-24T19:11:06.494808+00:00",
+  "latest_revision_at_selection": 9052,
+  "page_id": 303,
+  "requested_title": "Transport",
+  "revision": 9052,
+  "revision_timestamp": "2018-09-07T17:07:21Z",
+  "selection": "approved",
+  "title": "Transport",
+  "url": "https://pardeewiki.du.edu/index.php?title=Transport&oldid=9052"
+}

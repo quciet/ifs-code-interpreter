@@ -1,0 +1,404 @@
+{
+  "approval": {
+    "checked_at": "2026-09-24T19:11:34.711062+00:00",
+    "method": "public-body-class-and-RLCONF",
+    "reason": null,
+    "response_sha256": "00309164f7b38ea93dcb67b089a71eff414d7e7fe84aca6a8c3a5bd9bfcc1b3b",
+    "revision": 7640,
+    "status": "approved",
+    "url": "https://pardeewiki.du.edu/index.php?title=Extended+Features"
+  },
+  "content": {
+    "images": [
+      "Data1.gif",
+      "Data2.gif",
+      "Data3.gif",
+      "Groups1.gif",
+      "Groups2.gif",
+      "Groups3.gif",
+      "Geo_186.png",
+      "Subregion1.gif",
+      "Subregion2.gif",
+      "Subregion3.gif",
+      "Subregion4.gif",
+      "Subregion5.gif",
+      "Feat6.gif",
+      "Rebuild.gif",
+      "Rebuild1.gif"
+    ],
+    "links": [],
+    "pageid": 1514,
+    "revid": 7640,
+    "sections": [
+      {
+        "anchor": "Manage_Country_Data",
+        "byteoffset": 0,
+        "fromtitle": "Extended_Features",
+        "index": "1",
+        "level": "1",
+        "line": "<span>Manage Country Data</span>",
+        "linkAnchor": "Manage_Country_Data",
+        "number": "1",
+        "toclevel": 1
+      },
+      {
+        "anchor": "Edit_Country_Data",
+        "byteoffset": 545,
+        "fromtitle": "Extended_Features",
+        "index": "2",
+        "level": "2",
+        "line": "<span>Edit Country Data</span>",
+        "linkAnchor": "Edit_Country_Data",
+        "number": "1.1",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Display_Processed_Data",
+        "byteoffset": 1590,
+        "fromtitle": "Extended_Features",
+        "index": "3",
+        "level": "2",
+        "line": "<span>Display Processed Data</span>",
+        "linkAnchor": "Display_Processed_Data",
+        "number": "1.2",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Historic_Data_File_Processing",
+        "byteoffset": 2440,
+        "fromtitle": "Extended_Features",
+        "index": "4",
+        "level": "2",
+        "line": "<span>Historic Data File Processing</span>",
+        "linkAnchor": "Historic_Data_File_Processing",
+        "number": "1.3",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Importing_Data_from_Excel_Files",
+        "byteoffset": 2978,
+        "fromtitle": "Extended_Features",
+        "index": "5",
+        "level": "3",
+        "line": "<span>Importing Data from Excel Files</span>",
+        "linkAnchor": "Importing_Data_from_Excel_Files",
+        "number": "1.3.1",
+        "toclevel": 3
+      },
+      {
+        "anchor": "Remove_Years_from_Data",
+        "byteoffset": 5078,
+        "fromtitle": "Extended_Features",
+        "index": "6",
+        "level": "3",
+        "line": "<span>Remove Years from Data</span>",
+        "linkAnchor": "Remove_Years_from_Data",
+        "number": "1.3.2",
+        "toclevel": 3
+      },
+      {
+        "anchor": "Identify_and_Save_Years",
+        "byteoffset": 5403,
+        "fromtitle": "Extended_Features",
+        "index": "7",
+        "level": "3",
+        "line": "<span>Identify and Save Years</span>",
+        "linkAnchor": "Identify_and_Save_Years",
+        "number": "1.3.3",
+        "toclevel": 3
+      },
+      {
+        "anchor": "Manage_Groups/Regions",
+        "byteoffset": 5786,
+        "fromtitle": "Extended_Features",
+        "index": "8",
+        "level": "1",
+        "line": "<span>Manage Groups/Regions</span>",
+        "linkAnchor": "Manage_Groups/Regions",
+        "number": "2",
+        "toclevel": 1
+      },
+      {
+        "anchor": "Identify_Groups_or_Country/Region_Members",
+        "byteoffset": 6657,
+        "fromtitle": "Extended_Features",
+        "index": "9",
+        "level": "2",
+        "line": "<span>Identify Groups or Country/Region Members</span>",
+        "linkAnchor": "Identify_Groups_or_Country/Region_Members",
+        "number": "2.1",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Change_Grouping/Regionalization",
+        "byteoffset": 7386,
+        "fromtitle": "Extended_Features",
+        "index": "10",
+        "level": "2",
+        "line": "<span>Change Grouping/Regionalization</span>",
+        "linkAnchor": "Change_Grouping/Regionalization",
+        "number": "2.2",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Display_Regionally_Aggregated_Data",
+        "byteoffset": 11230,
+        "fromtitle": "Extended_Features",
+        "index": "11",
+        "level": "2",
+        "line": "<span>Display Regionally Aggregated Data</span>",
+        "linkAnchor": "Display_Regionally_Aggregated_Data",
+        "number": "2.3",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Change_Country_Subregionalization",
+        "byteoffset": 11819,
+        "fromtitle": "Extended_Features",
+        "index": "12",
+        "level": "1",
+        "line": "<span>Change Country Subregionalization</span>",
+        "linkAnchor": "Change_Country_Subregionalization",
+        "number": "3",
+        "toclevel": 1
+      },
+      {
+        "anchor": "Introduction_to_Sub-regionalization_Procedures",
+        "byteoffset": 11899,
+        "fromtitle": "Extended_Features",
+        "index": "13",
+        "level": "2",
+        "line": "<span>Introduction to Sub-regionalization Procedures</span>",
+        "linkAnchor": "Introduction_to_Sub-regionalization_Procedures",
+        "number": "3.1",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Foundation_for_the_Process:_Database_Modification",
+        "byteoffset": 13579,
+        "fromtitle": "Extended_Features",
+        "index": "14",
+        "level": "3",
+        "line": "<span>Foundation for the Process: Database Modification</span>",
+        "linkAnchor": "Foundation_for_the_Process:_Database_Modification",
+        "number": "3.1.1",
+        "toclevel": 3
+      },
+      {
+        "anchor": "Add_or_Delete_Sub-regions",
+        "byteoffset": 14956,
+        "fromtitle": "Extended_Features",
+        "index": "15",
+        "level": "2",
+        "line": "<span>Add or Delete Sub-regions</span>",
+        "linkAnchor": "Add_or_Delete_Sub-regions",
+        "number": "3.2",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Change_Sub-regionalization",
+        "byteoffset": 18303,
+        "fromtitle": "Extended_Features",
+        "index": "16",
+        "level": "2",
+        "line": "<span>Change Sub-regionalization</span>",
+        "linkAnchor": "Change_Sub-regionalization",
+        "number": "3.3",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Show_Computed_Functions",
+        "byteoffset": 19724,
+        "fromtitle": "Extended_Features",
+        "index": "17",
+        "level": "1",
+        "line": "<span>Show Computed Functions</span>",
+        "linkAnchor": "Show_Computed_Functions",
+        "number": "4",
+        "toclevel": 1
+      },
+      {
+        "anchor": "Rebuild_Model_Base",
+        "byteoffset": 20778,
+        "fromtitle": "Extended_Features",
+        "index": "18",
+        "level": "1",
+        "line": "<span>Rebuild Model Base</span>",
+        "linkAnchor": "Rebuild_Model_Base",
+        "number": "5",
+        "toclevel": 1
+      },
+      {
+        "anchor": "Rebuild_the_Base",
+        "byteoffset": 21428,
+        "fromtitle": "Extended_Features",
+        "index": "19",
+        "level": "2",
+        "line": "<span>Rebuild the Base</span>",
+        "linkAnchor": "Rebuild_the_Base",
+        "number": "5.1",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Rebuilding_the_Base_Case",
+        "byteoffset": 21612,
+        "fromtitle": "Extended_Features",
+        "index": "20",
+        "level": "3",
+        "line": "<span>Rebuilding the Base Case</span>",
+        "linkAnchor": "Rebuilding_the_Base_Case",
+        "number": "5.1.1",
+        "toclevel": 3
+      },
+      {
+        "anchor": "Running_the_Model_to_Fill_the_New_Base_Case",
+        "byteoffset": 23136,
+        "fromtitle": "Extended_Features",
+        "index": "21",
+        "level": "3",
+        "line": "<span>Running the Model to Fill the New Base Case</span>",
+        "linkAnchor": "Running_the_Model_to_Fill_the_New_Base_Case",
+        "number": "5.1.2",
+        "toclevel": 3
+      },
+      {
+        "anchor": "Rebuild_the_Historic_Base",
+        "byteoffset": 24279,
+        "fromtitle": "Extended_Features",
+        "index": "22",
+        "level": "2",
+        "line": "<span>Rebuild the Historic Base</span>",
+        "linkAnchor": "Rebuild_the_Historic_Base",
+        "number": "5.2",
+        "toclevel": 2
+      },
+      {
+        "anchor": "Model_Integration",
+        "byteoffset": 25391,
+        "fromtitle": "Extended_Features",
+        "index": "23",
+        "level": "1",
+        "line": "<span>Model Integration</span>",
+        "linkAnchor": "Model_Integration",
+        "number": "6",
+        "toclevel": 1
+      }
+    ],
+    "showtoc": true,
+    "templates": [],
+    "text": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en\" dir=\"ltr\"><div id=\"toc\" class=\"toc\" role=\"navigation\" aria-labelledby=\"mw-toc-heading\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\" class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\" lang=\"en\" dir=\"ltr\"><h2 id=\"mw-toc-heading\">Contents</h2><span class=\"toctogglespan\"><label class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li class=\"toclevel-1 tocsection-1\"><a href=\"#Manage_Country_Data\"><span class=\"tocnumber\">1</span> <span class=\"toctext\"><span>Manage Country Data</span></span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-2\"><a href=\"#Edit_Country_Data\"><span class=\"tocnumber\">1.1</span> <span class=\"toctext\"><span>Edit Country Data</span></span></a></li>\n<li class=\"toclevel-2 tocsection-3\"><a href=\"#Display_Processed_Data\"><span class=\"tocnumber\">1.2</span> <span class=\"toctext\"><span>Display Processed Data</span></span></a></li>\n<li class=\"toclevel-2 tocsection-4\"><a href=\"#Historic_Data_File_Processing\"><span class=\"tocnumber\">1.3</span> <span class=\"toctext\"><span>Historic Data File Processing</span></span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-5\"><a href=\"#Importing_Data_from_Excel_Files\"><span class=\"tocnumber\">1.3.1</span> <span class=\"toctext\"><span>Importing Data from Excel Files</span></span></a></li>\n<li class=\"toclevel-3 tocsection-6\"><a href=\"#Remove_Years_from_Data\"><span class=\"tocnumber\">1.3.2</span> <span class=\"toctext\"><span>Remove Years from Data</span></span></a></li>\n<li class=\"toclevel-3 tocsection-7\"><a href=\"#Identify_and_Save_Years\"><span class=\"tocnumber\">1.3.3</span> <span class=\"toctext\"><span>Identify and Save Years</span></span></a></li>\n</ul>\n</li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-8\"><a href=\"#Manage_Groups/Regions\"><span class=\"tocnumber\">2</span> <span class=\"toctext\"><span>Manage Groups/Regions</span></span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-9\"><a href=\"#Identify_Groups_or_Country/Region_Members\"><span class=\"tocnumber\">2.1</span> <span class=\"toctext\"><span>Identify Groups or Country/Region Members</span></span></a></li>\n<li class=\"toclevel-2 tocsection-10\"><a href=\"#Change_Grouping/Regionalization\"><span class=\"tocnumber\">2.2</span> <span class=\"toctext\"><span>Change Grouping/Regionalization</span></span></a></li>\n<li class=\"toclevel-2 tocsection-11\"><a href=\"#Display_Regionally_Aggregated_Data\"><span class=\"tocnumber\">2.3</span> <span class=\"toctext\"><span>Display Regionally Aggregated Data</span></span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-12\"><a href=\"#Change_Country_Subregionalization\"><span class=\"tocnumber\">3</span> <span class=\"toctext\"><span>Change Country Subregionalization</span></span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-13\"><a href=\"#Introduction_to_Sub-regionalization_Procedures\"><span class=\"tocnumber\">3.1</span> <span class=\"toctext\"><span>Introduction to Sub-regionalization Procedures</span></span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-14\"><a href=\"#Foundation_for_the_Process:_Database_Modification\"><span class=\"tocnumber\">3.1.1</span> <span class=\"toctext\"><span>Foundation for the Process: Database Modification</span></span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-15\"><a href=\"#Add_or_Delete_Sub-regions\"><span class=\"tocnumber\">3.2</span> <span class=\"toctext\"><span>Add or Delete Sub-regions</span></span></a></li>\n<li class=\"toclevel-2 tocsection-16\"><a href=\"#Change_Sub-regionalization\"><span class=\"tocnumber\">3.3</span> <span class=\"toctext\"><span>Change Sub-regionalization</span></span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-17\"><a href=\"#Show_Computed_Functions\"><span class=\"tocnumber\">4</span> <span class=\"toctext\"><span>Show Computed Functions</span></span></a></li>\n<li class=\"toclevel-1 tocsection-18\"><a href=\"#Rebuild_Model_Base\"><span class=\"tocnumber\">5</span> <span class=\"toctext\"><span>Rebuild Model Base</span></span></a>\n<ul>\n<li class=\"toclevel-2 tocsection-19\"><a href=\"#Rebuild_the_Base\"><span class=\"tocnumber\">5.1</span> <span class=\"toctext\"><span>Rebuild the Base</span></span></a>\n<ul>\n<li class=\"toclevel-3 tocsection-20\"><a href=\"#Rebuilding_the_Base_Case\"><span class=\"tocnumber\">5.1.1</span> <span class=\"toctext\"><span>Rebuilding the Base Case</span></span></a></li>\n<li class=\"toclevel-3 tocsection-21\"><a href=\"#Running_the_Model_to_Fill_the_New_Base_Case\"><span class=\"tocnumber\">5.1.2</span> <span class=\"toctext\"><span>Running the Model to Fill the New Base Case</span></span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-2 tocsection-22\"><a href=\"#Rebuild_the_Historic_Base\"><span class=\"tocnumber\">5.2</span> <span class=\"toctext\"><span>Rebuild the Historic Base</span></span></a></li>\n</ul>\n</li>\n<li class=\"toclevel-1 tocsection-23\"><a href=\"#Model_Integration\"><span class=\"tocnumber\">6</span> <span class=\"toctext\"><span>Model Integration</span></span></a></li>\n</ul>\n</div>\n\n<h1><span class=\"mw-headline\" id=\"Manage_Country_Data\"><span style=\"font-size:xx-large;\">Manage Country Data</span></span></h1>\n<p>To access the Manage Country Data sub-option, click on Extended Features on the Main Menu of IFs. There you will find two sub-sub-options:\n</p>\n<ul><li><a href=\"#Edit_Country_Data\">Edit Country Data</a></li>\n<li><a href=\"#Display_Processed_Data\">Display Processed Data</a></li>\n<li><a href=\"#Historic_Data_File_Processing\">Historic Data File Processing</a></li></ul>\n<p>This feature of IFs allows users to alter the historic data that underlies IFs. It is suggested that only those with extensive experience using IFs attempt to change this data.\n</p>\n<h2><span class=\"mw-headline\" id=\"Edit_Country_Data\"><span style=\"font-size:x-large;\">Edit Country Data</span></span></h2>\n<p>To access Edit Country Data, click on Extended Features on the Main Menu of IFs, and then select Manage Country Data.\n</p><p><b>Editing Initial Conditions for Countries:</b>&#160;You may find that the data base for a country is less complete and/or accurate than you would like. You can fix most of that with the normal procedures for changing initial conditions and parameters.\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Data1.gif\" class=\"mw-file-description\"><img src=\"/images/8/8e/Data1.gif\" decoding=\"async\" width=\"502\" height=\"476\" class=\"mw-file-element\" /></a><figcaption>Raw Country Data Window</figcaption></figure><p>The grid gives you the opportunity to go into all issue areas and all countries and change any values you wish of the raw data. To narrow down your selection, simply click on Please remember that, if you do so, you will need to rebuild the base case again (after indicating the issue area(s) in which you have changed data) and then rerun the model. Also please remember that any changes you make to the raw data are \"permanent\" and do not disappear after you exit IFs: the only ways to reverse them are to do so number-by-number or to reinstall IFs.\n</p><h2><span class=\"mw-headline\" id=\"Display_Processed_Data\"><span style=\"font-size:x-large;\">Display Processed Data</span></span></h2>\n<p>To access this feature of IFs, select Extended Features from the Main Menu and then Manage Country Data. Click on Display Processed Country Data.\n</p><p>By clicking on Display Processed Country Data, a window similar to the one below will appear:\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Data2.gif\" class=\"mw-file-description\"><img src=\"/images/d/d4/Data2.gif\" decoding=\"async\" width=\"500\" height=\"473\" class=\"mw-file-element\" /></a><figcaption>Processed Country Data Window</figcaption></figure>\n<p>This allows you to view all of the data for each country that underlies the use of IFs. By toggling between the options at the top of the screen, Agriculture, Population, Economics, Social/Political and Energy, you are able to quickly find the variables you are looking for. By clicking Exit, your changes will be saved.\n</p><p>If you would like to incorporate data changes into your version of IFs, make any changes necessary and then Rebuild the Model Base and rerun the model.\n</p>\n<h2><span class=\"mw-headline\" id=\"Historic_Data_File_Processing\"><span style=\"font-size:x-large;\">Historic Data File Processing</span></span></h2>\n<p>To access Historic Data File Processing, click on Extended Features on the Main Menu of IFs, and then select Manage Country Data.\n</p><p>If you have reason to import large amounts of data into IFs, click on the Historic Data File Processing. This will then present you with three options:\n</p>\n<ul><li><a href=\"#Importing_Data_from_Excel_Files\">Importing Data from Excel Files</a></li>\n<li><a href=\"#Remove_Years_from_Data\">Remove Years from Data</a></li>\n<li><a href=\"#Identify_and_Save_Years\">Identify and Save Years</a></li></ul>\n<h3><span class=\"mw-headline\" id=\"Importing_Data_from_Excel_Files\"><span style=\"font-size:medium;\">Importing Data from Excel Files</span></span></h3>\n<p>This feature of IFs can be found by selecting Extended Features from the Main Menu, Manage Country Data, Historic Data File Processing and then Import XLS Data.\n</p><p>When you choose to import large amounts of data into IFs via Excel, choose Import Data From XLS File. This will add an .xls access file to the historic data set for IFs.\n</p><p>Choosing this option will cause a window to appear that will look similarly to the one below:\n</p>\n<figure class=\"mw-halign-right\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Data3.gif\" class=\"mw-file-description\"><img src=\"/images/8/85/Data3.gif\" decoding=\"async\" width=\"690\" height=\"530\" class=\"mw-file-element\" /></a><figcaption>Importing data window</figcaption></figure><p>Initially, it would be advised to change the Series Orientation function located on the right hand side of this menu. Identify how your data set is orientated and match that to one of the options. You will notice that the graph below changes to visually represent the specific data orientation that you choose.\n</p><p>After you have chosen the Series Orientation, click on the File option located at the top of the menu. You will then be prompted to select an Excel file. After you have made your selection, the file will be loaded into the Import Excel Data form. You will then be prompted to select certain Excel Sheets. These can be seen at the bottom of the Excel file after it is opened. They may have different names or simply be distinguished as \"Sheet 1\", \"Sheet 2\", etc. To see the Excel file you have selected, click on Viet Excel.\n</p><p>After you have selected your Excel file, you must further specify the orientation of the data so that IFs knows how to read the data after it has been imported. Fill in the Country Names Start at, Years Start at and Series Name Start at forms before proceeding. To finish the process, you must fill in some more specific information that will help IFs categorize your data. If you have questions, you can consult the Data Dictionary located in the lower-middle of the menu. When finished, click Import.\n</p><p>Other options include Scaling, which allows users to change their data set values by a multiplier. Finally, users are asked to specify a name for their Variable list as well as a brief description.\n</p>\n<h3><span class=\"mw-headline\" id=\"Remove_Years_from_Data\"><span style=\"font-size:medium;\">Remove Years from Data</span></span></h3>\n<p>This feature of IFs can be found by selecting Extended Features from the Main Menu, Manage Country Data, Historic Data File Processing and then Remove Data From Years.\n</p><p>This feature allows users to remove data for all years except for 5 year intervals.\n</p>\n<h3><span class=\"mw-headline\" id=\"Identify_and_Save_Years\"><span style=\"font-size:medium;\">Identify and Save Years</span></span></h3>\n<p>This feature of IFs can be found by selecting Extended Features from the Main Menu, Manage Country Data, Historic Data File Processing and then Identify and Save Years.\n</p><p>This feature allows users to identify and save data years if they have made any substantive change to the years in the raw data file.&#160;\n</p>\n<h1><span id=\"Manage_Groups.2FRegions\"></span><span class=\"mw-headline\" id=\"Manage_Groups/Regions\"><span style=\"font-size:xx-large;\">Manage Groups/Regions</span></span></h1>\n<p>To access Manage Groups/Countries/Regions, click on Extended Features on the Main Menu of IFs. There you will find three sub-sub-options: Identify Group or Country/Region Members, Change Grouping/Regionalization, and Display Regionally Aggregated Data.\n</p><p>This feature of IFs allows users to delve more deeply into the structure and membership of groups or Glists that are used in IFs. Users also can create their own groups or alter membership within an existing group to suit their purpose.\n</p>\n<ul><li><a href=\"#Identify_Groups_or_Country.2FRegion_Members\">Learn about how to see what countries are members of what groups.</a></li>\n<li><a href=\"#Change_Grouping.2FRegionalization\">Learn how to change existing groups and create your own group.</a></li>\n<li><a href=\"#Display_Regionally_Aggregated_Data\">Learn how to display regional or group data sets.</a></li></ul>\n<h2><span id=\"Identify_Groups_or_Country.2FRegion_Members\"></span><span class=\"mw-headline\" id=\"Identify_Groups_or_Country/Region_Members\"><span style=\"font-size:x-large;\">Identify Groups or Country/Region Members</span></span></h2>\n<p>To identify regions or group members used in IFs, click on Extended Features on the Main Menu of IFs, and then select Manage Regionalization.\n</p><p>This feature of IFs allows users to identify which countries/regions are represented in certain groups. By clicking on this feature, you will be presented with a menu that looks similarly to the one below:\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Groups1.gif\" class=\"mw-file-description\"><img src=\"/images/b/be/Groups1.gif\" decoding=\"async\" width=\"530\" height=\"477\" class=\"mw-file-element\" /></a><figcaption>Selecting groups or countries/regions window</figcaption></figure><p>By clicking on Switch to Groups, the list of countries/regions will become a list of groups. By clicking on any of the groups in the left-hand list, the members of that group will appear on the right hand side.\n</p><h2><span id=\"Change_Grouping.2FRegionalization\"></span><span class=\"mw-headline\" id=\"Change_Grouping/Regionalization\"><span style=\"font-size:x-large;\">Change Grouping/Regionalization</span></span></h2>\n<p>To change countries in certain regions or groups, click on Extended Features on the Main Menu of IFs, and then select Manage Regionalization.\n</p><p>How do I change the geographic representations of IFs?\n</p><p>This is an advanced topic, and many users may wish to change or add Grouping designations to IFs for analysis purposes. However, before describing the processes, it is important to understand the geographic conceptualizations used in IFs. Learn more about the building blocks of IFs.\n</p>\n<figure class=\"mw-halign-right\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Groups2.gif\" class=\"mw-file-description\"><img src=\"/images/9/92/Groups2.gif\" decoding=\"async\" width=\"730\" height=\"480\" class=\"mw-file-element\" /></a><figcaption>Change Grouping/Regionalization window</figcaption></figure><p><b>Changing or Adding Groupings.&#160;</b>On the above form, choose the Switch to Groups option. The list box on the left displays the current Groups of IFs (yours may differ from the one above). The list box in the middle provides check boxes for all countries/regions in your version of IFs; it allows you to change the membership of the Groups in the left-most box. The list box on the right shows the full set of country/region members of whatever group you select in the left-most box. Select one of the groups in the left box by clicking on it; you should see changes in both of the other two boxes as they display the country/region membership of the group and, in the case of the middle box, give you the opportunity to change that membership.\n</p><p><b>Editing Membership in a Group.</b>&#160;The menu options provide help editing groupings. Let’s try adding a member to an existing group. Click on the Group name in the left-hand list to activate it. You will see the group members on the right. Arbitrarily pick and country/region in the middle list that is not checked and check the box in front of its name. After you check it, note that the name is still not in the right-hand list. Now click on the Register Member Changes option from the menu. Note that the country/region is added immediately to the right-hand list. Your editing is complete. You could now exit the form and begin displaying results for the redefined group (or use the group as the basis for parameter change in scenario analysis). But instead, uncheck the box in front of the country/region name and again click on Register Member Changes. You will have undone your arbitrary change.\n</p><p><b>Adding a Group:</b>&#160;Now let’s add a Group. Click on the Add Group option. The system will first confirm that you want to make such a change. Proceed. When asked for a name of the Group, provide that name if you have one in mind for a new group or type Test if you do not. After hitting the Enter key, you will see the new Group at the bottom of the left-hand list.\n</p><p>At this point the Group has been created, but has no members. With the name of the Group in the left-had box activated, select its members by activating the appropriate check-boxes in the middle column. When you have finished that, touch the Register Member Changes option. You will see the members of your Group pop up in the right-hand box.\n</p><p>You can now Exit from the form. You should see a message box that indicates no errors in what you have done. Then you will see a message indicating that your new group has been added to a file of IFs that maintains such groupings. That means that even when you stop the model and begin again later, the new Group will be defined. Go to one of the Display options and try to create a table for the new Group. It should work just like any other.\n</p><p>If you have created a Test group, however, you probably do not want it to always remain an option. So go back into Change Regionalization/Grouping, select the Test group in the left-hand window, and touch the Delete Group option. Again the program will ask for confirmation. Provide it and proceed.\n</p><p>There should be no limit on the number of Groups that you can designate in this way.\n</p>\n<h2><span class=\"mw-headline\" id=\"Display_Regionally_Aggregated_Data\"><span style=\"font-size:x-large;\">Display Regionally Aggregated Data</span></span></h2>\n<p>To display data that is regionally aggregated, click on Extended Features on the Main Menu of IFs, and then select Manage Regionalization.\n</p><p>This feature of IFs allows you to view data that is separated into economic, agricultural or energy sectors for specific countries. By selecting this feature, a window similar to the one below will appear:\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Groups3.gif\" class=\"mw-file-description\"><img src=\"/images/2/26/Groups3.gif\" decoding=\"async\" width=\"462\" height=\"449\" class=\"mw-file-element\" /></a><figcaption>Processed Region Data Window</figcaption></figure><p>Toggle between the options at the top of the menu in order to change the data represented below.\n</p><h1><span class=\"mw-headline\" id=\"Change_Country_Subregionalization\"><span style=\"font-size:xx-large;\">Change Country Subregionalization</span></span></h1>\n<h2><span class=\"mw-headline\" id=\"Introduction_to_Sub-regionalization_Procedures\"><span style=\"font-size:x-large;\">Introduction to Sub-regionalization Procedures</span></span></h2>\n<p>Using IFs, the user will be able to not only display all variables for individual countries across time, but also examine their results as a product of larger groups or divide a country into sub-regions and study these regions separately. To learn how the processes work, it is important to understand the geographic representation used in IFs.\n</p>\n<figure class=\"mw-halign-right\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Geo_186.png\" class=\"mw-file-description\"><img src=\"/images/1/16/Geo_186.png\" decoding=\"async\" width=\"500\" height=\"378\" class=\"mw-file-element\" /></a><figcaption>Visual representation of IFs definitions of regions/countries/groups/glists</figcaption></figure><p>There are 186 country-specific data sets in IFs and they form the foundation of the program. Groups are the collections of countries and regions organized geographically or by membership in international institutions/regimes. G-lists merge both groups and countries and are mostly geographically bound. The ability to split countries down into smaller regions, provinces or states is represented by the Regions module which is now under development.\n</p><p>The user can choose in which form to display their results. They can also&#160;<a href=\"#Identify_Groups_or_Country.2FRegion_Members\">examine the membership of each group</a>,&#160;<a href=\"#Change_Grouping.2FRegionalization\">create new groups and add or delete members of an existing group</a>. In particular, they can use the sub-regionalization feature of IFs to explore all variables of individual provinces within a country or a region. This section will primarily introduce the management of sub-regionalization. By learning the process, users can delve deeper into the analysis of any particular country by creating its sub-regions and investigating the variables of individual regions.&#160;\n</p>\n<h3><span class=\"mw-headline\" id=\"Foundation_for_the_Process:_Database_Modification\"><span style=\"font-size:medium;\">Foundation for the Process: Database Modification</span></span></h3>\n<p>Before a country in IFs can be divided into states or provinces, a new data file called IFsHistSeriesxxx.mdb, for example IFsHistSeriesChina.mdb, must be created for the country. That file is a variation of the country-based file called IFsHistSeries.mdb with data series tables for all countries across time for all variables. In addition, some tables that exist in the file Provinces.mdb on the IFs\\Data directory require modifications to initiate the sub-regionalization process.\n</p><p>The process of sub-regionalization actually affects five files: IFs.mdb, IFsHistSeries.mdb, IFsCoVatra.mdb, IFsCoVatraSeries.mdb, and IFsWVSCohort.mdb. For each of the files, the process looks in the IFs\\Data folder for an equivalent file with the name of the country at the end, for example IFsHistSeriesChina.mdb, then creates a copy to the IFs\\Runfiles directory. Modification is done in the copies on the \\Runfiles directory as well to the original files in the \\Data directory. Data for both individual provinces and the country as a whole are preserved, and can be copied back and forth between \\Data and \\Runfiles directories, so the user will be able to switch between model runs with different sub-regionalizations, and reset everything to the starting point without states/provinces.\n</p>\n<h2><span class=\"mw-headline\" id=\"Add_or_Delete_Sub-regions\"><span style=\"font-size:x-large;\">Add or Delete Sub-regions</span></span></h2>\n<p>To add sub-regions, choose&#160;<b>Extended features</b>&#160;on the menu bar first. In the drop down menu choose&#160;<b>Change Country Sub-Regionalization</b>, and then&#160;<b>Add or Delete Subregions</b>. The popup window would show several sub-regions that already exist in IFs. Click on a country to see its available sub-regions.\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Subregion1.gif\" class=\"mw-file-description\"><img src=\"/images/e/e0/Subregion1.gif\" decoding=\"async\" width=\"677\" height=\"498\" class=\"mw-file-element\" /></a><figcaption>Sub-region selection window</figcaption></figure><p>Choose a region name and click&#160;<b>Add</b>. Click&#160;<b>OK</b>&#160;on popup windows to proceed.\n</p><p>That would initiate backstage processes which include 1) checking the availability of four required data series for the states and provinces being created in IFsHistSeriesxxx.mdb, 2) filling holes in the four required data series for the base year and other years, 3) processing additional available data series from the province files, and 4) filling holes for series that are needed for further model processing.\n</p><p>When the processes are complete, the user will be taken to the form for Rebuilding the Base Data Load, where IFs cleans and reconciles data series and also aggregates states/provinces into sub-regions or individual ones.\n</p>\n<figure class=\"mw-default-size mw-halign-center\" typeof=\"mw:File\"><a href=\"/index.php?title=File:Subregion2.gif\" class=\"mw-file-description\" title=\"Rebuilding the Base Data Load window\"><img alt=\"Rebuilding the Base Data Load window\" src=\"/images/c/cc/Subregion2.gif\" decoding=\"async\" width=\"414\" height=\"322\" class=\"mw-file-element\" /></a><figcaption>Rebuilding the Base Data Load window</figcaption></figure><p>In the Rebuild Base form, all boxes on the Rebuild Base form should be checked either automatically or by the user.\n</p><p>Rebuilding the base case will place all initial conditions and parameters into the base case, but all computed values will be set at 0 until the model is re-run. Usually, the completion of rebuilding the base data load will automatically take the user to the form for re-running the model and re-creating the base case. If it does not, exit to the main menu, click&#160;<b>Scenario Analysis</b>&#160;and choose&#160;<b>Single Run</b>&#160;from the sub-menu&#160;<b>Run</b>.\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Subregion3.gif\" class=\"mw-file-description\"><img src=\"/images/5/55/Subregion3.gif\" decoding=\"async\" width=\"424\" height=\"295\" class=\"mw-file-element\" /></a><figcaption>Run scenario window</figcaption></figure><p>Run the base case for as long a time period as possible (normally to 2100).\n</p><p>Upon completion of the model run, there will be a working file with all computed variables, but the IFsBase.run file will still not include those computed variables. To save the results of the new run, choose&#160;<b>SAVE working file as</b>… from&#160;<b>File Management</b>&#160;under&#160;<b>Scenario Analysis</b>.\n</p><p>It is also possible to switch between different model runs. For instance, the user has just completed a sub-regionalization that divides China into single provinces. Now he would like to use data for the whole country as a base case again. To remove all sub-regions, open the window for&#160;<b>Add or Delete Subregions</b>. Click on&#160;<b>Switch Provinces</b>&#160;and choose&#160;<b>No State/Province</b>&#160;from the right side box of Available Runs. Click&#160;<b>Switch</b>&#160;to restore the model to pre-sub-regionalization status.\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Subregion4.gif\" class=\"mw-file-description\"><img src=\"/images/4/49/Subregion4.gif\" decoding=\"async\" width=\"677\" height=\"498\" class=\"mw-file-element\" /></a><figcaption>Selecting raw sub-region data window</figcaption></figure><p>To add another sub-region, the existing sub-region needs to be deleted first. The option to delete a sub-region is in the same window as to add sub-regions. Select a region name and click&#160;<b>Delete</b>&#160;to delete the sub-region. Deleting a region will remove all files created in the process of adding the region, and the corresponding model run will no longer be available from the Switch Provinces option.\n</p><h2><span class=\"mw-headline\" id=\"Change_Sub-regionalization\"><span style=\"font-size:x-large;\">Change Sub-regionalization</span></span></h2>\n<p>IFs allows users to create new sub-regions and to alter the membership of existing sub-regions for analysis purpose. Before changing sub-regionalization, it is necessary to restore the model to pre-sub-regionalization status. Then, under&#160;<b>Extended Features</b>, choose&#160;<b>Change Sub-Regionalization</b>&#160;from sub-menu&#160;<b>Change Country Sub-Regionalization</b>.\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Subregion5.gif\" class=\"mw-file-description\"><img src=\"/images/7/76/Subregion5.gif\" decoding=\"async\" width=\"662\" height=\"549\" class=\"mw-file-element\" /></a><figcaption>Selecting sub-regionalization window</figcaption></figure><p>On the above form, the list box on the left displays the current sub-regions of IFs. The list box in the middle provides available geographic units for the country chosen. The list box on the right shows the full set of region members of whatever group the users select in the left-most box.\n</p><p><b>Editing Membership in a Region</b>. Click on a region name in the left-hand list to activate it. Double click a state/province in the right-most box to remove it from the highlighted sub-region, and double click a state/province in the middle box to add it to the highlighted sub-region.\n</p><p><b>Create New Region</b>. Click on Create New Region on the above form and enter a region name to add in the pop-up window. The newly created region will then appear on the left-most box in the form. Follow the same instructions as in Editing Membership in a Region to add and edit members for the new region.\n</p>\n<h1><span class=\"mw-headline\" id=\"Show_Computed_Functions\"><span style=\"font-size:xx-large;\">Show Computed Functions</span></span></h1>\n<p>To access Show Computed Functions, click on Extended Features on the Main Menu of IFs.\n</p><p>By clicking on Show Computed Functions, you will be presented with a menu that looks similarly to the one pictured below:\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Feat6.gif\" class=\"mw-file-description\"><img src=\"/images/5/5f/Feat6.gif\" decoding=\"async\" width=\"607\" height=\"474\" class=\"mw-file-element\" /></a><figcaption>Computed Functions window</figcaption></figure><p>The box that is located in the middle of your screen holds hundreds of functions. Select one or more of these functions. In order to select more than one function, highlight one function, hold in the Ctrl key and select a second function.\n</p><p>After you have selected a function, choose the Draw Graph option from the top of the menu. This will then display the function at the bottom of the screen along with the specific function and an R-Squared value.\n</p><p>You are then able to export what you have created by selecting Save Graph. This will open a new window that will present you with more graph saving options.\n</p><p>Turning Tracking On or Tracking Off allows values to be displayed in the top right corner of the graph.\n</p>\n<h1><span class=\"mw-headline\" id=\"Rebuild_Model_Base\"><span style=\"font-size:xx-large;\">Rebuild Model Base</span></span></h1>\n<p>Rebuilding either the model base, or the historic base, are features that allow you to incorporate larger changes you have made to foundational aspects of IFs. Rebuilding the Model Base (also known as the Futures Base) will ask IFs to reconstruct all of its data from 2000-2100. Rebuilding the Historic Base will ask IFs to reconstruct its data from 1960-2000.\n</p><p>To access Rebuild Model Base, click on Extended Features on the Main Menu of IFs. There you will find two sub-sub-options:\n</p>\n<ul><li><a href=\"#Rebuild_the_Base\">Rebuild the Base</a></li>\n<li><a href=\"#Rebuild_the_Historic_Base\">Rebuild the Historic Base</a></li></ul>\n<h2><span class=\"mw-headline\" id=\"Rebuild_the_Base\"><span style=\"font-size:x-large;\">Rebuild the Base</span></span></h2>\n<p>To access Rebuilding the Base, click on Extended Features on the Main Menu of IFs, and then select Rebuild Model Base.\n</p>\n<h3><span class=\"mw-headline\" id=\"Rebuilding_the_Base_Case\"><span style=\"font-size:medium;\">Rebuilding the Base Case</span></span></h3>\n<p>If you have made substantive changes to, say, the regionalization of IFs, you will have to rebuild the base for those changes to take effect. Choose Model Change again from the Main Menu and choose the Rebuild Base sub-option. That may have two sub options – you want Rebuild Base, not Rebuild Historic Base (although if both are there, the regionalization change means that you should return later and also Rebuild the Historic Base). IFs will provide a short synopsis of what rebuilding the base will do and when you would want to do it. It then provides the Rebuild Base window – at this point, you can still change your mind and exit without rebuilding the base:\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Rebuild.gif\" class=\"mw-file-description\"><img src=\"/images/2/26/Rebuild.gif\" decoding=\"async\" width=\"528\" height=\"476\" class=\"mw-file-element\" /></a><figcaption>Rebuilding the Base Case window</figcaption></figure><p>At this point you have changed the regionalization, but have not changed any of the raw country data, so check only the Regionalization box on this screen. Note that IFs will, however, automatically check the issue-area specific boxes, because it needs to create new regional values in each one of those. Normally you will want to rebuild the base case for as long a time period as possible, so leave the Last Year at 2100. When ready, touch the Rebuild Base command button.\n</p><p>Rebuilding the base case will take a while, because all country-specific data must be aggregated into regions. The preprocessor that does this also takes care to check consistency of various data series and to fill holes as necessary.&#160;\n</p>\n<h3><span class=\"mw-headline\" id=\"Running_the_Model_to_Fill_the_New_Base_Case\"><span style=\"font-size:medium;\">Running the Model to Fill the New Base Case</span></span></h3>\n<p>When the process is complete, you will be reminded that you must now run the model. Although all initial conditions and parameters have been placed into the base case, all computed values were set at 0 when you rebuilt the base. So Exit to the Main menu, go to Self-Managed Scenario Analysis, choose the Run option, and run the model for the longest time period possible (normally 2100).\n</p><p>Upon completion of the model run, you will have a working file with the computed variables, but the IFsBase.run file will still not include those computed variables. Because you have rebuilt the Base Case, the model will ask you if you want to save the results of your run (still in the Working File) as the new Base Case. Respond affirmatively to save the working file as IFsBase.run. These are the only circumstances under which IFs will allow you to save over the Base Case.\n</p><p>You should now have a Base Case that includes whatever changes you made to the regionalization of the model. You will be able to display any variable in IFs for the change you made.\n</p>\n<h2><span class=\"mw-headline\" id=\"Rebuild_the_Historic_Base\"><span style=\"font-size:x-large;\">Rebuild the Historic Base</span></span></h2>\n<p>To access Rebuilding the Historic Base, click on Extended Features on the Main Menu of IFs, and then select Rebuild Model Base.\n</p><p>This feature of IFs should only be used if one or more of the following occurs:\n</p>\n<ul><li>You have lost the base case and cannot retrieve it from an instillation disk</li>\n<li>You have changed the country-specific data base in access files</li>\n<li>You have changed the number or membership of model regions</li></ul>\n<p>The process of rebuilding the base of IFs will process all of the country specific data in the model and will create group files. These files will then be used to construct a new base. Rebuilding the Historic Base will delete earlier Run-Result-Files.\n</p><p>After deciding you would like to rebuild the historic base, you will be prompted with a menu that allows you to specify what data sets you would like rebuilt and change the last year. The menu should look similarly to the image below:\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Rebuild1.gif\" class=\"mw-file-description\"><img src=\"/images/7/79/Rebuild1.gif\" decoding=\"async\" width=\"529\" height=\"477\" class=\"mw-file-element\" /></a><figcaption>Rebuilding Historic Base window</figcaption></figure><p>Check the boxes you would like to rebuild and click on Rebuild Base.\n</p><h1><span class=\"mw-headline\" id=\"Model_Integration\"><span style=\"font-size:xx-large;\">Model Integration</span></span></h1>\n<p>To access Model Integration, click on Extended Features on the Main Menu of IFs. This feature is designed to incorporate different software programs into IFs. It is currently under development.\n</p>\n<!-- \nNewPP limit report\nCached time: 20260924191133\nCache expiry: 86400\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.031 seconds\nReal time usage: 0.033 seconds\nPreprocessor visited node count: 119/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Saved in RevisionOutputCache with key wiki:rcache:7640:dateformat=default and timestamp 20260924191133 and revision id 7640.\n -->\n</div>",
+    "title": "Extended Features",
+    "wikitext": "= <span style=\"font-size:xx-large;\">Manage Country Data</span> =\n\nTo access the Manage Country Data sub-option, click on Extended Features on the Main Menu of IFs. There you will find two sub-sub-options:\n\n*[[#Edit_Country_Data|Edit Country Data]]\n*[[#Display_Processed_Data|Display Processed Data]]\n*[[#Historic_Data_File_Processing|Historic Data File Processing]]\n\nThis feature of IFs allows users to alter the historic data that underlies IFs. It is suggested that only those with extensive experience using IFs attempt to change this data.\n\n== <span style=\"font-size:x-large;\">Edit Country Data</span> ==\n\nTo access Edit Country Data, click on Extended Features on the Main Menu of IFs, and then select Manage Country Data.\n\n'''Editing Initial Conditions for Countries:'''&nbsp;You may find that the data base for a country is less complete and/or accurate than you would like. You can fix most of that with the normal procedures for changing initial conditions and parameters.\n\n[[File:Data1.gif|frame|center|Raw Country Data Window]]The grid gives you the opportunity to go into all issue areas and all countries and change any values you wish of the raw data. To narrow down your selection, simply click on Please remember that, if you do so, you will need to rebuild the base case again (after indicating the issue area(s) in which you have changed data) and then rerun the model. Also please remember that any changes you make to the raw data are \"permanent\" and do not disappear after you exit IFs: the only ways to reverse them are to do so number-by-number or to reinstall IFs.\n\n== <span style=\"font-size:x-large;\">Display Processed Data</span> ==\n\nTo access this feature of IFs, select Extended Features from the Main Menu and then Manage Country Data. Click on Display Processed Country Data.\n\nBy clicking on Display Processed Country Data, a window similar to the one below will appear:\n\n[[File:Data2.gif|frame|center|Processed Country Data Window]]\n\nThis allows you to view all of the data for each country that underlies the use of IFs. By toggling between the options at the top of the screen, Agriculture, Population, Economics, Social/Political and Energy, you are able to quickly find the variables you are looking for. By clicking Exit, your changes will be saved.\n\nIf you would like to incorporate data changes into your version of IFs, make any changes necessary and then Rebuild the Model Base and rerun the model.\n\n== <span style=\"font-size:x-large;\">Historic Data File Processing</span> ==\n\nTo access Historic Data File Processing, click on Extended Features on the Main Menu of IFs, and then select Manage Country Data.\n\nIf you have reason to import large amounts of data into IFs, click on the Historic Data File Processing. This will then present you with three options:\n\n*[[#Importing_Data_from_Excel_Files|Importing Data from Excel Files]]\n*[[#Remove_Years_from_Data|Remove Years from Data]]\n*[[#Identify_and_Save_Years|Identify and Save Years]]\n\n=== <span style=\"font-size:medium;\">Importing Data from Excel Files</span> ===\n\nThis feature of IFs can be found by selecting Extended Features from the Main Menu, Manage Country Data, Historic Data File Processing and then Import XLS Data.\n\nWhen you choose to import large amounts of data into IFs via Excel, choose Import Data From XLS File. This will add an .xls access file to the historic data set for IFs.\n\nChoosing this option will cause a window to appear that will look similarly to the one below:\n\n[[File:Data3.gif|frame|right|Importing data window]]Initially, it would be advised to change the Series Orientation function located on the right hand side of this menu. Identify how your data set is orientated and match that to one of the options. You will notice that the graph below changes to visually represent the specific data orientation that you choose.\n\nAfter you have chosen the Series Orientation, click on the File option located at the top of the menu. You will then be prompted to select an Excel file. After you have made your selection, the file will be loaded into the Import Excel Data form. You will then be prompted to select certain Excel Sheets. These can be seen at the bottom of the Excel file after it is opened. They may have different names or simply be distinguished as \"Sheet 1\", \"Sheet 2\", etc. To see the Excel file you have selected, click on Viet Excel.\n\nAfter you have selected your Excel file, you must further specify the orientation of the data so that IFs knows how to read the data after it has been imported. Fill in the Country Names Start at, Years Start at and Series Name Start at forms before proceeding. To finish the process, you must fill in some more specific information that will help IFs categorize your data. If you have questions, you can consult the Data Dictionary located in the lower-middle of the menu. When finished, click Import.\n\nOther options include Scaling, which allows users to change their data set values by a multiplier. Finally, users are asked to specify a name for their Variable list as well as a brief description.\n\n=== <span style=\"font-size:medium;\">Remove Years from Data</span> ===\n\nThis feature of IFs can be found by selecting Extended Features from the Main Menu, Manage Country Data, Historic Data File Processing and then Remove Data From Years.\n\nThis feature allows users to remove data for all years except for 5 year intervals.\n\n=== <span style=\"font-size:medium;\">Identify and Save Years</span> ===\n\nThis feature of IFs can be found by selecting Extended Features from the Main Menu, Manage Country Data, Historic Data File Processing and then Identify and Save Years.\n\nThis feature allows users to identify and save data years if they have made any substantive change to the years in the raw data file.&nbsp;\n\n= <span style=\"font-size:xx-large;\">Manage Groups/Regions</span> =\n\nTo access Manage Groups/Countries/Regions, click on Extended Features on the Main Menu of IFs. There you will find three sub-sub-options: Identify Group or Country/Region Members, Change Grouping/Regionalization, and Display Regionally Aggregated Data.\n\nThis feature of IFs allows users to delve more deeply into the structure and membership of groups or Glists that are used in IFs. Users also can create their own groups or alter membership within an existing group to suit their purpose.\n\n*[[#Identify_Groups_or_Country.2FRegion_Members|Learn about how to see what countries are members of what groups.]]\n*[[#Change_Grouping.2FRegionalization|Learn how to change existing groups and create your own group.]]\n*[[#Display_Regionally_Aggregated_Data|Learn how to display regional or group data sets.]]\n\n== <span style=\"font-size:x-large;\">Identify Groups or Country/Region Members</span> ==\n\nTo identify regions or group members used in IFs, click on Extended Features on the Main Menu of IFs, and then select Manage Regionalization.\n\nThis feature of IFs allows users to identify which countries/regions are represented in certain groups. By clicking on this feature, you will be presented with a menu that looks similarly to the one below:\n\n[[File:Groups1.gif|frame|center|Selecting groups or countries/regions window]]By clicking on Switch to Groups, the list of countries/regions will become a list of groups. By clicking on any of the groups in the left-hand list, the members of that group will appear on the right hand side.\n\n== <span style=\"font-size:x-large;\">Change Grouping/Regionalization</span> ==\n\nTo change countries in certain regions or groups, click on Extended Features on the Main Menu of IFs, and then select Manage Regionalization.\n\nHow do I change the geographic representations of IFs?\n\nThis is an advanced topic, and many users may wish to change or add Grouping designations to IFs for analysis purposes. However, before describing the processes, it is important to understand the geographic conceptualizations used in IFs. Learn more about the building blocks of IFs.\n\n[[File:Groups2.gif|frame|right|Change Grouping/Regionalization window]]'''Changing or Adding Groupings.&nbsp;'''On the above form, choose the Switch to Groups option. The list box on the left displays the current Groups of IFs (yours may differ from the one above). The list box in the middle provides check boxes for all countries/regions in your version of IFs; it allows you to change the membership of the Groups in the left-most box. The list box on the right shows the full set of country/region members of whatever group you select in the left-most box. Select one of the groups in the left box by clicking on it; you should see changes in both of the other two boxes as they display the country/region membership of the group and, in the case of the middle box, give you the opportunity to change that membership.\n\n'''Editing Membership in a Group.'''&nbsp;The menu options provide help editing groupings. Let’s try adding a member to an existing group. Click on the Group name in the left-hand list to activate it. You will see the group members on the right. Arbitrarily pick and country/region in the middle list that is not checked and check the box in front of its name. After you check it, note that the name is still not in the right-hand list. Now click on the Register Member Changes option from the menu. Note that the country/region is added immediately to the right-hand list. Your editing is complete. You could now exit the form and begin displaying results for the redefined group (or use the group as the basis for parameter change in scenario analysis). But instead, uncheck the box in front of the country/region name and again click on Register Member Changes. You will have undone your arbitrary change.\n\n'''Adding a Group:'''&nbsp;Now let’s add a Group. Click on the Add Group option. The system will first confirm that you want to make such a change. Proceed. When asked for a name of the Group, provide that name if you have one in mind for a new group or type Test if you do not. After hitting the Enter key, you will see the new Group at the bottom of the left-hand list.\n\nAt this point the Group has been created, but has no members. With the name of the Group in the left-had box activated, select its members by activating the appropriate check-boxes in the middle column. When you have finished that, touch the Register Member Changes option. You will see the members of your Group pop up in the right-hand box.\n\nYou can now Exit from the form. You should see a message box that indicates no errors in what you have done. Then you will see a message indicating that your new group has been added to a file of IFs that maintains such groupings. That means that even when you stop the model and begin again later, the new Group will be defined. Go to one of the Display options and try to create a table for the new Group. It should work just like any other.\n\nIf you have created a Test group, however, you probably do not want it to always remain an option. So go back into Change Regionalization/Grouping, select the Test group in the left-hand window, and touch the Delete Group option. Again the program will ask for confirmation. Provide it and proceed.\n\nThere should be no limit on the number of Groups that you can designate in this way.\n\n== <span style=\"font-size:x-large;\">Display Regionally Aggregated Data</span> ==\n\nTo display data that is regionally aggregated, click on Extended Features on the Main Menu of IFs, and then select Manage Regionalization.\n\nThis feature of IFs allows you to view data that is separated into economic, agricultural or energy sectors for specific countries. By selecting this feature, a window similar to the one below will appear:\n\n[[File:Groups3.gif|frame|center|Processed Region Data Window]]Toggle between the options at the top of the menu in order to change the data represented below.\n\n= <span style=\"font-size:xx-large;\">Change Country Subregionalization</span> =\n\n== <span style=\"font-size:x-large;\">Introduction to Sub-regionalization Procedures</span> ==\n\nUsing IFs, the user will be able to not only display all variables for individual countries across time, but also examine their results as a product of larger groups or divide a country into sub-regions and study these regions separately. To learn how the processes work, it is important to understand the geographic representation used in IFs.\n\n[[File:Geo 186.png|frame|right|Visual representation of IFs definitions of regions/countries/groups/glists]]There are 186 country-specific data sets in IFs and they form the foundation of the program. Groups are the collections of countries and regions organized geographically or by membership in international institutions/regimes. G-lists merge both groups and countries and are mostly geographically bound. The ability to split countries down into smaller regions, provinces or states is represented by the Regions module which is now under development.\n\nThe user can choose in which form to display their results. They can also&nbsp;[[#Identify_Groups_or_Country.2FRegion_Members|examine the membership of each group]],&nbsp;[[#Change_Grouping.2FRegionalization|create new groups and add or delete members of an existing group]]. In particular, they can use the sub-regionalization feature of IFs to explore all variables of individual provinces within a country or a region. This section will primarily introduce the management of sub-regionalization. By learning the process, users can delve deeper into the analysis of any particular country by creating its sub-regions and investigating the variables of individual regions.&nbsp;\n\n=== <span style=\"font-size:medium;\">Foundation for the Process: Database Modification</span> ===\n\nBefore a country in IFs can be divided into states or provinces, a new data file called IFsHistSeriesxxx.mdb, for example IFsHistSeriesChina.mdb, must be created for the country. That file is a variation of the country-based file called IFsHistSeries.mdb with data series tables for all countries across time for all variables. In addition, some tables that exist in the file Provinces.mdb on the IFs\\Data directory require modifications to initiate the sub-regionalization process.\n\nThe process of sub-regionalization actually affects five files: IFs.mdb, IFsHistSeries.mdb, IFsCoVatra.mdb, IFsCoVatraSeries.mdb, and IFsWVSCohort.mdb. For each of the files, the process looks in the IFs\\Data folder for an equivalent file with the name of the country at the end, for example IFsHistSeriesChina.mdb, then creates a copy to the IFs\\Runfiles directory. Modification is done in the copies on the \\Runfiles directory as well to the original files in the \\Data directory. Data for both individual provinces and the country as a whole are preserved, and can be copied back and forth between \\Data and \\Runfiles directories, so the user will be able to switch between model runs with different sub-regionalizations, and reset everything to the starting point without states/provinces.\n\n== <span style=\"font-size:x-large;\">Add or Delete Sub-regions</span> ==\n\nTo add sub-regions, choose&nbsp;'''Extended features'''&nbsp;on the menu bar first. In the drop down menu choose&nbsp;'''Change Country Sub-Regionalization''', and then&nbsp;'''Add or Delete Subregions'''. The popup window would show several sub-regions that already exist in IFs. Click on a country to see its available sub-regions.\n\n[[File:Subregion1.gif|frame|center|Sub-region selection window]]Choose a region name and click&nbsp;'''Add'''. Click&nbsp;'''OK'''&nbsp;on popup windows to proceed.\n\nThat would initiate backstage processes which include 1) checking the availability of four required data series for the states and provinces being created in IFsHistSeriesxxx.mdb, 2) filling holes in the four required data series for the base year and other years, 3) processing additional available data series from the province files, and 4) filling holes for series that are needed for further model processing.\n\nWhen the processes are complete, the user will be taken to the form for Rebuilding the Base Data Load, where IFs cleans and reconciles data series and also aggregates states/provinces into sub-regions or individual ones.\n\n[[File:Subregion2.gif|center|Rebuilding the Base Data Load window]]In the Rebuild Base form, all boxes on the Rebuild Base form should be checked either automatically or by the user.\n\nRebuilding the base case will place all initial conditions and parameters into the base case, but all computed values will be set at 0 until the model is re-run. Usually, the completion of rebuilding the base data load will automatically take the user to the form for re-running the model and re-creating the base case. If it does not, exit to the main menu, click&nbsp;'''Scenario Analysis'''&nbsp;and choose&nbsp;'''Single Run'''&nbsp;from the sub-menu&nbsp;'''Run'''.\n\n[[File:Subregion3.gif|frame|center|Run scenario window]]Run the base case for as long a time period as possible (normally to 2100).\n\nUpon completion of the model run, there will be a working file with all computed variables, but the IFsBase.run file will still not include those computed variables. To save the results of the new run, choose&nbsp;'''SAVE working file as'''… from&nbsp;'''File Management'''&nbsp;under&nbsp;'''Scenario Analysis'''.\n\nIt is also possible to switch between different model runs. For instance, the user has just completed a sub-regionalization that divides China into single provinces. Now he would like to use data for the whole country as a base case again. To remove all sub-regions, open the window for&nbsp;'''Add or Delete Subregions'''. Click on&nbsp;'''Switch Provinces'''&nbsp;and choose&nbsp;'''No State/Province'''&nbsp;from the right side box of Available Runs. Click&nbsp;'''Switch'''&nbsp;to restore the model to pre-sub-regionalization status.\n\n[[File:Subregion4.gif|frame|center|Selecting raw sub-region data window]]To add another sub-region, the existing sub-region needs to be deleted first. The option to delete a sub-region is in the same window as to add sub-regions. Select a region name and click&nbsp;'''Delete'''&nbsp;to delete the sub-region. Deleting a region will remove all files created in the process of adding the region, and the corresponding model run will no longer be available from the Switch Provinces option.\n\n== <span style=\"font-size:x-large;\">Change Sub-regionalization</span> ==\n\nIFs allows users to create new sub-regions and to alter the membership of existing sub-regions for analysis purpose. Before changing sub-regionalization, it is necessary to restore the model to pre-sub-regionalization status. Then, under&nbsp;'''Extended Features''', choose&nbsp;'''Change Sub-Regionalization'''&nbsp;from sub-menu&nbsp;'''Change Country Sub-Regionalization'''.\n\n[[File:Subregion5.gif|frame|center|Selecting sub-regionalization window]]On the above form, the list box on the left displays the current sub-regions of IFs. The list box in the middle provides available geographic units for the country chosen. The list box on the right shows the full set of region members of whatever group the users select in the left-most box.\n\n'''Editing Membership in a Region'''. Click on a region name in the left-hand list to activate it. Double click a state/province in the right-most box to remove it from the highlighted sub-region, and double click a state/province in the middle box to add it to the highlighted sub-region.\n\n'''Create New Region'''. Click on Create New Region on the above form and enter a region name to add in the pop-up window. The newly created region will then appear on the left-most box in the form. Follow the same instructions as in Editing Membership in a Region to add and edit members for the new region.\n\n= <span style=\"font-size:xx-large;\">Show Computed Functions</span> =\n\nTo access Show Computed Functions, click on Extended Features on the Main Menu of IFs.\n\nBy clicking on Show Computed Functions, you will be presented with a menu that looks similarly to the one pictured below:\n\n[[File:Feat6.gif|frame|center|Computed Functions window]]The box that is located in the middle of your screen holds hundreds of functions. Select one or more of these functions. In order to select more than one function, highlight one function, hold in the Ctrl key and select a second function.\n\nAfter you have selected a function, choose the Draw Graph option from the top of the menu. This will then display the function at the bottom of the screen along with the specific function and an R-Squared value.\n\nYou are then able to export what you have created by selecting Save Graph. This will open a new window that will present you with more graph saving options.\n\nTurning Tracking On or Tracking Off allows values to be displayed in the top right corner of the graph.\n\n= <span style=\"font-size:xx-large;\">Rebuild Model Base</span> =\n\nRebuilding either the model base, or the historic base, are features that allow you to incorporate larger changes you have made to foundational aspects of IFs. Rebuilding the Model Base (also known as the Futures Base) will ask IFs to reconstruct all of its data from 2000-2100. Rebuilding the Historic Base will ask IFs to reconstruct its data from 1960-2000.\n\nTo access Rebuild Model Base, click on Extended Features on the Main Menu of IFs. There you will find two sub-sub-options:\n\n*[[#Rebuild_the_Base|Rebuild the Base]]\n*[[#Rebuild_the_Historic_Base|Rebuild the Historic Base]]\n\n== <span style=\"font-size:x-large;\">Rebuild the Base</span> ==\n\nTo access Rebuilding the Base, click on Extended Features on the Main Menu of IFs, and then select Rebuild Model Base.\n\n=== <span style=\"font-size:medium;\">Rebuilding the Base Case</span> ===\n\nIf you have made substantive changes to, say, the regionalization of IFs, you will have to rebuild the base for those changes to take effect. Choose Model Change again from the Main Menu and choose the Rebuild Base sub-option. That may have two sub options – you want Rebuild Base, not Rebuild Historic Base (although if both are there, the regionalization change means that you should return later and also Rebuild the Historic Base). IFs will provide a short synopsis of what rebuilding the base will do and when you would want to do it. It then provides the Rebuild Base window – at this point, you can still change your mind and exit without rebuilding the base:\n\n[[File:Rebuild.gif|frame|center|Rebuilding the Base Case window]]At this point you have changed the regionalization, but have not changed any of the raw country data, so check only the Regionalization box on this screen. Note that IFs will, however, automatically check the issue-area specific boxes, because it needs to create new regional values in each one of those. Normally you will want to rebuild the base case for as long a time period as possible, so leave the Last Year at 2100. When ready, touch the Rebuild Base command button.\n\nRebuilding the base case will take a while, because all country-specific data must be aggregated into regions. The preprocessor that does this also takes care to check consistency of various data series and to fill holes as necessary.&nbsp;\n\n=== <span style=\"font-size:medium;\">Running the Model to Fill the New Base Case</span> ===\n\nWhen the process is complete, you will be reminded that you must now run the model. Although all initial conditions and parameters have been placed into the base case, all computed values were set at 0 when you rebuilt the base. So Exit to the Main menu, go to Self-Managed Scenario Analysis, choose the Run option, and run the model for the longest time period possible (normally 2100).\n\nUpon completion of the model run, you will have a working file with the computed variables, but the IFsBase.run file will still not include those computed variables. Because you have rebuilt the Base Case, the model will ask you if you want to save the results of your run (still in the Working File) as the new Base Case. Respond affirmatively to save the working file as IFsBase.run. These are the only circumstances under which IFs will allow you to save over the Base Case.\n\nYou should now have a Base Case that includes whatever changes you made to the regionalization of the model. You will be able to display any variable in IFs for the change you made.\n\n== <span style=\"font-size:x-large;\">Rebuild the Historic Base</span> ==\n\nTo access Rebuilding the Historic Base, click on Extended Features on the Main Menu of IFs, and then select Rebuild Model Base.\n\nThis feature of IFs should only be used if one or more of the following occurs:\n\n*You have lost the base case and cannot retrieve it from an instillation disk\n*You have changed the country-specific data base in access files\n*You have changed the number or membership of model regions\n\nThe process of rebuilding the base of IFs will process all of the country specific data in the model and will create group files. These files will then be used to construct a new base. Rebuilding the Historic Base will delete earlier Run-Result-Files.\n\nAfter deciding you would like to rebuild the historic base, you will be prompted with a menu that allows you to specify what data sets you would like rebuilt and change the last year. The menu should look similarly to the image below:\n\n[[File:Rebuild1.gif|frame|center|Rebuilding Historic Base window]]Check the boxes you would like to rebuild and click on Rebuild Base.\n\n= <span style=\"font-size:xx-large;\">Model Integration</span> =\n\nTo access Model Integration, click on Extended Features on the Main Menu of IFs. This feature is designed to incorporate different software programs into IFs. It is currently under development."
+  },
+  "content_sha256": "d8145f735cd64fb848eb43089cf0fe5891fb0b81aa1d7e44ab8777f67c13e30c",
+  "extraction_warnings": [
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/8/8e/Data1.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/d/d4/Data2.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/8/85/Data3.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/b/be/Groups1.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/9/92/Groups2.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/2/26/Groups3.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/1/16/Geo_186.png"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/e/e0/Subregion1.gif"
+    },
+    {
+      "alt": "Rebuilding the Base Data Load window",
+      "kind": "visual_not_transcribed",
+      "source": "/images/c/cc/Subregion2.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/5/55/Subregion3.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/4/49/Subregion4.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/7/76/Subregion5.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/5/5f/Feat6.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/2/26/Rebuild.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/7/79/Rebuild1.gif"
+    },
+    {
+      "dependencies": {
+        "images": [
+          "Data1.gif",
+          "Data2.gif",
+          "Data3.gif",
+          "Groups1.gif",
+          "Groups2.gif",
+          "Groups3.gif",
+          "Geo_186.png",
+          "Subregion1.gif",
+          "Subregion2.gif",
+          "Subregion3.gif",
+          "Subregion4.gif",
+          "Subregion5.gif",
+          "Feat6.gif",
+          "Rebuild.gif",
+          "Rebuild1.gif"
+        ],
+        "templates": []
+      },
+      "kind": "embedded_dependency_approval_unverified"
+    }
+  ],
+  "extractor": "structured-v2",
+  "fetched_at": "2026-09-24T19:11:36.662618+00:00",
+  "latest_revision_at_selection": 13771,
+  "page_id": 1514,
+  "requested_title": "Extended Features",
+  "revision": 7640,
+  "revision_timestamp": "2017-07-27T18:04:29Z",
+  "selection": "approved",
+  "title": "Extended Features",
+  "url": "https://pardeewiki.du.edu/index.php?title=Extended+Features&oldid=7640"
+}

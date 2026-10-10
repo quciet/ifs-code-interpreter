@@ -1,4 +1,4 @@
-"""Read-only code retrieval and source-cited answers. Python standard library only."""
+"""Read-only code retrieval and source-cited research for IFs Companion."""
 from __future__ import annotations
 
 import argparse
@@ -115,9 +115,11 @@ def answer(question, evidence, endpoint, model, key):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--index', default='workspace/code.sqlite3')
+    parser.add_argument('--bundle', default=str(Path(__file__).resolve().parents[1]/'data'))
     sub = parser.add_subparsers(dest='command', required=True)
     build = sub.add_parser('index', help='Index bundled sources, or explicitly selected local folders')
     build.add_argument('--source', action='append', help='Repeat for multiple local source folders')
+    sub.add_parser('prepare-semantic',help='Prepare offline embeddings for the current index')
     for name in ('search', 'ask'):
         p = sub.add_parser(name)
         p.add_argument('question')
@@ -126,19 +128,30 @@ def main():
             p.add_argument('--model', default=os.getenv('IFS_AI_MODEL'))
     args = parser.parse_args()
     try:
+        from research import Research, prepare_research, evidence_from_hits
         if args.command == 'index':
-            print(json.dumps(index_sources(args.source or ['data/ifs-dev', 'data/ifs-web'], args.index), indent=2))
+            # Build separately and activate only after both code and wiki preparation succeed.
+            import uuid
+            destination=Path(args.index);pending=destination.with_name(destination.name+'.'+uuid.uuid4().hex+'.tmp')
+            try:
+                result=index_sources(args.source or [Path(args.bundle)/name for name in ('ifs-dev','ifs-web')],pending)
+                result.update(prepare_research(pending,args.bundle))
+                pending.replace(destination);result['index']=str(destination)
+                print(json.dumps(result,indent=2))
+            finally:pending.unlink(missing_ok=True)
             return
-        evidence = search(args.index, args.question)
+        research=Research(args.index,args.bundle)
+        if args.command=='prepare-semantic':
+            print(json.dumps(research.retrieval.prepare(),indent=2));return
+        evidence,semantic = evidence_from_hits(research, args.question)
         if args.command == 'search':
-            print(json.dumps(evidence, indent=2, ensure_ascii=False))
+            print(json.dumps({'evidence':evidence,'semantic_status':semantic}, indent=2, ensure_ascii=False))
             return
         if not args.endpoint or not args.model:
             raise ValueError('Set IFS_AI_ENDPOINT and IFS_AI_MODEL, or pass --endpoint and --model.')
-        print(answer(args.question, evidence, args.endpoint, args.model, os.getenv('IFS_AI_API_KEY','')))
-        print('\nSources (indexed snapshots; local folders may have changed):')
-        for item in evidence:
-            print(f"[{item['id']}] {item['source']}/{item['path']}:{item['start']}-{item['end']} sha256={item['sha256']}")
+        from investigation import investigate
+        print(json.dumps(investigate(research,args.question,{'endpoint':args.endpoint,'model':args.model,
+                          'api_key':os.getenv('IFS_AI_API_KEY','')}),indent=2,ensure_ascii=False))
     except ValueError as exc:
         parser.exit(2, str(exc)+'\n')
     except Exception as exc:

@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "source": "https://pardeewiki.du.edu",
+  "provenance": "Public documentation snapshot exported from the prototype cache. No live freshness claim.",
+  "scope": {
+    "articles": 20,
+    "checked_at": "2026-09-24T19:11:42.205564+00:00",
+    "roots": [
+      "Understand the Model",
+      "Guide to Scenario Analysis in International Futures (IFs)"
+    ],
+    "run_id": 2
+  },
+  "pages": [
+    {
+      "file": "133.json",
+      "title": "Population",
+      "revision": 14141,
+      "sha256": "8eeebd08cff3ea6b7a1add167b65c4f89f2546cad6a0d8f58f6583e8511fae09",
+      "fetched_at": "2026-09-24T19:10:56.413266+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "142.json",
+      "title": "Introduction to IFs",
+      "revision": 12058,
+      "sha256": "5c267ef0213a53862831478659a97a695e1ab597ee551fa4b5ac1acd1d3576a4",
+      "fetched_at": "2026-09-24T19:11:26.658082+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "198.json",
+      "title": "Agriculture",
+      "revision": 14147,
+      "sha256": "9ba6f24d17f1acaa2898422b8ae5f58a52cb7ad1d53de651317986732aeb5dfb",
+      "fetched_at": "2026-09-24T19:10:04.960376+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "221.json",
+      "title": "Education",
+      "revision": 9368,
+      "sha256": "9f3133cc1805a70e21f461a0c40f0723b94f0d3ee7bbfa54b795cc9a1ef8ed71",
+      "fetched_at": "2026-09-24T19:10:21.110703+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "232.json",
+      "title": "Energy",
+      "revision": 14148,
+      "sha256": "c683595a239c32b4d90988e579797d7e2ea3644b91a440efbfc15533b08405ce",
+      "fetched_at": "2026-09-24T19:10:26.190583+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "239.json",
+      "title": "Environment",
+      "revision": 14143,
+      "sha256": "d19909ed1b8bfa51505415c697f89139951a725289f99921dd462693622dbfd3",
+      "fetched_at": "2026-09-24T19:10:31.257245+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "241.json",
+      "title": "Governance",
+      "revision": 9029,
+      "sha256": "51c4a36f8fd2302dc82a11918b18e397a0c4d6512d1f7e6aa3dd3c6545d86fcf",
+      "fetched_at": "2026-09-24T19:10:36.298121+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "255.json",
+      "title": "Health",
+      "revision": 9031,
+      "sha256": "0f6af41108e7b7b6502a42d78cc99feb3acbfa6629d5194585bfaca9f682020b",
+      "fetched_at": "2026-09-24T19:10:41.322778+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "272.json",
+      "title": "Infrastructure",
+      "revision": 9069,
+      "sha256": "e2c2498a0dbbc860a29dd017ef73ef1661136a629e06eeaec65b82a63f5d9356",
+      "fetched_at": "2026-09-24T19:10:46.381140+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "283.json",
+      "title": "Interstate Politics (IP)",
+      "revision": 9036,
+      "sha256": "13c0c802ce1e5800192b1259c4bc6023922f17f3cde537d5d5c393cb0b6de39f",
+      "fetched_at": "2026-09-24T19:10:51.372551+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "292.json",
+      "title": "Socio-Political",
+      "revision": 14144,
+      "sha256": "8d67ce00226c2687b9ac17b40707a803eddebcd71c4a93e89ca4546ade9f8d6d",
+      "fetched_at": "2026-09-24T19:11:01.489104+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "303.json",
+      "title": "Transport",
+      "revision": 9052,
+      "sha256": "5d0e7362b613ee6008aad472f6cb60b7f80d960652112b89d919b655cc5b99c8",
+      "fetched_at": "2026-09-24T19:11:06.494808+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "998.json",
+      "title": "Understand IFs",
+      "revision": 8507,
+      "sha256": "cda3f4eae3594134ebb84c4ae00aece71bdebe215a140b72a19016d86a10ddab",
+      "fetched_at": "2026-09-24T19:11:11.541191+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "1514.json",
+      "title": "Extended Features",
+      "revision": 7640,
+      "sha256": "fd723ebdd765eb617cd01dab2280bc01c4702a2b8e2aa7a085f85858c092d93f",
+      "fetched_at": "2026-09-24T19:11:36.662618+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "1615.json",
+      "title": "Define, Drivers, Explain, Code and Delete",
+      "revision": 7642,
+      "sha256": "d1208cf1f27d436c2c0c92f648df0431070bd4cead0de8f36def3164f1f684ce",
+      "fetched_at": "2026-09-24T19:11:31.673092+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "1689.json",
+      "title": "Understand the Model",
+      "revision": 8509,
+      "sha256": "ef54e37b3043c19e348023f30a4a01f7636f0e0847971c02ee77345ad515e4f8",
+      "fetched_at": "2026-09-24T19:09:54.908292+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "1702.json",
+      "title": "Guide to Scenario Analysis in International Futures (IFs)",
+      "revision": 12053,
+      "sha256": "63982bda1b159466bd0d192680d858c2c8646bd718573546b65a77164feb4d38",
+      "fetched_at": "2026-09-24T19:09:59.907339+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "1703.json",
+      "title": "Water model documentation",
+      "revision": 9106,
+      "sha256": "06e8c6095bff47b7c40358c3387ee11067edca393d5d1504dd4e6767773716cb",
+      "fetched_at": "2026-09-24T19:11:16.558376+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "1720.json",
+      "title": "IFs Bibliography",
+      "revision": 8332,
+      "sha256": "adc157126bb4356c1d738298a83f36c4c1447f83ada27c6509fce6fdbc90847f",
+      "fetched_at": "2026-09-24T19:11:41.712268+00:00",
+      "selection": "approved"
+    },
+    {
+      "file": "2412.json",
+      "title": "Economics",
+      "revision": 10954,
+      "sha256": "2deda71ff599c9bf10deeb8c119de2c22d6524706ca0e14479ea06f1dbaea565",
+      "fetched_at": "2026-09-24T19:10:15.712928+00:00",
+      "selection": "latest_fallback"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "approval": {
+    "checked_at": "2026-09-24T19:11:29.673139+00:00",
+    "method": "public-body-class-and-RLCONF",
+    "reason": null,
+    "response_sha256": "d4396976b3cff9dd6b8e6961d52090a518c7ffa50b9edf9a1891e374ec4176b1",
+    "revision": 7642,
+    "status": "approved",
+    "url": "https://pardeewiki.du.edu/index.php?title=Define%2C+Drivers%2C+Explain%2C+Code+and+Delete"
+  },
+  "content": {
+    "images": [
+      "Define.gif",
+      "Driver.gif"
+    ],
+    "links": [],
+    "pageid": 1615,
+    "revid": 7642,
+    "sections": [],
+    "showtoc": false,
+    "templates": [],
+    "text": "<div class=\"mw-content-ltr mw-parser-output\" lang=\"en\" dir=\"ltr\"><p>These options are present when variables or parameters are selected either for display, to create a new Scenario-Load-File, or when users double-click no values located in a Table.\n</p><p>From<b>&#160;Self Managed Full Variable/Parameter Selection:</b>\n</p>\n<figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Define.gif\" class=\"mw-file-description\"><img src=\"/images/0/01/Define.gif\" decoding=\"async\" width=\"672\" height=\"528\" class=\"mw-file-element\" /></a><figcaption>Self Managed Full Variable/Parameter Selection window</figcaption></figure><p>From<b>&#160;Quick Scenario Analysis with Tree:</b>\n</p><figure class=\"mw-halign-center\" typeof=\"mw:File/Frame\"><a href=\"/index.php?title=File:Driver.gif\" class=\"mw-file-description\"><img src=\"/images/8/8a/Driver.gif\" decoding=\"async\" width=\"691\" height=\"551\" class=\"mw-file-element\" /></a><figcaption>Quick Scenario Analysis with Tree window</figcaption></figure><p><b>Define:</b>&#160;By selecting this option, a window will appear that will define the variables that are being displayed. You are able to print these drivers from this new window by selecting the Print option. May provide a pop-up window with a longer definition of the variable.\n</p><p><b>Drivers (Linkages):</b>&#160;By selecting this option, a window will appear that graphically displays how different drivers interact. The form will pop-up with a diagram showing the variable in the center and the variables from which it is computed on the left plus the variables to which it contributes on the right. This drivers diagram is derived directly from parsing the computer code of the model. If you float the cursor over any variable name on this screen, a more extended name will pop up. If you click on any driver variable or driven variable, the diagram will repaint with the variable selected at the middle. The menu option named Options has sub-options that allow you to display the computer code, view the equations, or see a causal diagram, view equations, or display the computer code (just as do the options from the pop-up box itself). It is also possible to save the drivers diagram to the clipboard or to a file – or to print the diagram. From this window, users are able to do the following:\n</p>\n<ul><li><b>Exit Drivers:</b>&#160;Select this to return to the previous screen.</li>\n<li><b>Copy to Clipboard:</b>&#160;Select this to copy the presented data to your clipboard. To paste this data in an application (such as Word, or PowerPoint), open your selected application and either right-click and select Paste or hold in CTRL-V.</li>\n<li><b>Save:</b>&#160;Select this option in order to save the image that is displayed. The default save option is a .bmp file.</li>\n<li><b>Print:</b>&#160;Select this option to print the image displayed in IFs.</li>\n<li><b>How to:</b>&#160;Selecting this option will call up a small window that explains this driver display feature of IFs in more detail.</li>\n<li><b>Additional Features:</b>&#160;Move your mouse over any driver and a longer definition will be displayed. The drivers/parameters on the left hand side of your screen driver the drivers on the right hand side of the screen. To move either foreword or backward through the list of drivers, simply click on one driver that lies to either the right or left of the center driver. This will shift the driver display. Experiment.</li></ul>\n<p><b>Explain (Block Diagram):</b>&#160;Selecting this option will bring up a help-file that shows a diagram that broadly explains how drivers interact for the area of inquiry (agriculture, economics, etc.) that you have displayed in your table. There normally is also textual explanation.\n</p><p><b>Equations:</b>&#160;Selecting this option will bring up a help-file that shows the equations used in computing the drivers displayed.\n</p><p><b>View Code:</b>&#160;Select this feature and a help-file will be opened that shows the computer code used to express the calculation of these drivers and their interaction in IFs.\n</p><p><b>Delete:</b>&#160;This option allows you to clear the selected variable/parameter from this box.\n</p>\n<!-- \nNewPP limit report\nCached time: 20260924190724\nCache expiry: 86400\nReduced expiry: false\nComplications: []\nCPU time usage: 0.006 seconds\nReal time usage: 0.007 seconds\nPreprocessor visited node count: 1/1000000\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 1/100\nExpensive parser function count: 0/100\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Saved in parser cache with key wiki:pcache:idhash:1615-0!canonical and timestamp 20260924190724 and revision id 7642. Rendering was triggered because: page-view\n -->\n</div>",
+    "title": "Define, Drivers, Explain, Code and Delete",
+    "wikitext": "These options are present when variables or parameters are selected either for display, to create a new Scenario-Load-File, or when users double-click no values located in a Table.\n\nFrom'''&nbsp;Self Managed Full Variable/Parameter Selection:'''\n\n[[File:Define.gif|frame|center|Self Managed Full Variable/Parameter Selection window]]From'''&nbsp;Quick Scenario Analysis with Tree:'''\n\n[[File:Driver.gif|frame|center|Quick Scenario Analysis with Tree window]]'''Define:'''&nbsp;By selecting this option, a window will appear that will define the variables that are being displayed. You are able to print these drivers from this new window by selecting the Print option. May provide a pop-up window with a longer definition of the variable.\n\n'''Drivers (Linkages):'''&nbsp;By selecting this option, a window will appear that graphically displays how different drivers interact. The form will pop-up with a diagram showing the variable in the center and the variables from which it is computed on the left plus the variables to which it contributes on the right. This drivers diagram is derived directly from parsing the computer code of the model. If you float the cursor over any variable name on this screen, a more extended name will pop up. If you click on any driver variable or driven variable, the diagram will repaint with the variable selected at the middle. The menu option named Options has sub-options that allow you to display the computer code, view the equations, or see a causal diagram, view equations, or display the computer code (just as do the options from the pop-up box itself). It is also possible to save the drivers diagram to the clipboard or to a file – or to print the diagram. From this window, users are able to do the following:\n\n*'''Exit Drivers:'''&nbsp;Select this to return to the previous screen.\n*'''Copy to Clipboard:'''&nbsp;Select this to copy the presented data to your clipboard. To paste this data in an application (such as Word, or PowerPoint), open your selected application and either right-click and select Paste or hold in CTRL-V.\n*'''Save:'''&nbsp;Select this option in order to save the image that is displayed. The default save option is a .bmp file.\n*'''Print:'''&nbsp;Select this option to print the image displayed in IFs.\n*'''How to:'''&nbsp;Selecting this option will call up a small window that explains this driver display feature of IFs in more detail.\n*'''Additional Features:'''&nbsp;Move your mouse over any driver and a longer definition will be displayed. The drivers/parameters on the left hand side of your screen driver the drivers on the right hand side of the screen. To move either foreword or backward through the list of drivers, simply click on one driver that lies to either the right or left of the center driver. This will shift the driver display. Experiment.\n\n'''Explain (Block Diagram):'''&nbsp;Selecting this option will bring up a help-file that shows a diagram that broadly explains how drivers interact for the area of inquiry (agriculture, economics, etc.) that you have displayed in your table. There normally is also textual explanation.\n\n'''Equations:'''&nbsp;Selecting this option will bring up a help-file that shows the equations used in computing the drivers displayed.\n\n'''View Code:'''&nbsp;Select this feature and a help-file will be opened that shows the computer code used to express the calculation of these drivers and their interaction in IFs.\n\n'''Delete:'''&nbsp;This option allows you to clear the selected variable/parameter from this box."
+  },
+  "content_sha256": "b2aad3eb533f60990345378ac96628152abb5b48203916c8986cc21798f50405",
+  "extraction_warnings": [
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/0/01/Define.gif"
+    },
+    {
+      "alt": "",
+      "kind": "visual_not_transcribed",
+      "source": "/images/8/8a/Driver.gif"
+    },
+    {
+      "dependencies": {
+        "images": [
+          "Define.gif",
+          "Driver.gif"
+        ],
+        "templates": []
+      },
+      "kind": "embedded_dependency_approval_unverified"
+    }
+  ],
+  "extractor": "structured-v2",
+  "fetched_at": "2026-09-24T19:11:31.673092+00:00",
+  "latest_revision_at_selection": 7642,
+  "page_id": 1615,
+  "requested_title": "Define, Drivers, Explain, Code and Delete",
+  "revision": 7642,
+  "revision_timestamp": "2017-07-27T18:11:13Z",
+  "selection": "approved",
+  "title": "Define, Drivers, Explain, Code and Delete",
+  "url": "https://pardeewiki.du.edu/index.php?title=Define%2C+Drivers%2C+Explain%2C+Code+and+Delete&oldid=7642"
+}

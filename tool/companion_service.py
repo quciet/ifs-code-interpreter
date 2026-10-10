@@ -16,6 +16,8 @@ import uuid
 
 import ai_settings
 from ifs_code_interpreter import index_sources, search, answer
+from research import Research, prepare_research, evidence_from_hits
+from investigation import investigate
 
 ROOT = Path(__file__).resolve().parent
 BUNDLE = ROOT.parent / 'data'
@@ -35,7 +37,22 @@ def worker(action, payload):
             result = index_sources(payload['roots'], payload['destination'])
             if not result['indexed_files']:
                 raise ValueError('No supported source files found. Choose a folder containing IFs code.')
+            result.update(prepare_research(payload['destination'], payload['bundle']))
+        elif action == 'semantic':
+            research = Research(payload['index'], payload['bundle'])
+            result = research.retrieval.prepare()
         else:
+            if payload.get('research_version'):
+                research = Research(payload['index'], payload['bundle'])
+                if action == 'ask':
+                    settings = ai_settings.load(payload['settings_file'], secret=True)
+                    if not settings['configured']: raise ValueError('Configure the shared AI connection in Companion Settings first.')
+                    result = investigate(research, payload['question'], settings)
+                else:
+                    evidence, semantic = evidence_from_hits(research, payload['question'])
+                    result = {'question':payload['question'], 'evidence':evidence, 'semantic_status':semantic,
+                              'answer':'Matching code and offline wiki evidence. Search is local and does not call an AI provider.'}
+                return {'ok': True, 'result': result}
             evidence = search(payload['index'], payload['question'])
             # Bound provider context even when source files contain minified lines.
             for item in evidence:
@@ -92,6 +109,10 @@ class Workspace:
             manifest = json.loads((self.bundle/'sources.json').read_text(encoding='utf-8'))
             bundled = [{'repository': s['repository'], 'commit': s['commit']} for s in manifest['sources']]
             old = self.active and self.active['kind']=='bundled' and self.active.get('revisions') != bundled
+            wiki_manifest = self.bundle/'wiki/manifest.json'
+            from ifs_research.common import digest
+            wiki_hash = digest(wiki_manifest.read_bytes()) if wiki_manifest.exists() else None
+            old = old or bool(self.active and (not self.active.get('research_version') or self.active.get('wiki_bundle') != wiki_hash))
             history = []
             for p in sorted((self.data/'answers').glob('*.json'), reverse=True)[:50]:
                 try:
@@ -122,7 +143,17 @@ class Workspace:
                 candidate = {'kind': kind, 'roots': roots, 'revisions': self.state()['bundled'] if kind=='bundled' else [],
                              'created': datetime.now(timezone.utc).isoformat()}
                 temporary = self.data/('index-'+uuid.uuid4().hex+'.sqlite3')
-                payload = {'roots': roots, 'destination': str(temporary)}
+                payload = {'roots': roots, 'destination': str(temporary), 'bundle':str(self.bundle)}
+            elif action == 'semantic':
+                if not self.active or not self.active.get('research_version'): raise ValueError('Prepare the research index first.')
+                # Vectors are written into an isolated SQLite backup and swapped on success.
+                import sqlite3
+                from contextlib import closing
+                temporary = self.data/('index-'+uuid.uuid4().hex+'.sqlite3')
+                with closing(sqlite3.connect(self.data/'code.sqlite3')) as source, closing(sqlite3.connect(temporary)) as target:
+                    source.backup(target)
+                candidate = dict(self.active)
+                payload = {'index':str(temporary), 'bundle':str(self.bundle)}
             elif action in ('ask', 'search'):
                 if not self.active: raise ValueError('Prepare the source index first.')
                 question = request.get('question', '')
@@ -130,12 +161,13 @@ class Workspace:
                     raise ValueError('Enter a question up to 6,000 characters.')
                 if action == 'ask' and not ai_settings.load(self.settings_file)['configured']:
                     raise ValueError('Configure the shared AI connection in Companion Settings first.')
-                payload = {'question': question.strip(), 'index': str(self.data/'code.sqlite3'), 'settings_file': self.settings_file}
+                payload = {'question': question.strip(), 'index': str(self.data/'code.sqlite3'), 'settings_file': self.settings_file,
+                           'bundle':str(self.bundle), 'research_version':self.active.get('research_version')}
                 candidate = dict(self.active)
                 temporary = None
             else: raise ValueError('Unknown action.')
             prefix = [sys.executable] if getattr(sys, 'frozen', False) else [sys.executable, str(Path(__file__).resolve())]
-            self.job = {'status': 'running', 'action': action, 'message': 'Preparing code index…' if action=='index' else 'Reading source evidence…'}
+            self.job = {'status': 'running', 'action': action, 'message': {'index':'Preparing code and wiki index…','semantic':'Preparing local semantic search. This can take several minutes…'}.get(action,'Investigating source evidence…')}
             self.pending = temporary
             try:
                 process = subprocess.Popen(prefix+['--worker'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
@@ -150,7 +182,7 @@ class Workspace:
 
     def watch(self, process, action, payload, candidate, temporary):
         try:
-            output, _ = process.communicate(json.dumps({'action':action,'payload':payload}).encode(), timeout=600)
+            output, _ = process.communicate(json.dumps({'action':action,'payload':payload}).encode(), timeout=1800 if action=='semantic' else 600)
             with self.lock:
                 if self.process is not process: return
                 response = json.loads(output) if output else {}
@@ -158,10 +190,17 @@ class Workspace:
                     self.job = {'status':'failed','message':response.get('error','Worker stopped before finishing.')}
                 elif action == 'index':
                     temporary.replace(self.data/'code.sqlite3')
-                    candidate['indexed_files'] = response['result']['indexed_files']
+                    candidate.update({k:v for k,v in response['result'].items() if k!='index'})
                     write_json(self.data/'source.json', candidate)
                     self.active = candidate
                     self.job = {'status':'complete','action':action,'message':f"Ready · {candidate['indexed_files']} source files indexed"}
+                elif action == 'semantic':
+                    temporary.replace(self.data/'code.sqlite3')
+                    candidate['semantic_ready'] = True
+                    candidate['semantic_model'] = response['result']['model_identity']
+                    write_json(self.data/'source.json',candidate)
+                    self.active = candidate
+                    self.job = {'status':'complete','action':action,'message':'Local semantic search is ready.'}
                 else:
                     now = datetime.now(timezone.utc)
                     record = {**response['result'], 'id': now.strftime('%Y%m%dT%H%M%S')+'-'+uuid.uuid4().hex[:12],
@@ -247,7 +286,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.send({'ok':True})
                 threading.Thread(target=self.server.shutdown,daemon=True).start(); return
             if self.path == '/api/stop': return self.send(self.server.workspace.cancel())
-            if self.path in ('/api/index','/api/ask','/api/search'):
+            if self.path in ('/api/index','/api/ask','/api/search','/api/semantic'):
                 return self.send(self.server.workspace.start(self.path.rsplit('/',1)[1],request))
             return self.send({'error':'Not found'},404)
         except (ValueError,OSError) as error: return self.send({'error':str(error)},400)
@@ -295,7 +334,25 @@ def main():
 
 
 if __name__ == '__main__':
-    if '--worker' in sys.argv:
+    if '--check-offline-model' in sys.argv:
+        # Release smoke test: actual packaged ONNX inference with sockets disabled.
+        import socket
+        import tempfile
+        from ifs_research.retrieval import LocalEmbedding
+        def no_network(*args,**kwargs): raise RuntimeError('Offline model attempted a network connection')
+        socket.socket.connect = no_network
+        with tempfile.TemporaryDirectory() as temp:
+            base=Path(temp);source=base/'source';source.mkdir()
+            (source/'Fixture.vb').write_text('Sub Forecast()\nGDP = POP * GDPPC\nEnd Sub\n',encoding='utf-8')
+            index=base/'index.db';index_sources([source],index);prepare_research(index,base/'empty-bundle')
+            research=Research(index,BUNDLE)
+            model=LocalEmbedding(research.model_path)
+            research.retrieval.prepare(encoder=model)
+            result=research.retrieval.search('population output')
+            if result['semantic_status']!='local embeddings active' or not result['hits']:
+                raise RuntimeError('Offline hybrid search failed')
+            print(json.dumps({'offline_semantic_check':'passed','model_identity':model.identity}))
+    elif '--worker' in sys.argv:
         def watch_worker_parent():
             pid = int(os.environ['IFS_CODE_WORKER_PARENT'])
             while parent_alive(pid): time.sleep(1)
