@@ -57,14 +57,40 @@ saved run. See `data/sources.json` for bundled revision identities.
 
 ## Status and limitations
 
-This initial backend provides lexical retrieval and model-generated cited answers.
-It is not yet an installable `.ifstool` or integrated Companion screen. Companion
-will own navigation and shared settings; the earlier research assistant's standalone
-application layout is not copied. Semantic retrieval, iterative code investigation,
-and wiki integration are future work. Lexical matches are not compiler-resolved
-dependencies or proof of causality. Citation validation checks reference existence,
-not whether every generated claim follows from the evidence. Live model quality has
-not yet been evaluated. No model execution or results analysis is implemented here.
+Explore Code includes an embedded Companion screen, authenticated loopback service,
+background indexing and questions, cancellation, and saved answers with source
+excerpts. The `.ifstool` includes its runtime and bundled code. Install it using
+Companion > Settings > Manage tools > Add from file. Companion 0.1.2 or later provides
+shared AI settings and folder browsing. API keys are protected with Windows DPAPI;
+they are not stored in the tool or returned to the browser. The tool reads the shared
+settings file supplied by Companion, including changes made while it is open.
+
+Select bundled code or up to four local folders, prepare the index, then ask a
+question or search locally. Stop preserves the previous complete index and saved
+answers. Updating or uninstalling the tool preserves user data. The source version
+is shown with each saved answer. If a new tool version bundles different commits,
+Explore Code prompts you to prepare its index again.
+
+Retrieval is lexical, not compiler-resolved dependency analysis. Semantic search,
+iterative investigation, and wiki integration remain future work. Citation validation
+checks reference existence, not claim correctness. Live model answer quality has
+not yet been evaluated; integration tests use a local mock provider. No IFs execution
+or numerical results analysis is performed.
+
+## Build a Companion package
+
+On Windows with Python and PyInstaller installed:
+
+```powershell
+python scripts/build_tool.py --python 'path\to\packaging-python.exe'
+```
+
+The build verifies tests and snapshot hashes, then produces
+`release/ifs-code-reader-0.2.0-win-x64.ifstool` and its SHA256 file. Runtime protocol:
+`IFS_TOOL_TOKEN`, `IFS_TOOL_DATA_DIR`, `IFS_TOOL_READY_FILE`, `IFS_COMPANION_PID`, and
+`IFS_AI_SETTINGS_FILE`. Every service route requires `X-IFs-Tool-Token`. User indexes,
+source selection, and answers remain outside the installation. Parent exit and stdin
+EOF close the service and its worker. Source snapshots retain upstream notices.
 
 ## Maintainer snapshot import
 

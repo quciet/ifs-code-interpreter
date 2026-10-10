@@ -1,0 +1,2 @@
+# Source snapshot hashes refer to exact upstream bytes.
+data/** -text
